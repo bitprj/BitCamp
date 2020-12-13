@@ -21,6 +21,16 @@ Serverless architectures offer greater scalability, more flexibility, and quicke
 4-week course on using Azure Functions, Javascript, and External APIs.
 
 ### **Week 1**
+
+📚 **Summary**
+
+Students will **learn about and set up tools** needed for the completion of the "Emotion Reader" project. To show their mastery of these skills they will complete a simple HTTP Trigger function, commit files, and work with VSCode.
+
+![https___bitcamptest azurewebsites net_api_HttpTrigger1_code=6p6KEpC180jEKVcYs28e7dWZ7PetDnfOJ7e7tnKNvHZJzwPFq0QdAA== name=hello](https://user-images.githubusercontent.com/69332964/102018451-50a09c80-3d3b-11eb-8a02-0f1d06a5ca61.gif) <br /> *Example of the simple HTTP trigger students will make with an Azure Function, which takes in a parameter of "name" and outputs the time.*
+
+![image](https://user-images.githubusercontent.com/69332964/102018608-429f4b80-3d3c-11eb-970f-aeacea8f47f7.png)
+*Behind the scenes of the Azure console students work with.*
+
 **Learning Objectives**
 - Create and deploy an Azure Function
 - Intro to using beginner JS
@@ -39,6 +49,13 @@ Intro to Functions 🧰
 - Create and deploy an HTTP trigger Azure Function that output the current time + date
 
 ### **Week 2**
+
+📚 **Summary**
+
+Students are now **starting their "Emotion Reader" web app** with coding their HTTP Trigger Azure Function and creating the Face API resource. This trigger parses an image, makes a request to the Face API, and returns the emotion data in the body. Lastly, they will **test their function** with Postman. <br />
+![postman](https://user-images.githubusercontent.com/69332964/102019491-e808ee00-3d41-11eb-8101-fb4c30203a9a.gif)
+<br />*By the end of the week, students will be able to send a request to their HTTP Trigger on Postman and receive emotion data in JSON.*
+
 **Learning Objectives**
 - Parsing multipart data + Outputting in JSON
 - Installing npm dependencies
@@ -46,6 +63,13 @@ Intro to Functions 🧰
 - Testing using Postman
 
 ### **Week 3**
+
+:books: **Summary**
+
+During Week 3, students are finishing up their "Emotion Reader" project by coding the frontend with HTML, CSS, and JS. They will code and style the page; integrate JS that makes a POST request to the HTTP Trigger they created in Week 2 and displays emotion data. By the time their project is finished, students will have experience working with APIs, Azure Functions, and connecting frontend to backend.<br />
+![Express10ns](https://user-images.githubusercontent.com/69332964/102021511-42a84700-3d4e-11eb-9ff5-ddbf467fc768.gif)
+<br />*Students will have a working web app that takes a face image as an input, makes a request to the HTTP Trigger, and displays emotion data.*
+
 **Learning Objectives**
 - Calling Azure Functions
 - Learning HTML/CSS
