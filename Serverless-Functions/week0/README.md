@@ -1,6 +1,6 @@
 # Week 0: Fundamentals of JavaScript
 
-This week (prerequisite) will focus on teaching/revisiting key JavaScript skills to complete the 4 week learning lab where you will create a Emotion Reader Engine with Azure Functions and a Face API.
+This week (prerequisite) will focus on teaching/revisiting key JavaScript skills to complete the 4 week learning lab where you will create a Emotion Reader Engine with Azure Functions and a Face API. Students complete this project as a prerequisite *prior* to the start of camp as a review resource.
 
 **Learning Objectives:**
 
