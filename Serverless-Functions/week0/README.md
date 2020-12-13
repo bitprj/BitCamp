@@ -12,4 +12,8 @@ This week (prerequisite) will focus on teaching/revisiting key JavaScript skills
 
 Your task is to learn/relearn the fundamentals of JavaScript through simple activities and a final project... making a digital clock in JavaScript. To complete this project, you will be using key JavaScript skills like jQuery, templating, and basics (variables, functions, syntax, etc).
 
+### ❗ Prerequisites for BitCamp Serverless:
+
+The purpose of Week 0 is to **review or teach** skills required for success with the curriculum. Building a JS Clock requires students to understand the basics of JS, templating in JS, and integrating HTML, CSS, and JS.
+> Note that these are skills needed mainly for developing a frontend. Students will be introduced to APIs, Functions, and making requests later in the course.
 
