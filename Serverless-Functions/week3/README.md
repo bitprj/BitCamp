@@ -2,6 +2,11 @@
 
 Last week, you should've learned the basics of how to create an Azure Function, along with the basics of triggers and bindings.
 
+### :books: Summary
+During Week 3, students are finishing up their "Emotion Reader" project by coding the frontend with HTML, CSS, and JS. They will code and style the page; integrate JS that makes a POST request to the HTTP Trigger they created in Week 2 and displays emotion data. By the time their project is finished, students will have experience working with APIs, Azure Functions, and connecting frontend to backend.<br />
+![Express10ns](https://user-images.githubusercontent.com/69332964/102021511-42a84700-3d4e-11eb-9ff5-ddbf467fc768.gif)
+<br />*Students will have a working web app that takes a face image as an input, makes a request to the HTTP Trigger, and displays emotion data.*
+
 ### Learning Objectives
 - Creating an HTML webpage
 - Making a HTTP POST request to Azure Function
