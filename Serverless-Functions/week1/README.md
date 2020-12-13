@@ -2,8 +2,10 @@
 
 This week will focus on three topics: downloading an IDE (visual studio code), configuring and messing around with Azure, and figuring out how to use GitHub.
 
-### Summary
-Students will learn about and set up tools needed for the completion of the "Emotion Reader" project. To show their mastery of these skills they will complete a simple HTTP Trigger function, commit files, and finish these tasks in VSCode.
+### 📚 Summary
+Students will **learn about and set up tools** needed for the completion of the "Emotion Reader" project. To show their mastery of these skills they will complete a simple HTTP Trigger function, commit files, and work with VSCode.
+
+![https___bitcamptest azurewebsites net_api_HttpTrigger1_code=6p6KEpC180jEKVcYs28e7dWZ7PetDnfOJ7e7tnKNvHZJzwPFq0QdAA== name=hello](https://user-images.githubusercontent.com/69332964/102018451-50a09c80-3d3b-11eb-8a02-0f1d06a5ca61.gif) <br /> *Example of the simple HTTP trigger students will make, which takes in a parameter of "name" and outputs the time.*
 
 ### Learning Objectives
 
