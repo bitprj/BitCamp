@@ -20,7 +20,7 @@ Serverless architectures offer greater scalability, more flexibility, and quicke
 ### Project Description
 4-week course on using Azure Functions, Javascript, and External APIs.
 
-### ❗ Prerequisites for BitCamp Serverless:
+### ❗ Prerequisites for BitCamp Serverless (Week 0)
 
 The purpose of Week 0 is to **review or teach** skills required for success with the curriculum. Building a JS Clock requires students to understand the basics of JS, templating in JS, and integrating HTML, CSS, and JS. Week 1 will help students set up tools needed to build the project!
 > Note that these are skills needed mainly for developing a frontend. Students will be introduced to APIs, Functions, and making requests later in the course during Week 2 and 3.
