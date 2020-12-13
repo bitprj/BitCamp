@@ -2,9 +2,12 @@
 
 This week will focus on three topics: downloading an IDE (visual studio code), configuring and messing around with Azure, and figuring out how to use GitHub.
 
+### Summary
+Students will learn about and set up tools needed for the completion of the "Emotion Reader" project. To show their mastery of these skills they will complete a simple HTTP Trigger function, commit files, and finish these tasks in VSCode.
+
 ### Learning Objectives
 
-- Downloading an IDE and Figuring Out the Basics
+- Downloading an IDE and needed extensions
 - Configuring Azure, specifically Azure Functions
 - Learning How to Use GitHub (commits, pull requests, etc)
 
