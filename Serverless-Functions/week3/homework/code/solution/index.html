@@ -23,28 +23,18 @@
     <div class="container">
 
       <input type="hidden" id='hidden_token'>
-      <input type="hidden" id = 'hiddenemotion'>
       <form id="myform" onsubmit="handle(event)" enctype="multipart/form-data">
         <div class="form-group">
           <div id="image-div">
             <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)"/>
             <img id="output" width=30%/></p>
-            <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
-          </div>
-
-          <div id="song">
-            <button id="song-button">Find a Song</button>
-          </div>         
-        </div>        
+            <button type="submit" class="btn btn-secondary btn-sm">Submit</button>       
       </form> 
 
 
 <hr/>
 
       <div id="emotion"></div>
-  
-      <div id="song-detail"></div>   
-
     </div>
 
     <-- ================================================== -->
@@ -53,7 +43,6 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="config.js" type="text/javascript"></script>
-    <script src="song.js" type="text/javascript"></script>
     <script src="face.js" type="text/javascript"></script>
   </body>
 </html>
