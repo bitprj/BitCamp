@@ -9,7 +9,7 @@ Serverless architectures offer greater scalability, more flexibility, and quicke
 
 **How?** Students gain experience through building a complete web app with a frontend (HTML, CSS, JS) and backend (Azure Functions, NodeJS). The web app's input is a picture, and it analzyes the image to display emotion data.
 
-> Example of [frontend](https://express10ns.emilychen10.repl.co/) *Note: Azure Functions are disabled*
+> Example of [web app](https://express10ns-1.emilychen10.repl.co/) *Note: Azure Functions may not be always enabled*
 
 **When?** 
 * *Starting out:* Week 0 consists of an introductory JS project and Week 1 assists students in setting up with VSCode, a basic Azure Function, and Github.
