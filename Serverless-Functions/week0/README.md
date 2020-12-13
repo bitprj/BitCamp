@@ -4,9 +4,10 @@ This week (prerequisite) will focus on teaching/revisiting key JavaScript skills
 
 **Learning Objectives:**
 
-- Basics of JavaScript
+- Reviewing basics of JavaScript
 - Templating in JavaScript
 - Integrating files (HTML, CSS, JS)
+- Learning needed coding prerequisites 
 
 **Homework:**
 
