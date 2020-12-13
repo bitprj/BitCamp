@@ -7,7 +7,7 @@ Serverless architectures offer greater scalability, more flexibility, and quicke
 
 **What?** Concise and interactive Github Learning Lab that introduces and develops skills related to serverless architectures with [Microsoft Azure Functions](https://azure.microsoft.com/en-us/services/functions/)
 
-**How?** Students gain experience through building a complete web app with a frontend (HTML, CSS, JS) and backend (Azure Functions, NodeJS). The web app's input is a picture, and it displays emotion data.
+**How?** Students gain experience through building a complete web app with a frontend (HTML, CSS, JS) and backend (Azure Functions, NodeJS). The web app's input is a picture, and it analzyes the image to display emotion data.
 
 > Example of [frontend](https://express10ns.emilychen10.repl.co/) *Note: Azure Functions are disabled*
 
