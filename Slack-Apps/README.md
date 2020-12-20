@@ -30,7 +30,7 @@ In the Livestream Portion of Week 2, students will work with new topics like sho
 
 ### Homework
 
-In the Homework Portion of Week 2, students will continue to advance the skills taught during the livestream through a guided Github Learning Lab. Students will focus on BlockKit (found [here](https://api.slack.com/block-kit "here")) and explore the UI framework by creating more complicated messages that change and work with user input. As well, students will strengthen their understanding of modals by experimenting with different modal blocks and views. At the end of the week, students will be tasked to create a simple Slack App that uses the skills learned in week 2 (shortcuts, modals, and BlockKit) in a creative way to recieve and respond to user input.
+In the Homework Portion of Week 2, students will continue to advance the skills taught during the livestream through a guided Github Learning Lab. Students will focus on BlockKit (found [here](https://api.slack.com/block-kit "here")) and explore the UI framework by creating more complicated messages that change and work with user input. As well, students will strengthen their understanding of modals by experimenting with different modal blocks and views. At the end of the week, students will be tasked to create a simple Slack App that uses the skills learned in week 2 (shortcuts, modals, and BlockKit) in a creative way to recieve and respond to user input. 
 
 ### **Week 3: Integration with Google Translate API**
 
@@ -38,11 +38,11 @@ In the Homework Portion of Week 2, students will continue to advance the skills 
 
 ### Livestream
 
-In the Livestream Portion of Week 3, students will be introduced to third party API integration. This week, students will start off by using the Google Translate API. Students will first learn a few more actions including how to respond to emoji reactions and how to set Slack Apps to reply to a thread. The livestream for this week will hardcode the callback response to prepare students to integrate the API for homework.
+In the Livestream Portion of Week 3, students will be introduced to third party API integration. This week, students will start off by using the Google Translate API. Students will first learn a few more actions including how to respond to emoji reactions and how to set Slack Apps to reply to a thread. Using these actions, students will create a Slack App that responds to a flag (emoji reaction) and posts a message in a thread with the language of given flag. The livestream for this week will hardcode the callback response to prepare students to integrate the API for homework.
 
 ### Homework
 
-In the Homework Portion of Week 3, students will continue to advance the skills taught during the livestream through a guided Github Learning Lab. Students will begin the process of integrating the google translate API (found [here](https://cloud.google.com/translate/docs/ "here")) by learning how to create an account, obtain an API key/token, and finally, code the callback logic that sends a message and recieves a translated response back.
+In the Homework Portion of Week 3, students will continue to advance the skills taught during the livestream through a guided Github Learning Lab. Students will begin the process of integrating the google translate API (found [here](https://cloud.google.com/translate/docs/ "here")) by learning how to create an account, obtain an API key/token, and finally, code the callback logic that sends a message and recieves a translated response back. Students will create an app, building on to the livestream, that responds to a flag (emoji reaction) + phrase and will return the translated phrase in a thread.
 
 ### **Week 4: Events and Reminders with Google Calendar API**
 
