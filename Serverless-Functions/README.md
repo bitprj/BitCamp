@@ -64,8 +64,8 @@ Students are now **starting their "Emotion Reader" web app** with coding their H
 **Learning Objectives**
 - Parsing multipart data + Outputting in JSON
 - Installing npm dependencies
-- Working with the Face API
-- Testing using Postman
+- Working with the Face API + Reading its documentation
+- Calling and Testing API Endpoints ft. Postman
 
 ### **Week 3**
 
@@ -79,3 +79,4 @@ During Week 3, students are finishing up their "Emotion Reader" project by codin
 - Calling Azure Functions
 - Learning HTML/CSS
 - Uploading Images with Forms
+- Completing the working app end to end!
