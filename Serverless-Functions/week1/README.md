@@ -12,8 +12,8 @@ Students will **learn about and set up tools** needed for the completion of the 
 
 ### Learning Objectives
 
-- Downloading an IDE and needed extensions
-- Configuring Azure, specifically Azure Functions
+- Downloading an IDE and Figuring Out the Basics
+- Configuring Azure, specifically Azure Functions (create and deploy your first Function)
 - Learning How to Use GitHub (commits, pull requests, etc)
 
 ### Livestream
