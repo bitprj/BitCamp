@@ -31,9 +31,9 @@ The purpose of Week 0 is to **review or teach** skills required for success with
 
 Students will **learn about and set up tools** needed for the completion of the "Emotion Reader" project. To show their mastery of these skills they will complete a simple HTTP Trigger function, commit files, and work with VSCode.
 
-![https___bitcamptest azurewebsites net_api_HttpTrigger1_code=6p6KEpC180jEKVcYs28e7dWZ7PetDnfOJ7e7tnKNvHZJzwPFq0QdAA== name=hello](https://user-images.githubusercontent.com/69332964/102018451-50a09c80-3d3b-11eb-8a02-0f1d06a5ca61.gif) <br /> *Example of the simple HTTP trigger students will make with an Azure Function, which takes in a parameter of "name" and outputs the time.*
+![http trigger](https://user-images.githubusercontent.com/69332964/102018451-50a09c80-3d3b-11eb-8a02-0f1d06a5ca61.gif) <br /> *Example of the simple HTTP trigger students will make with an Azure Function, which takes in a parameter of "name" and outputs the time.*
 
-![image](https://user-images.githubusercontent.com/69332964/102018608-429f4b80-3d3c-11eb-970f-aeacea8f47f7.png)
+![azure console](https://user-images.githubusercontent.com/69332964/102018608-429f4b80-3d3c-11eb-970f-aeacea8f47f7.png)
 *Behind the scenes of the Azure console students work with.*
 
 **Learning Objectives**
@@ -48,7 +48,7 @@ Setting Up 👷
 
 Intro to Javascript 💻
 - Learning fundamentals
-- making a digital clock
+- Making a digital clock
 
 Intro to Functions 🧰
 - Create and deploy an HTTP trigger Azure Function that output the current time + date
@@ -64,6 +64,7 @@ Students are now **starting their "Emotion Reader" web app** with coding their H
 **Learning Objectives**
 - Parsing multipart data + Outputting in JSON
 - Installing npm dependencies
+- Making HTTP requests with fetch
 - Working with the Face API + Reading its documentation
 - Calling and Testing API Endpoints ft. Postman
 
