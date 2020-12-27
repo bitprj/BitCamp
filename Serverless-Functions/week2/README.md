@@ -39,4 +39,4 @@ Create a HTTP trigger Azure Function that uses the Face API to analyze emotion i
 
 ### :question: How will this help students?
 
-The Week 2 livestream shows how to create an HTTP trigger that outputs facial hair information: close, but not quite what students have to do. Because the demonstration is not exactly what the students are coding (an emotion reader), it gives them a chance to figure out some aspects of the project on their own. In addition to this, the livestream shows another example of how the Face API and HTTP trigger can be used.
+The Week 2 livestream shows how to create an HTTP trigger that outputs facial hair information: close, but not quite what students have to do for homework. Because the demonstration is not exactly what the students are coding (an emotion reader), it gives them a chance to figure out some aspects of the project on their own. In addition to this, the livestream shows another example of how the Face API and HTTP trigger can be used.
