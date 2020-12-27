@@ -22,3 +22,15 @@ Your task is to learn/relearn the fundamentals of JavaScript through simple acti
 The purpose of Week 0 is to **review or teach** skills required for success with the curriculum. Building a JS Clock requires students to understand the basics of JS, templating in JS, and integrating HTML, CSS, and JS. Week 1 will help students set up tools needed to build the project!
 > Note that these are skills needed mainly for developing a frontend. Students will be introduced to APIs, Functions, and making requests later in the course during Week 2 and 3.
 
+Some helpful links for getting into JS:
+- [W3Schools](https://www.w3schools.com/js/default.asp)
+- [Tutorialspoint](https://www.tutorialspoint.com/javascript/javascript_overview.htm)
+- [Modern JS](https://javascript.info/)
+
+If you have specific questions, try out Stack Overflow (it is super duper helpful):
+- [Stack Overflow](https://stackoverflow.com/)
+
+Specific concepts to know and learn:
+1. Variables
+2. Functions
+3. Basic syntax
