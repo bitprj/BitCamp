@@ -30,3 +30,7 @@ We'll be going over how to:
 Create an HTML webpage that allows the user to submit an image and submit by pressing a button.
 - The step by step runthrough is located in the [issues folder](https://github.com/bitprj/Bitcamp-Serverless/blob/master/week3/homework/issues). Follow the issues numerically to complete the project. 
 - Any starter and solution code is in the [code folder](https://github.com/bitprj/Bitcamp-Serverless/tree/master/week3/homework/code/solution) in homework.
+
+### :question: How will this help students?
+
+This livestream shows how to connect frontend (the basic HTML/CSS website students create) to the backend, their HTTP trigger Azure Function. The students can then apply this to their own Emotion Reader project by creating a static website, using it to call their Azure Function, and finally displaying the received data on the webpage.
