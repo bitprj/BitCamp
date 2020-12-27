@@ -8,8 +8,9 @@ During Week 3, students are finishing up their "Emotion Reader" project by codin
 <br />*Students will have a working web app that takes a face image as an input, makes a request to the HTTP Trigger, and displays emotion data.*
 
 ### Learning Objectives
-- Creating an HTML webpage
-- Making a HTTP POST request to Azure Function
+- Creating an HTML webpage with CSS
+- Upload an image with a form
+- Making a HTTP POST request to an Azure Function
 - Parsing and displaying data retrieved from call
 
 
