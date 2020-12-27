@@ -11,9 +11,11 @@ Students are now **starting their "Emotion Reader" web app** with coding their H
 
 ### **Learning Objectives**
 
-- retrieving data from Face API
-- making HTTP requests using fetch
-- installing and using npm dependencies
+- Parsing multipart data + Outputting in JSON
+- Installing npm dependencies
+- Making HTTP requests with fetch
+- Working with the Face API + Reading its documentation
+- Calling and Testing API Endpoints ft. Postman
 
 ### **Livestream**
 
