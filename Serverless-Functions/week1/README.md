@@ -33,3 +33,7 @@ We'll be going over how to:
 ### Homework
 
 Your task is to follow a step by step guide on how to download an IDE, create an Azure account, and get started with GitHub. After that, on your own you will be completing 3 simple tasks to show your understanding of these programs.
+
+### :question: How will this help students?
+
+The livestream demonstrates step by step how to set up necessary resources needed to succeed in Bitcamp Serverless. It contains information that will assist them in completing the tasks for this week with these tools: an IDE, Azure, and Github.
