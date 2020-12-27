@@ -36,3 +36,7 @@ In the livestream, we're going to code a HTTP trigger Azure Function that detect
 Create a HTTP trigger Azure Function that uses the Face API to analyze emotion in a picture. 
 - The step by step runthrough is located in the [issues folder](homework/issues). Follow the issues numerically to complete the project. 
 - Any starter and solution code is in the [code folder](homework/code) in homework.
+
+### :question: How will this help students?
+
+The Week 2 livestream shows how to create an HTTP trigger that outputs facial hair information: close, but not quite what students have to do. Because the demonstration is not exactly what the students are coding (an emotion reader), it gives them a chance to figure out some aspects of the project on their own. In addition to this, the livestream shows another example of how the Face API and HTTP trigger can be used.
