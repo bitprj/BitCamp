@@ -1,6 +1,7 @@
 # 🛠 Working With Github Learning Labs 
 
-*The `config.yml` file should be written in this order. Refer to a complete `config.yml` file [here](https://github.com/emsesc/azure-functions-course/blob/master/config.yml)!*
+*The `config.yml` file should be written in this order. Refer to a complete `config.yml` file [here](https://github.com/Bahburs/javascript-course/blob/main/config.yml)!*
+Feel free to also refer to Github's Learning Lab documentation linked [here](https://lab.github.com/docs) and located under "3. Writing a course"; it contains more a more detailed description of all the options you can use. **This md file is targeted specifically towards BitProject's Bit Camp Learning Labs.**
 
 ## :pencil: **The Basic Sections of the YAML file**
 
@@ -32,11 +33,11 @@ description: >-
   Static Web Apps.
 ```
 
-### 3. `template: `
+### 3. [`template: `](https://lab.github.com/docs/template-block)
 
 **What is it?**
 
-**It specifies the template repository that is created for the student to use during the Learning Lab and the repository that houses the code for your Learning Lab.** In the example below, when someone begins the Learning Lab, a repo named "bit-camp-learning-lab-test" will be created. The repo, "azure-functions-template," is where the config.yml file, course-details.md, and responses folder are. This repo is *not* created for the student and is only for developing the course.
+**It specifies the template repository that is created for the student to use during the Learning Lab and the repository that should be copied into the learner's repository.** In the example below, when someone begins the Learning Lab, a repo named "bit-camp-learning-lab-test" will be created. The repo, "azure-functions-template," is the repository that is copied into the student's new "bit-camp-learning-lab-test" repo.
 
 **Syntax:**
 
@@ -46,7 +47,9 @@ template:
   repo: azure-functions-template
 ```
 
-### 4. `before: `
+### 4. [`before: `](https://lab.github.com/docs/before-block)
+
+:sparkles: ***Optional*** :sparkles: 
 
 **What is it?**
 
@@ -68,11 +71,11 @@ before:
     body: 00-prerequisite.md
 ```
 
-### 5. `steps: `
+### 5. [`steps: `](https://lab.github.com/docs/steps-block)
 
 **What is it?**
 
-This is the meat of the Learning Lab - the logic that controls when issues are closed, when responses are commented, and when to move on. The syntax requires breaking down to explain properly, so refer to the next section for a complete description.
+This is the meat of the Learning Lab - the logic that controls when issues are closed, when responses are commented, and when to move on. The syntax requires breaking down to explain properly, so refer to the [next section](https://github.com/emsesc/BitCamp/blob/master/Learning-Labs101.md#apple-the-core-of-the-learning-lab---steps-) for a complete description.
 
 **Syntax:**
 
@@ -132,4 +135,65 @@ tags:
 ### Breaking down `steps: `
 
 Your first step in `steps: ` should be something along the lines of this:
+```yaml
+  - title: 'Week 1: Downloading an IDE'
+    description: Installing Visual Studio Code.
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 00-response.md
+        issue: 1
+      - type: createIssue
+        title: Week 1
+        body: 1.1-ide.md
+ ```
+ This opens up issue #2, which is Week 1, **when the issue #1, which was opened by `before: `, is closed.** `event: issues.closed` specifies that when the `Prerequisite` issue (see in `before: ` section) is closed by the learner, the Learning Lab Bot responds with a comment containing the `00-response.md`file and creates the new issue (Week 1). Another comment is written containing the file `1.1-ide.md`, which is specified in `body:`.
+
+:bulb: The `link:` directs the learner to the new issue that was created: Week 1. Now that the new section has been created, we can move inside the issue like this:
+
+```yaml
+  - title: 'Week 1: Downloading an IDE'
+    description: Installing Visual Studio Code.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 1.2-azure.md
+```
+This step executes or triggers when an issue comment is created (`event: issue_comment.created`) and responds with another new comment containing `1.2-azure.md`. Let's say that we're done with Week 1. How do we create a new section?
+
+```yaml
+  - title: 'Week 1: Learning to Use Github'
+    description: Understanding how to use GitHub.
+    event: push
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 01-complete.md
+        issue: 2
+      - type: createIssue
+        title: Week 2
+        body: 2.1-parsing.md
+      - type: closeIssue
+        issue: 2
+```
+Include the last step of Week 1, including the response trigger (in this case, it's when the learner commits something) and the response file. In the actions, also include creating a new issue (#3) and closing the old issue (#2). **Keep on repeating this pattern until you're ready to end the Learning Lab!**
+
+### **Finishing up the Learning Lab**
+
+To close it up, you use the same code as above, except you don't create another issue.
+```yaml
+  - title: 'Final Project: Lightning Talk'
+    description: Preparing your lightning talk.
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 04-complete.md
+        issue: 5
+      - type: closeIssue
+        issue: 5
+```
+
+
 
