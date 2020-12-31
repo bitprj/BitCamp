@@ -194,6 +194,8 @@ To close it up, you use the same code as above, except you don't create another 
       - type: closeIssue
         issue: 5
 ```
+If you correctly set up your steps, they should appear on the course page like this:
+![image](https://user-images.githubusercontent.com/69332964/103423853-1d517080-4b77-11eb-98a9-476d483cc2c0.png)
 
 
 
