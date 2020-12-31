@@ -76,6 +76,11 @@ This is the meat of the Learning Lab - the logic that controls when issues are c
 
 **Syntax:**
 
+```yaml
+steps: 
+[insert all your steps]
+```
+
 1. Creating a new section (issue) after the completion of another (closing an issue and opening a new one)
 ```yaml
   - title: 'Week 1: Downloading an IDE'
@@ -122,4 +127,9 @@ tags:
 
 ## :apple: **The Core of the Learning Lab - `steps: `**
 
+*This part is crucial when making your Learning Lab actually work... It details when issues should be opened, when they should be closed, and when to move forward in the lab.*
+
 ### Breaking down `steps: `
+
+Your first step in `steps: ` should be something along the lines of this:
+
