@@ -1,4 +1,4 @@
-# 🛠 Working With Github Learning Labs 
+# 🛠 Working With Github Learning Labs: The YAML File
 
 *The `config.yml` file should be written in this order. Refer to a complete `config.yml` file [here](https://github.com/bitprj/azure-functions-course/blob/master/config.yml)!*
 Feel free to also refer to Github's Learning Lab documentation linked [here](https://lab.github.com/docs) and located under "3. Writing a course"; it contains more a more detailed description of all the options you can use. **This md file is targeted specifically towards BitProject's Bit Camp Learning Labs.**
