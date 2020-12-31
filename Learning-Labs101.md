@@ -205,6 +205,7 @@ If you correctly set up your steps, they should appear on the course page like t
 * Prerequisite = Issue #1
 * Week 1 = Issue #2
 * Week 2 = Issue #3
-...and so on
+
+*...and so on*
 
 ### See the issues/comments in action [here](https://github.com/emsesc/bit-camp-learning-lab-test/issues?q=is%3Aissue+is%3Aclosed)
