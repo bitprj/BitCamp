@@ -1,6 +1,6 @@
 # 🛠 Working With Github Learning Labs 
 
-*The `config.yml` file should be written in this order. Refer to a complete `config.yml` file [here](https://github.com/Bahburs/javascript-course/blob/main/config.yml)!*
+*The `config.yml` file should be written in this order. Refer to a complete `config.yml` file [here](https://github.com/bitprj/azure-functions-course/blob/master/config.yml)!*
 Feel free to also refer to Github's Learning Lab documentation linked [here](https://lab.github.com/docs) and located under "3. Writing a course"; it contains more a more detailed description of all the options you can use. **This md file is targeted specifically towards BitProject's Bit Camp Learning Labs.**
 
 ## :pencil: **The Basic Sections of the YAML file**
@@ -148,7 +148,9 @@ Your first step in `steps: ` should be something along the lines of this:
         title: Week 1
         body: 1.1-ide.md
  ```
- This opens up issue #2, which is Week 1, **when the issue #1, which was opened by `before: `, is closed.** `event: issues.closed` specifies that when the `Prerequisite` issue (see in `before: ` section) is closed by the learner, the Learning Lab Bot responds with a comment containing the `00-response.md`file and creates the new issue (Week 1). Another comment is written containing the file `1.1-ide.md`, which is specified in `body:`.
+ :arrow_up: This opens up issue #2, which is Week 1, **when the issue #1, which was opened by `before: `, is closed.** `event: issues.closed` specifies that when the `Prerequisite` issue (see in `before: ` section) is closed by the learner, the Learning Lab Bot responds with a comment containing the `00-response.md`file and creates the new issue (Week 1). *Note: The purpose of the response file is to notify that the first issue was closed and the learner should move on to Week 1 (issue #2)*
+ 
+ Another comment is written containing the file `1.1-ide.md`, which is specified in `body:`.
 
 :bulb: The `link:` directs the learner to the new issue that was created: Week 1. Now that the new section has been created, we can move inside the issue like this:
 
@@ -161,7 +163,9 @@ Your first step in `steps: ` should be something along the lines of this:
       - type: respond
         with: 1.2-azure.md
 ```
-This step executes or triggers when an issue comment is created (`event: issue_comment.created`) and responds with another new comment containing `1.2-azure.md`. Let's say that we're done with Week 1. How do we create a new section?
+:arrow_up: This step executes or triggers when an issue comment is created (`event: issue_comment.created`) and responds with another new comment containing `1.2-azure.md`. 
+
+### Let's say that we're done with Week 1. How do we create a new section?
 
 ```yaml
   - title: 'Week 1: Learning to Use Github'
@@ -178,11 +182,11 @@ This step executes or triggers when an issue comment is created (`event: issue_c
       - type: closeIssue
         issue: 2
 ```
-Include the last step of Week 1, including the response trigger (in this case, it's when the learner commits something) and the response file. In the actions, also include creating a new issue (#3) and closing the old issue (#2). **Keep on repeating this pattern until you're ready to end the Learning Lab!**
+:arrow_up: Include the last step of Week 1, including the response trigger (in this case, it's when the learner commits something) and the response file. In the actions, also include creating a new issue (#3) and closing the old issue (#2). **Keep on repeating this pattern until you're ready to end the Learning Lab!**
 
 ### **Finishing up the Learning Lab**
 
-To close it up, you use the same code as above, except you don't create another issue.
+:arrow_down: To close it up, you use the same code as above, except you don't create another issue.
 ```yaml
   - title: 'Final Project: Lightning Talk'
     description: Preparing your lightning talk.
@@ -197,5 +201,10 @@ To close it up, you use the same code as above, except you don't create another 
 If you correctly set up your steps, they should appear on the course page like this:
 ![image](https://user-images.githubusercontent.com/69332964/103423853-1d517080-4b77-11eb-98a9-476d483cc2c0.png)
 
+### Clarification of Weeks and Issues
+* Prerequisite = Issue #1
+* Week 1 = Issue #2
+* Week 2 = Issue #3
+...and so on
 
-
+### See the issues/comments in action [here](https://github.com/emsesc/bit-camp-learning-lab-test/issues?q=is%3Aissue+is%3Aclosed)
