@@ -1,9 +1,18 @@
 # 🛠 Working With Github Learning Labs: The YAML File
 
-*The `config.yml` file should be written in this order. Refer to a complete `config.yml` file [here](https://github.com/bitprj/azure-functions-course/blob/master/config.yml)!*
-Feel free to also refer to Github's Learning Lab documentation linked [here](https://lab.github.com/docs) and located under "3. Writing a course"; it contains more a more detailed description of all the options you can use. **This md file is targeted specifically towards BitProject's Bit Camp Learning Labs.**
+## :books: **Resources**
+* Github's very own [Learning Lab](https://lab.github.com/githubtraining/write-a-learning-lab-course) that goes over how to create Learning Labs
+* Github [Learning Lab documentation](https://lab.github.com/docs). Specifically look at "3. Writing a course" - this includes more detailed descriptions of the wide range of customizability Learning Labs hold.
+* Links to corresponding documentation pages are also provided accordingly throughout.
+
+## :question: **What is the `config.yml` file for?**
+*[Introduction to the config.yml file Video by Github](https://www.youtube.com/watch?v=HL8MdBsFaF4)*
+> "With every Github Learning Lab course there is a config.yml file that drives the logic and defines the steps to take within the course. **The majority of the time spent may be dedicated to this file, so understanding all of the pieces and how they fit together is pretty important..."** *- Github*
 
 ## :pencil: **The Basic Sections of the YAML file**
+
+*The `config.yml` file should be written in this order. Refer to a complete `config.yml` file [here](https://github.com/bitprj/azure-functions-course/blob/master/config.yml)!*
+**This md file is targeted specifically towards BitProject's Bit Camp Learning Labs.**
 
 ### 1. `title: `
 
