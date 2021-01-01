@@ -15,6 +15,9 @@ In the past, our curriculum has been created by student developers, sometimes in
 #### Past Projects & Further Reading
 
 Website: https://www.bitproject.org
+
 Blog Posts: https://www.bitproject.org/blog
+
 Current Program Offerings: https://www.bitproject.org/programs
+
 Youtube (has past livestreams and all other recorded Bit Project content): https://www.youtube.com/channel/UCV20hvrYZrgCf458R8cJWag
