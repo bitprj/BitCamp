@@ -143,7 +143,7 @@ tags:
 
 ### Breaking down `steps: `
 
-**Before we take a look at how an entire `steps: ` section should be written and how it works together, let's dive first into each specific option.**
+**Before we take a look at how an entire `steps: ` section should be written and how it works together, let's dive first into each specific attribute.**
 
 **1. `title: ` and `description: `**
 
@@ -151,7 +151,7 @@ These are self explanatory and make up the metadata of each step. Provide a good
 
 **2. `event: `**
 
-This option specifies when this step should be triggered or executed using a webhook event from Github. If you set it as `event: issues.closed`, everything under `actions: ` will occur when an issue is closed. Find more webhook events [here](https://lab.github.com/docs/events).
+This attribute specifies when this step should be triggered or executed using a webhook event from Github. If you set it as `event: issues.closed`, everything under `actions: ` will occur when an issue is closed. Find more webhook events [here](https://lab.github.com/docs/events).
 
 **3. `link: `**
 
@@ -189,7 +189,7 @@ This is arguably the most important part of `steps:`. There are three main actio
   issue: 2
 ```
 
-**Now, let's see how all the options work together to develop the logic of the Learning Lab.**
+**Now, let's see how all the attributes work together to develop the logic of the Learning Lab.**
 
 Your first step in `steps: ` should be something along the lines of this:
 ```yaml
