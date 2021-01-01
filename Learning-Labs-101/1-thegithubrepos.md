@@ -1,5 +1,9 @@
 # 🛠 Working With Github Learning Labs: **The Github Repos**
 
+## :books: **Resources**
+* Github's very own [Learning Lab](https://lab.github.com/githubtraining/write-a-learning-lab-course) that goes over how to create Learning Labs
+* Github [Learning Lab documentation](https://lab.github.com/docs)
+
 *The Main Github repo for your Learning Lab contains files that contains configuration, course details, and response files that house the actual curriculum content. Refer to an example repository [here](https://github.com/bitprj/azure-functions-course).*
 
 ## :file_folder: Components of the Main Repository
