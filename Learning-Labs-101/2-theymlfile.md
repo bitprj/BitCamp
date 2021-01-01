@@ -143,6 +143,54 @@ tags:
 
 ### Breaking down `steps: `
 
+**Before we take a look at how an entire `steps: ` section should be written and how it works together, let's dive first into each specific option.**
+
+**1. `title: ` and `description: `**
+
+These are self explanatory and make up the metadata of each step. Provide a good and consistent title along with a concise description.
+
+**2. `event: `**
+
+This option specifies when this step should be triggered or executed using a webhook event from Github. If you set it as `event: issues.closed`, everything under `actions: ` will occur when an issue is closed. Find more webhook events [here](https://lab.github.com/docs/events).
+
+**3. `link: `**
+
+Step links allow you to direct learners to a location that contains instructions to continue the Learning Lab. `link: '{{ repoUrl }}/issues/2'` would direct the learner to the second issue created in the repository. A more complicated usage example is linked [here](https://lab.github.com/docs/links)
+
+**4. `actions: `**
+
+This is arguably the most important part of `steps:`. There are three main actions we will go over: `respond`, `createIssue`, and `closeIssue`. As always, more detailed documentation can be found [here](https://lab.github.com/docs/using-actions).
+
+* `respond`
+
+`respond` requires the `with` option that dictates which response file to comment on the issue. You would use this option when you want to comment new instructions for the learner.
+
+```yaml
+- type: respond
+  with: my-response.md
+```
+
+* `createIssue`
+
+`createIssue` requires two options: `title` and `body`. `title` is the title of the issue and `body` is the description of the issue. Use this option when you need a new "section" within your Learning Lab. (Ex: Week 1, Week 2)
+
+```yaml
+- type: createIssue
+  title: New issue
+  body: theissue.md
+```
+
+* `closeIssue`
+
+`closeIssue` requires only one option: `issue`. Use this option when you want to close off a "section." For example, if I am ending Week 1 and starting Week 2, I would close out the corresponding issue of Week 1.
+
+```yaml
+- type: closeIssue
+  issue: 2
+```
+
+**Now, let's see how all the options work together to develop the logic of the Learning Lab.**
+
 Your first step in `steps: ` should be something along the lines of this:
 ```yaml
   - title: 'Week 1: Downloading an IDE'
