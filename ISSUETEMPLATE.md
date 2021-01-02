@@ -1,4 +1,4 @@
-The following is an template for members to use whenever creating an issue for members or the open-source community. Each section should be filled out unless stated as optional. For problem type, state whether the issue is targetting an error/bug, documentation fix, need for additional information, etc. If you have any other questions about creating or contributing, please checkout the *"how to contribute"* Github issue [here](https://github.com/bitprj "here").
+The following is an template for members to use whenever creating an issue for members or the open-source community. Each section should be filled out unless stated as optional. For problem type, state whether the issue is targetting an error/bug, documentation fix, need for additional information, etc. If you have any other questions about creating or contributing, please checkout the *"how to contribute"* Github issue [here](https://github.com/bitprj "here") (link coming soon).
 
 **Template:**
 
