@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 const { App, ExpressReceiver } = require('@slack/bolt');
 const express = require('express');
+=======
+>>>>>>> 9a198601099836cb94db078100afe44ccd0d14cc
 const axios = require('axios');
 
 const { config } = require('dotenv');
