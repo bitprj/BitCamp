@@ -7,17 +7,33 @@ The following is an template for members to use whenever creating an issue for m
 
 ### Issue Name:
 
+(Name addressing problem that issue is created to fix)
+
 ### Problem:
+
 #### Context:
+
+(Where is the problem located, what information is needed to fix it, general knowledge)
+
 #### Type:
+
+(Issue type, example: bug, additional feature, documentation, etc, SEE LABELS)
+
 #### Actual Issue:
+
+(Straight, to the point description of the actual issue, example: code error on line 3, etc)
+
 ### Desired Outcome:
 
-### (Optional) Hint/Example:
+(Needed fix for members/open-source users to complete, what result should be after issue is fixed)
 
-### Possible Solutions:
+### (Optional) Possible Solutions:
+
+(Any ideas/solutions/ways to easily fix the issues)
 
 ### Other Details:
+
+(Any other details necessary)
 
 ---
 Before submitting the issue, make sure to assign a member if the issue is for a specific user. If the issue is not assigned to a member, it will be specified as open-source which means any user has the ability to contribute.
