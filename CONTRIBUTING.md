@@ -6,6 +6,8 @@ First of all, how it works. While contributing might seem quick and easy, the pr
 
 ---
 
+### Key Terms
+
 |  Term | Meaning  |
 | ------------ | ------------ |
 | Issue  | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. They’re kind of like email—except they can be shared and discussed with the rest of your team. Most software projects have a bug tracker of some kind. GitHub’s tracker is called Issues, and has its own section in every repository.  |
@@ -22,4 +24,28 @@ First of all, how it works. While contributing might seem quick and easy, the pr
 |  Documentation | When an issue is labelled as documentation, there is an issue within the markdown file of the given folder/repository. This could be a typo in the repository documentation or even mean a part needs to be created or added to complete the documentation fully. |
 |  Newcomer | When an issue is labelled as newcomer, the issue is for new users who don't have as much experience with Github or open-source contributions in general. Usually these issues will be much easier tasks like fixing typing errors, code errors, and more.  |
 |  Specifics (example: slack, serverless, etc) | When an issue is labelled with specifics, the issue is focused on a certain Bit Camp. While these labels don't change the difficulty or type of issue, they are used to specify which course the issue is targetted towards.  |
+
+If you still feel like you don't completely understand how Github works, check out these helpful links:
+
+- Github Basics (Learning Lab): https://lab.github.com/githubtraining/introduction-to-github
+- How Issues Work (Github Guides): https://guides.github.com/features/issues/
+- Contributing to Repos (Youtube Video): https://www.youtube.com/watch?v=waEb2c9NDL8
+
+---
+
+## Getting Started
+
+Now it's time to start contributing! At this point, you should have a decent introduction to the basics of Github and our repository specific labels (these are super important for issues)!
+
+### Choosing an Issue
+
+When it comes to picking which issue you want to work on, it all depends on a two key aspects: the level of difficulty and availability. 
+
+*Difficulty* : When viewing all open issues, finding the difficulty of the issue will be based on whether the issue is labelled with "newcomer" or "good first issue". If the issue you want to contribute to isn't labelled with said newcomer labels, it is most likely more difficult then simply a small text/code error.
+
+*Availability* : When viewing all open issues, availability will be based on whether the issue is closed or open, and whether the issue has been assigned to a Bit Project member. If the issue is assigned, it means the issue is NOT for open-source users. If you view an issue that is open and unassigned, feel free to contribute to it!
+
+
+
+
 
