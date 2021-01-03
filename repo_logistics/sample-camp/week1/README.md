@@ -15,7 +15,7 @@
 - For the full video, look in the [video folder]().
 - For the full code, look in the [code folder]().
 
-We'll be going over how to:
+**We'll be going over how to:**
 
 *[Provide a brief chronological order of what will be covered in the livestream.]*
 
