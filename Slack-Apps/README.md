@@ -9,8 +9,14 @@ A week by week guidline of the skills and topics covered in each individual week
 
 ### **Week 1: Getting Started with Slack API**
 ***
+📚 **Summary**
 
+Students are learning the basic of Slack API including the introductions of Node Java Script, Permission/Scopes and a brief introduction of Events and Listeners. Students will later browse the slack API documentation which they are going use to complete their final assignment. 
 
+**Learning Objectives**
+- Introduction to Slack API.
+- Intro to Node JS, Permission/Scopes, Events And Listeners.
+- Creating a slack app that listens and responds to a specific channel.
 
 ### Livestream
 
