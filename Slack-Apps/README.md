@@ -41,7 +41,7 @@ In the Livestream Portion of Week 2, students will work with new topics like sho
 Homework
 In the Homework Portion of Week 2, students will continue to advance the skills taught during the livestream through a guided Github Learning Lab. Students will focus on BlockKit (found here) and explore the UI framework by creating more complicated messages that change and work with user input. As well, students will strengthen their understanding of modals by experimenting with different modal blocks and views. At the end of the week, students will be tasked to create a simple Slack App that uses the skills learned in week 2 (shortcuts, modals, and BlockKit) in a creative way to recieve and respond to user input.
 
-❓ How will this help students?
+### ❓ How will this help students?
 The livestream will demonstrate a step by step with the Github Learning Lab which will help strengthen their understanding of modals. During this time students will be tasked to create a simple Slack App which they can ask questions with their instructors if they have any.
 
 ### **Week 3: Integration with Google Translate API**
