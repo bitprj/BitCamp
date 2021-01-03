@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 // ************ Packages Needed ************
 const { App, ExpressReceiver } = require('@slack/bolt');
 const express = require('express');
+=======
+
+const { App, ExpressReceiver } = require('@slack/bolt');
+const express = require('express');
+
+const axios = require('axios');
+
+>>>>>>> 8c7456f0803ead927544ed6ba9f66f58440daa73
 const { config } = require('dotenv');
 
 config();
