@@ -1,1 +1,12 @@
-Put your script here.
+Week 2 Schedule:
+Quick recap of topics from week 1 - 10 minutes
+Basics of Vector3 class - 5 minutes
+Basics of Time.deltaTime with a quick example - 5 minutes
+Basics of rigidbody, mass and movement with rigidbody - 10 minutes 
+How to duplicate an object in unity - 5 minutes
+Questions - 5 minutes
+Back to scripting, public versus private variables. Editing properties of scripts from the editor - 5 minutes
+Scripting camera movement (not making it a child object) - 10 minutes
+Run the game, notice that the camera is in the wrong position relative to the car. To fix this, add an offset - 5 minutes
+Add a playmode tint - 3 minutes
+Quick recap and then questions
