@@ -26,6 +26,9 @@ In the Livestream Portion of Week 1, students will be introduced to the basics o
 
 In the Homework Portion of Week 1, students will continue to advance the skills taught during the livestream through a guided Github Learning Lab. Students will browse the Slack API documentation, experiment with events and listeners, assign permissions/scopes, and further learn response functions like message() and say(). Doing so, they will have a final assignment of creating a similar slack app (to the livestream) that responds to an event rather than a message.
 
+### ❓ How will this help students?
+During the Livestream students will be able to ask questions refering to the current task or to the homework. This will allow students to be able to finish their final assignment while browsing through the API documentation and through a guided Github Learning Lab.
+
 # **Week 2: Introduction to Shortcuts, Modals, and BlockKit**
 📚 **Summary**
 
