@@ -1,14 +1,12 @@
-<<<<<<< HEAD
+// ************ Packages Needed ************
 const { App, ExpressReceiver } = require('@slack/bolt');
 const express = require('express');
-=======
->>>>>>> 9a198601099836cb94db078100afe44ccd0d14cc
-const axios = require('axios');
-
 const { config } = require('dotenv');
 
 config();
 
+// ************ Initializing Variables ************
+// Express object: this is an ExpressReceiver which gets and posts payloads
 const receiver = new ExpressReceiver({ signingSecret: process.env.SLACK_SIGNING_SECRET });
 receiver.router.use(express.json());
 
@@ -17,18 +15,17 @@ const app = new App({
   receiver
 });
 
-const GITHUB_REPO_URL = 'https://github.com/FifiTeklemedhin/IB-1-Programming-Projects';
-
+// ************ POST Method ************
+// function signature: specifies the request endpoint (where the webhook payload will be sent)
 receiver.router.post('/github-comments', async (req, res) => {
+  // specifies what information we will use from the payload (payload is found in req object)
   const {comment, action, repository, sender} = req.body;
+  const name = repository.name;
 
-  var name = "The repo has no name";
-    if(repository.name != null)
-      name =  `${repository.name}`;
+  // this string has the message sent in the channel. It uses the information accessed from the req object
+  const text = `${sender.login} just ${action} a comment in the ${name} repository. Comment: ${comment.body}`; //
 
-  const verb = action; 
-  const text = `${sender.login} just ${verb} a comment in the ${name} repository. Comment: ${comment.body}`; //
-
+  // posts the message to a specified channel
   await app.client.chat.postMessage({
     token: process.env.SLACK_BOT_TOKEN,
     channel: 'welcome',
