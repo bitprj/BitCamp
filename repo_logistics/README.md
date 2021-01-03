@@ -65,11 +65,11 @@ These are directories within the camp [subdirectory](https://github.com/emsesc/B
 
 Inside the Week Directories, there are three components: livestream, homework, and the README.md (individual week description).
 
-* [**`homework`**](https://github.com/bitprj/BitCamp/tree/master/Serverless-Functions/week1/homework): this contains the **code solution for that week's homework** and the **issues** from the Github Learning Lab
+* [**`homework`**](https://github.com/emsesc/BitCamp/tree/repo-logistics/repo_logistics/sample-camp/week1/homework): this contains the **code solution for that week's homework** and the **issues** from the Github Learning Lab
 
-* [**`livestream`**](https://github.com/bitprj/BitCamp/tree/master/Serverless-Functions/week1/livestream): this contains the **code from the livestream** and the **recorded livestreams**
+* [**`livestream`**](https://github.com/emsesc/BitCamp/tree/repo-logistics/repo_logistics/sample-camp/week1/livestream): this contains the **code from the livestream** and the **recorded livestreams**
 
-* [**`README.md`**](https://github.com/bitprj/BitCamp/blob/master/Serverless-Functions/week1/README.md): this is the **individual week description**, which should be differentiated from the root [README.md file](https://github.com/bitprj/BitCamp/blob/master/Serverless-Functions/README.md)
-  * **Note:** some content from the root [README.md file](https://github.com/bitprj/BitCamp/blob/master/Serverless-Functions/README.md) is repeated in the [individual week description](https://github.com/bitprj/BitCamp/blob/master/Serverless-Functions/week1/README.md) for clarification.
+* [**`README.md`**](https://github.com/emsesc/BitCamp/blob/repo-logistics/repo_logistics/sample-camp/week1/README.md): this is the **individual week description**, which should be differentiated from the root [README.md file](https://github.com/emsesc/BitCamp/blob/repo-logistics/repo_logistics/sample-camp/README.md)
+  * **Note:** some content from the root [README.md file](https://github.com/emsesc/BitCamp/blob/repo-logistics/repo_logistics/sample-camp/README.md) is repeated in the [individual week description](https://github.com/emsesc/BitCamp/blob/repo-logistics/repo_logistics/sample-camp/week1/README.md) for clarification.
   
 ## :art: Creating GIFS
