@@ -2,7 +2,7 @@
 
 📚 **Summary**
 
-Students are learning the basic of Slack API including the introductions of Node Java Script, Permission/Scopes and a brief introduction of Events and Listeners. Students will later browse the slack API documentation which they are going use to complete their final assignment. 
+Students will be learning the basic of Slack API including the introductions of Node Java Script, Permission/Scopes and a brief introduction of Events and Listeners. Students will later browse the slack API documentation which they are going use to complete their final assignment. 
 
 **Learning Objectives**
 - Introduction to Slack API.
