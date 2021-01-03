@@ -1,4 +1,4 @@
-Bitcamp Game Development - Week 2 Homework
+# Bitcamp Game Development - Week 2 Homework
 
 For this week’s homework, we’ll be adding assets to our game and writing basic scripts in C#.
 
