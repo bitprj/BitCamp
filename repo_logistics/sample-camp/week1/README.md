@@ -33,4 +33,4 @@
 
 ### :question: How will this help students?
 
-*[Connect the livestream to the homework and demonstrate how they work together to reinforce the students' learning. Maybe the livestream is slightly different than the homework - it allows students to figure out content on their own? Does the livestream review content that will be used in the homwork?] Example: The livestream demonstrates step by step how to set up necessary resources needed to succeed in Bitcamp Serverless. It contains information that will assist them in completing the tasks for this week with these tools: an IDE, Azure, and Github.
+*[Connect the livestream to the homework and demonstrate how they work together to reinforce the students' learning. Maybe the livestream is slightly different than the homework - it allows students to figure out content on their own? Does the livestream review content that will be used in the homwork?] Example: The livestream demonstrates step by step how to set up necessary resources needed to succeed in Bitcamp Serverless. It contains information that will assist them in completing the tasks for this week with these tools: an IDE, Azure, and Github.*
