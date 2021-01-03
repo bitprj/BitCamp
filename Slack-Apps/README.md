@@ -28,9 +28,11 @@ In the Homework Portion of Week 1, students will continue to advance the skills 
 
 ### **Week 2: Introduction to Shortcuts, Modals, and BlockKit**
 
-📚 Summary Students are now learning about new topics like Shortcuts, Modals and BlockKit. During the livestream students will build a polling Slack App using the shortcut-triggered modal.
+📚 Summary Students 
+are now learning about new topics like Shortcuts, Modals and BlockKit. During the livestream students will build a polling Slack App using the shortcut-triggered modal.
 
 Learning Objectives
+
 Creating Shortcuts, Modals and BlockKit.
 Building a polling Slack App
 Progress last weeks skills further.
