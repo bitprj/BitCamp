@@ -93,7 +93,13 @@ In Week 3, students will be introduced to their first 3rd Party API, Google Tran
 
 :books: **Summary**
 
-*[Give a quick overview of the week that emphasizes the deliverable of that week. What will the students be able to do after this week? What ending product will they have? Show a gif of the working end product of Week 4 if you can.]*
+### Livestream
+
+The Livestream Portion of Week 4 involves webhooks and the Express framework.  Students will learn about the usecases for a webhook, as well as how Express can be used to receive webhook payloads. The livestream covers GitHub webhooks, namely demonstrating the process of setting up a webhook and receiving a payload. The mentor leading the stream teaches these principles through a sample project: listening for a repository to be starred, then messaging a Slack channel when the event occurs.
+
+### Homework
+
+The Homework Portion of Week 4 is a review of the topics that are covered in the livestream. Students will follow a GitHub Learning Lab that outlines the basics of coding using webhooks. There are issues for creating GET and POST methods in Express and creating up a GitHub webhook. The last issue is a guided project similar to the one demonstrated in the livestream. Overall, the purpose of the homework this week is to expose students to the versatility of webhooks.
 
 **Learning Objectives**
 
