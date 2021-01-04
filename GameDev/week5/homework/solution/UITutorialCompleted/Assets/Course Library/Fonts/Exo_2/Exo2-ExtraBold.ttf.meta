@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: c63f048853a014829868fe9c11f00717
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Exo 2 Extra Bold
+  fontNames:
+  - Exo 2 Extra Bold
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ad3f5403e751f4b52afb38e1ac599222, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
