@@ -7,7 +7,7 @@ Data is all around us and knowing how to use and manipulate databases is an incr
 
 **What?** Concise and interactive Github Learning Lab that introduces and develops skills related to NoSQL databases with [MongoDB](https://www.mongodb.com/)
 
-**How?** Students gain experience through building a complete web app with a frontend (HTML, CSS, JS, Atlas Realms) and backend (MongoDB, Azure Services, NodeJS). The application utilizes machine learning, an external API, and NoSQL databases to recommend products to users based off of a picture. Authentication is used to incorporate the database, which stores a history of recommendations with a corresponding user.
+**How?** Students gain experience through building a complete web app with a frontend (HTML, CSS, JS, Atlas Realms) and backend (MongoDB, Azure Services, NodeJS). The application utilizes machine learning, an external API, and NoSQL databases to recommend products to users based on the contents in an uploaded image (objects and text within the picture). Authentication is used to incorporate the database, which stores a history of recommendations with a corresponding user.
 
 **When?** 
 * *Starting out:* Week 1 will ease students into the course by introducing them to MongoDB Compass and basic concepts related to NoSQL databases. They will also set up necessary tools (GitHub and Git Bash).
