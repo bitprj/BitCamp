@@ -88,17 +88,33 @@ In the Homework Portion of Week 3, students will continue to advance the skills 
 In Week 3, students will be introduced to their first 3rd Party API, Google Translate. Using the Google Translate API, students will create a Slack App that responds to a flag emoji and posts the translated text in a thread. During the Livestream, students will be able to ask questions refering to their current task.
 
 ### **Week 4**
+
 ***
 
 :books: **Summary**
 
-*[Give a quick overview of the week that emphasizes the deliverable of that week. What will the students be able to do after this week? What ending product will they have? Show a gif of the working end product of Week 4 if you can.]*
+### Livestream
+
+The Livestream Portion of Week 4 involves webhooks and the Express framework.  Students will learn about the usecases for a webhook, as well as how Express can be used to receive webhook payloads. The livestream covers GitHub webhooks, namely demonstrating the process of setting up a webhook and receiving a payload. The mentor leading the stream teaches these principles through a sample project: listening for a repository to be starred, then messaging a Slack channel when the event occurs.
+
+### Homework
+
+The Homework Portion of Week 4 is a review of the topics that are covered in the livestream. Students will follow a GitHub Learning Lab that outlines the basics of coding using webhooks. There are issues for creating GET and POST methods in Express and creating up a GitHub webhook. The last issue is a guided project similar to the one demonstrated in the livestream. Overall, the purpose of the homework this week is to expose students to the versatility of webhooks. 
 
 **Learning Objectives**
 
-*[Provide a concise bulleted list of objectives students should take away from this week. These should be specific concepts presented within the week that students should understand after this week.]*
+- Introducing students to webhooks
+  - Explaining the benefits and usecases for webhooks
+  - Teaching students how to use a webhook payload
+- Introducing students to Express and framworks 
+  - Teaching students how to get a webhook payload
+- Creating two apps that use the GitHub webhook service along with Express to post messages when an event occurs
 
 
+
+###  ❓ How will this help students?
+
+Webhooks are extremely useful tools when building apps of any kind. The livestream and homework for Week 4 will emphasize exploration of webhooks. Learning how to use a webhook will help students brainstorm ideas for their personal projects. During the livestream, students will be able to ask questions refering to their current task. The homework will additionally provide a step-by-step reference for the basics of creating a webhook.
 
 
 
