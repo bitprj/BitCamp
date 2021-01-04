@@ -1,4 +1,4 @@
-### **Week 3**
+### **Week 3: Integration with Google Translate API**
 ***
 
 :books: **Summary**
