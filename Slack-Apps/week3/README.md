@@ -1,4 +1,7 @@
-# **Week 3: Integration with Google Translate API**
+### **Week 3**
+***
+
+:books: **Summary**
 
 ### Livestream
 
@@ -8,3 +11,12 @@ In the Livestream Portion of Week 3, students will be introduced to third party 
 
 In the Homework Portion of Week 3, students will continue to advance the skills taught during the livestream through a guided Github Learning Lab. Students will begin the process of integrating the google translate API (found [here](https://cloud.google.com/translate/docs/ "here")) by learning how to create an account, obtain an API key/token, and finally, code the callback logic that sends a message and recieves a translated response back. Students will create an app, building on to the livestream, that responds to a flag (emoji reaction) + phrase and will return the translated phrase in a thread.
 
+**Learning Objectives**
+
+- Introduction to 3rd Party APIs (https://cloud.google.com/translate/docs/).
+- Using Emoji Reactions and responding in Threads.
+- Creating a Translation Slack App that responds to a Flag Emoji.
+
+###  ❓ How will this help students?
+
+In Week 3, students will be introduced to their first 3rd Party API, Google Translate. Using the Google Translate API, students will create a Slack App that responds to a flag emoji and posts the translated text in a thread. During the Livestream, students will be able to ask questions refering to their current task.
