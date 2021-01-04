@@ -35,7 +35,7 @@ In the Homework Portion of Week 1, students will continue to advance the skills 
 **Learning Objectives**
 
 - Introduction to the Slack API (https://api.slack.com).
-- Using Bolt Framework with NodeJS (https://github.com/slackapi/bolt-js)
+- Using Bolt Framework with NodeJS (https://github.com/slackapi/bolt-js).
 - Creating a Slack App that uses `say()` and responds to a message.
 
 ###  ❓ How will this help students?
@@ -80,7 +80,7 @@ In the Homework Portion of Week 3, students will continue to advance the skills 
 
 **Learning Objectives**
 
-- Introduction to 3rd Party APIs (https://cloud.google.com/translate/docs/)
+- Introduction to 3rd Party APIs (https://cloud.google.com/translate/docs/).
 - Using Emoji Reactions and responding in Threads.
 - Creating a Translation Slack App that responds to a Flag Emoji.
 
@@ -98,7 +98,7 @@ In Week 3, students will be introduced to their first 3rd Party API, Google Tran
 **Learning Objectives**
 
 - Introducing students to webhooks.
-  - Explaining the benefits and usecases for webhooks.
+  - Explaining the benefits and usecases for webhooks (https://zapier.com/blog/what-are-webhooks/).
   - Teaching students how to use a webhook payload.
 - Introducing students to Express and framworks.
   - Teaching students how to get a webhook payload.
