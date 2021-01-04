@@ -97,4 +97,15 @@ In Week 3, students will be introduced to their first 3rd Party API, Google Tran
 
 **Learning Objectives**
 
-*[Provide a concise bulleted list of objectives students should take away from this week. These should be specific concepts presented within the week that students should understand after this week.]*
+- Introducing students to webhooks.
+  - Explaining the benefits and usecases for webhooks.
+  - Teaching students how to use a webhook payload.
+- Introducing students to Express and framworks.
+  - Teaching students how to get a webhook payload.
+- Creating two apps that use the GitHub webhook service along with Express to post messages when an event occurs.
+
+
+
+###  ❓ How will this help students?
+
+Webhooks are extremely useful tools when building apps of any kind. The livestream and homework for Week 4 will emphasize exploration of webhooks. Learning how to use a webhook will help students brainstorm ideas for their personal projects. During the livestream, students will be able to ask questions refering to their current task. The homework will additionally provide a step-by-step reference for the basics of creating a webhook.
