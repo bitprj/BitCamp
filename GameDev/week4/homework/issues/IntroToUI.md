@@ -1,0 +1,1 @@
+This week we will be providing an introduction to user interface, or UI, using a practical example. We will learn how to create basic UI elements such as text and buttons. This includes text that changes throughout the course of our running game and a working restart button. We will also give an example of working with multiple scenes.
