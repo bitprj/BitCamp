@@ -42,7 +42,7 @@ In the Homework Portion of Week 1, students will continue to advance the skills 
 
 In Week 1, students will work towards the end goal of creating their first Slack App by being introduced to the skills necessary to create one (reading documentation, learning about NodeJS, etc). During the Livestream, students will be able to ask questions refering to their current task.
 
-### **Week 2**
+### **Week 2: Introduction to Shortcuts, Modals, and BlockKit**
 ***
 
 📚 **Summary**
@@ -65,7 +65,7 @@ In the Homework Portion of Week 2, students will continue to advance the skills 
 
 In Week 2, students will work on developing skills they worked on in the previous week and learn about new functions of the Slack API like BlockKit, Modals, and Views. During the Livestream, students will be able to ask questions refering to their current task.
 
-### **Week 3**
+### **Week 3: Integration with Google Translate API**
 ***
 
 :books: **Summary**
@@ -88,7 +88,7 @@ In the Homework Portion of Week 3, students will continue to advance the skills 
 
 In Week 3, students will be introduced to their first 3rd Party API, Google Translate. Using the Google Translate API, students will create a Slack App that responds to a flag emoji and posts the translated text in a thread. During the Livestream, students will be able to ask questions refering to their current task.
 
-### **Week 4**
+### **Week 4: Using the Github API & Webhooks**
 ***
 
 :books: **Summary**
