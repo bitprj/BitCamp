@@ -6,7 +6,7 @@ JavaScript is an extremely useful tool for user interface (UI) design that allow
 
 **Who?**  The material in this program is simplified so that those with minimal experience in computer science can try their hand at web design. This bootcamp was mainly designed for high school and college students, but aspiring coders of all ages are welcomed. Our instructors have an extensive background in coding, but are not experts with JavaScript.
 
-**What?** Concise and interactive Github Learning Lab that introduces and develops skills related to JavaScript with [Twilio](https://www.twilio.com/quest).
+**What?** Concise and interactive Github Learning Lab that introduces and develops skills related to JavaScript with [TwilioQuest](https://www.twilio.com/quest).
 
 **How?** Students will get experience with JavaScript, learning the basics as well as some advanced topics by completing assignments every week. In the end, students will use the knowledge theyve gained from TwilioQuest, a PC roleplaying game, to build a game of their choosing. 
 
@@ -19,7 +19,7 @@ JavaScript is an extremely useful tool for user interface (UI) design that allow
 
 ### Project Description
 
-4-week course on using Javascript and Twilio.
+4-week course on using Javascript and TwilioQuest.
 
 ### ❗ Prerequisites for BitCamp JavaScript (Week 0)
 
