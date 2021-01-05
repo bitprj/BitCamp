@@ -1,5 +1,3 @@
-Note: This script doesn't have the code snippets. Please see the pdf version for the version fo the script with those. 
-
 # Intro
 - Introduce ourselves 
 - For this lesson we will be using a pre-built game that you can all download
@@ -26,19 +24,22 @@ Note: This script doesn't have the code snippets. Please see the pdf version for
 - You can also change the font style, font size, and vertex color here
 - Open up the GameManager script and update it to the following:
 
-![Code snippet 1](codeSnippetImages/scoreDisplay1.png)
+![scoreDisplay Code snippet 1](codeSnippetImages/scoreDisplay1.png)
+![scoreDisplay Code snippet 2](codeSnippetImages/scoreDisplay2.png)
+![scoreDisplay Code snippet 3](codeSnippetImages/scoreDisplay3.png)
 
 
 - Select your Game Manager object in the Hierarchy panel and drag te Score object from the Hierarchy into the Score Text box that you see in the Game Manager Script inspector
 - With this we now have a way to dynamically update the score text we made. Now we just need to actually use it.
 - Go over to the Target.cs script. We will add the following to give the different blocks a point value and prepare to use the GameManager.cs
 
-(see pdf version for code snippet)
+![scoreDisplay Code snippet 4](codeSnippetImages/scoreDisplay4.png)
 
 - Next go to your prefabs and you should see pointValue in the script area of the inspector. Type in 5 for the three good blocks and -5 for the bad block. This gives each of our blocks a point value that is independent of each other and easy to change.
 - Next let’s go back to Targets.cs and have the score update.
 
-(see pdf version for code snippet)
+![scoreDisplay Code snippet 5](codeSnippetImages/scoreDisplay5.png)
+![scoreDisplay Code snippet 6](codeSnippetImages/scoreDisplay6.png)
 
 - Now when you click a block, the score changes by that blocks point value
 - Great! Now we have a dynamic score display!
@@ -59,7 +60,7 @@ Note: This script doesn't have the code snippets. Please see the pdf version for
 - Rename this new object as Scene Loader and a script component to it. Create a new script called SceneLoader.cs
 - Open up the new script and add the following:
 
-(see pdf version for code snippet)
+![gameOver Code snippet 1](codeSnippetImages/gameOver1.png)
 
 - Now that we have a function to perform a scene transition, we just need to connect it to our button
 - Select the Restart Button and look in the inspector window for a Button section. In this section click the plus under the On Click () area
@@ -69,7 +70,8 @@ Note: This script doesn't have the code snippets. Please see the pdf version for
 - Now our StartGame() function will be called by the button, but we still need the main game to send us to this screen in the first place. 
 - Go to your GameManager.cs script and update it with the following:
 
-(see pdf version for code snippet)
+![gameOver Code snippet 2](codeSnippetImages/gameOver2.png)
+![gameOver Code snippet 3](codeSnippetImages/gameOver3.png)
 
 - We want to go to the game over screen when a good block falls below the screen. In order to do this we will make what’s called a tag
 - In the Project panel, navigate to Assets > Prefabs and select the Bad 1
@@ -78,7 +80,7 @@ Note: This script doesn't have the code snippets. Please see the pdf version for
 - Then reselect the Bad 1 prefab and go to the Tag dropdown again. This time you should see Bad as an option which you should select
 - Then go to the Target.cs script and update the OnTriggerEvent function:
 
-(see pdf version for code snippet)
+![gameOver Code snippet 4](codeSnippetImages/gameOver4.png)
 
 - Now if a skull drops below the screen, the game should keep going, but if a good block goes below you should see the Game Over screen. Furthermore, the Game Over Screen should successfully restart the game
 

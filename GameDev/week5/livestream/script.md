@@ -1,6 +1,4 @@
-Note: This script doesn't have the code snippets. Please see the pdf version for the version fo the script with those. 
-
-Also please note that Part 4 the Inventory system currently uses Unity version 2020.1 instead of 2019.4. We will be making this correction later.
+Note: Part 4 the Inventory system currently uses Unity version 2020.1 instead of 2019.4. We will be making this correction later.
 
 # Intro
 Welcome back everyone. Last time we created a score text that changes as you play the game and a game over screen with a working restart button. Today, we will start by finishing up our game with a main menu. Then we will show off another example of what you can do with UI elements and introduce you to a few more we have yet to show you. 
@@ -24,7 +22,7 @@ Welcome back everyone. Last time we created a score text that changes as you pla
 - Next we are going to go to our Game Over scene and make some changes to our Scene Loader object
 - First go into your SceneLoader.cs script to add a difficulty variable and update the Start() and StartGame() functions:
 
-(see pdf for code snippet)
+![mainMenu Code snippet 1](codeSnippetImages/mainMenu1.png)
  
 - The DontDestroyOnLoad will make it so that our Scene Loader game object will persist through different scenes. Through this we can transfer the difficulty value between scenes
 - In the Project panel navigate to Assets > Prefabs and drag the Scene Loader from the Hierarchy panel to the Project panel
@@ -33,7 +31,7 @@ Welcome back everyone. Last time we created a score text that changes as you pla
 - Create a DifficultyButton.cs script and attach this to our three difficulty buttons
 In this new script:
 
-(see pdf for code snippet)
+![mainMenu Code snippet 2](codeSnippetImages/mainMenu2.png)
 
 - Go to the inspector for each of the buttons and you should see a difficulty field in the script section. Assign Easy a difficulty of 1, Medium 2, and Hard 3
 - Now if we click the play button from our Main Menu scene, we should be able to play the game and still use the restart button on the Game Over screen
@@ -41,7 +39,7 @@ In this new script:
 - However, we aren’t actually changing the difficulty yet
 - Go to your GameManager.cs script and add a difficulty variable and update the Start() function:
  
- (see pdf for code snippet)
+ ![mainMenu Code snippet 3](codeSnippetImages/mainMenu3.png)
  
 - Now you should have buttons that change the difficulty for the game and restarting the game will put you at the same difficulty too
 - A message should also appear in you console log that says what the difficulty is set to
@@ -59,11 +57,11 @@ This tutorial is going to cover ways to pause in Unity and is also going to invo
 - Luckily, for this tutorial, we’re only concerned about restricting player control while pausing, which means retrieving and disabling the MoveView and PlayerMovement scripts according to a boolean value
 - The cursor is set to be locked and invisible in the middle of the screen at startup by the MoveView script, but to allow it to be used on the pause screen, we’re going to be changing that variable based on the boolean as well
 
-(see pdf for code snippet)
+![inventory Code snippet 1](codeSnippetImages/inventory1.png)
 
 - We’ll then put this script in the GameManager object and assign its public variables:
 
-(see pdf for picture)
+![inventory Code snippet 2](codeSnippetImages/inventory2.png)
 
 - Now we’re going to start setting up the menu the player will be able to interact with
 - In the Canvas object, we’re going to create a UI>Panel object as its object that will be called InventoryMenu and will be sized according to the values in my final game
@@ -78,7 +76,7 @@ This tutorial is going to cover ways to pause in Unity and is also going to invo
 - Now we can delete all of the buttons except for the first InventorySlot, as we’re going to be making changes to it and we’ll copy it again later, but we’re firstly going to create a script called InventorySlot to define the behavior of this object
 - This script is going to use a small amount of Image component functionality, but we’re going to do more once we attach it to the object
 
-(see pdf for code snippet)
+![inventory Code snippet 3](codeSnippetImages/inventory3.png)
 
 - We’re going to attach this script to the InventorySlot object, and then add the image component that this code references
 - We can use a placeholder image to get the dimensions of this image looking nice inside the button, as this is where the image of the item in this slot is going to be displayed
@@ -88,11 +86,11 @@ This tutorial is going to cover ways to pause in Unity and is also going to invo
 - The inventory menu can now be seen while playing the game, but it covers the screen regardless of whether the game is paused or not
 - We’re going to go back into the Pausing script in GameManager to add a reference to the InventoryMenu object and some lines of code that’ll enable/disable it based on the paused boolean
 
-(see pdf for code snippet)
+![inventory Code snippet 4](codeSnippetImages/inventory4.png)
 
 - Our final script of this tutorial is going to be the InventoryUI script which is going to be placed in the InventoryMenu game object
 
-(see pdf for code snippet)
+![inventory Code snippet 5](codeSnippetImages/inventory5.png)
 
 - This is going to involve discussing the inventory script logic and how we can use it to be displayed by the UI
 - We then will assign InventoryGrid as the itemsParent variable in the inspector
