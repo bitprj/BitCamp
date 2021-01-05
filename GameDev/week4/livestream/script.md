@@ -26,7 +26,8 @@ Note: This script doesn't have the code snippets. Please see the pdf version for
 - You can also change the font style, font size, and vertex color here
 - Open up the GameManager script and update it to the following:
 
-(see pdf version for code snippet)
+![Code snippet 1](codeSnippetImages/scoreDisplay1.png)
+
 
 - Select your Game Manager object in the Hierarchy panel and drag te Score object from the Hierarchy into the Score Text box that you see in the Game Manager Script inspector
 - With this we now have a way to dynamically update the score text we made. Now we just need to actually use it.
