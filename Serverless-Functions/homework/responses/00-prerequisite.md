@@ -47,8 +47,6 @@ document.getElementById("clock").innerHTML = " ";
 
 Good job, hopefully your digital clock is fully working and your jQuery is linked to our HTML and CSS files. Your next task is a bit more tricky... you're making another clock but this time... in analog mode!
 
-### Don't know where to put your code? Try using this online interpreter: [repl.it](https://repl.it/languages/html)!
+If you have any other questions or need further assistance, feel free to reach out to your TAs!
 
-If you have any other questions or need further assistance, feel free to reach out to your TAs! Your last step is to create a Github account if you don't have one yet, create a repository to store your project, and upload your files. *We will cover Github in this course, so if you don't know how to use it, no worries! Give it your best try for now.*
-
-To continue, comment your **Javascript Clock Github Repo** link and press the **close issue with comment** button at the bottom of the page!
+To continue, press the **close issue** bottom at the bottom of the page!
