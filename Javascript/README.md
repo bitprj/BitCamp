@@ -73,15 +73,14 @@ This week, students will be working on a **Roman Calculator** that takes Roman n
 
 :books: **Summary**
 
-Students will learn the basics of **recursion** through this weeks assignment by creating a recursive function of their own.  To build off of this idea, we will show students how to **draw shapes** in JavaScript so that by the end of the week they can create recursive art by incorporating both ideas. 
+This week, we will introduce **HTML** and **CSS** to the students to give them a more in-depth and well-rounded idea of web design.  Lessons will focus on the fundamentals such as **HTML attributes** and **CSS properties** and how the two can be customized.  To make sure students have gained a basic understanding of the two languages, we will have them get started on a project where they will build a website using unique graphics they'll develop in HTML and CSS.
 
 **Learning Objectives**
 
-- Gaining a general understanding of recursion and its role in mathematics and programming
-- Creating a recursive function with real-life applications (ex: factorials)
-- Drawing shapes using JS functions
-- Making random shapes using JavaScript's `random` function
-- Using these skills to create recursive art
+- Understanding basic syntax for HTML and CSS
+- Learning attributes and properties in HTML and CSS
+- Customizing HTML and CSS features
+- Creating a unique site given these concepts
 
 ### **Week 4**
 
@@ -89,4 +88,17 @@ Students will learn the basics of **recursion** through this weeks assignment by
 
 :books: **Summary**
 
-During the final week of the JavaScript BitCamp, students are to assemble their **final projects**.  Though students will have complete freedom with what they choose to do for this assignment, they must include the JavaScript skills that they learned from this course - **arrays, loops, conditionals, and recursion**, all while **utilizing the user's input to produce an output**.  
+Now that students have a general idea of how to use HTML and CSS, we will combine this knowledge with their experience with JavaScript to **create an interactive website**.  This week, students will add to the website they created last week to **incorportate JavaScript**.  They should also come up with and submit an idea for their final project, which will be some type of interactive site that utilizes all of the skills they've gained from this course. 
+
+**Learning Objectives**
+
+- Integrating JS with HTML and CSS
+- Making a static site interactive with JS
+
+### **Weeks 5 and 6**
+
+***
+
+:books: **Summary**
+
+During the final weeks of the JavaScript BitCamp, students are to assemble their **final projects**.  Though students will have complete freedom with what they choose to do for this assignment, they must include the JavaScript skills that they learned from this course - **arrays, loops, conditionals, and design (HTML/CSS)**, all while **utilizing the user's input to produce an output**.  
