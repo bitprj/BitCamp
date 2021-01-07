@@ -17,3 +17,7 @@ What is the point of ************Open Source************: This allows users to t
 ![Image for profile](https://i.gyazo.com/96289483c4166329dc522d424b13dd15.gif)
 
 3. Once in your own Repository you can then edit, download, and upload anything you want for your own liking.
+
+![Image for files](https://i.gyazo.com/b0f59f2a8b2794ec8b763dccfa949d45.gif)
+
+4. Once you feel that you have edited a file to your liking you would scroll down to "Commit Changes" And you would have two options, one "Commit directly to the **master** branch." Or "Create a new branch for this commit and start a pull request." Sounds difficult right? Well its not, What it means is you can either save all your edits into the fork or (copy) version of the repo you created. Or create a pull request which tell others about changes you've pushed to a branch in a repository on GitHub. But from our suggestions if you're working on multiple files to Commit directly into your own repo before creating a pull request.
