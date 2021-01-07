@@ -8,8 +8,12 @@ What is the point of ************Open Source************: This allows users to t
 
 ## Steps on how to contribute to a open source Repositories 
 
-When wanting to contribute to open source you will need to fork a repository. A fork is how you copy and paste what ever files that are accessible to you. To fork you will need to goto the bit project and click the fork on the top right of the page. Once you do that it will copy the files to your repository
+1. When wanting to contribute to open source you will need to fork a repository. A fork is how you copy and paste what ever files that are accessible to you. To fork you will need to goto the bit project and click the fork on the top right of the page. Once you do that it will copy the files to your repository
 
-You will then need to click on your profile link on the top right of the page and click my Repository once there you’ll see a copy version of bit project. 
+![Image To Show Fork](https://docs.github.com/assets/images/help/repository/fork_button.jpg)
 
-Once in your own Repository you can then edit, download, and upload anything you want for your own liking.
+2. You will then need to click on your profile link on the top right of the page and click my Repository once there you’ll see a copy version of bit project. 
+
+![Image for profile](https://i.gyazo.com/96289483c4166329dc522d424b13dd15.gif)
+
+3. Once in your own Repository you can then edit, download, and upload anything you want for your own liking.
