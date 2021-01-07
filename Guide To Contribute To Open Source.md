@@ -24,6 +24,12 @@ What is the point of ************Open Source************: This allows users to t
 
 ![Image to commit directly](https://i.gyazo.com/ba0908a1762a1d50fda073d097dac346.gif)
 
-5. If you did click "Commit directly to the master branch." And you have feel like you finished editing everything in your repo its now time to do a PR (Pull Request) Which is going to alert people about the changes you have commited and see if it would be ready to be pushed back onto the main repo. 
+5. If you did click "Commit directly to the master branch." And you have feel like you finished editing everything in your repository it is now time to do a PR (Pull Request) Which is going to alert people about the changes you have commited and see if it would be ready to be pushed back onto the main repo. You're going to click Pull Request on the top left and then click New Pull Request.
+
+![Image Of PullRequest](https://i.gyazo.com/6b0326afdf6ffb3030eee5c4f00d2555.gif)
+
+6. Once you click New Pull Request you're going to see a [Title] Box and a [Description] Box. Within your Title you want to make sure its descriptive and for the Description you want to be sure to explain on what this Pull Request is about.
+
+![Image Of PullRequest](https://i.gyazo.com/d581725482f9cc0fc3875c355907d5f6.gif)
 
 
