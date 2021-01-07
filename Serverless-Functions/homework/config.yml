@@ -45,7 +45,7 @@ steps:
         with: 1.4-feedback.md
   - title: 'Week 1: Livestream Feedback'
     description: Help us improve this course!
-    event: issue_comment.created
+    event: issues.closed
     link: '{{ repoUrl }}/issues/1'
     actions:
       - type: respond
