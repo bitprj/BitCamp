@@ -49,6 +49,14 @@ steps:
     link: '{{ repoUrl }}/issues/1'
     actions:
       - type: respond
+        with: 1.5-blog.md
+        issue: 2
+  - title: 'Week 1: Livestream Blog'
+    description: The livestream in blog format.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/1'
+    actions:
+      - type: respond
         with: 01-complete.md
         issue: 2
       - type: createIssue
