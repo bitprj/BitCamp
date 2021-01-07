@@ -1,6 +1,7 @@
 # Bitcamp Serverless ⚡
 
-Serverless architectures offer greater scalability, more flexibility, and quicker time to release, all at a reduced cost. Functions is also a great solution for processing bulk data, integrating systems, working with the internet-of-things (IoT), and building simple APIs and micro-services.
+Serverless architectures offer greater scalability, more flexibility, and quicker time to release, all at a reduced cost. These attributes make functions an ideal place to start when introducing students to backend development. They will obtain the skills of processing bulk data, integrating systems, and building simple APIs and micro-services. Without the need to manage a server, Functions allow students to focus on the logic of the backend and develop essential skills needed for other aspects of computing as well. The abstraction also makes serverless architectures perfect for introducing students with no prior experience to application development.
+
 
 ## The Goal 🥅
 **Who?** Built with the audience of college and high school students that have minimal to advanced coding experience in mind. Most do not have experience with APIs with serverless architectures.
