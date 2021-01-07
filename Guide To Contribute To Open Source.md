@@ -23,3 +23,7 @@ What is the point of ************Open Source************: This allows users to t
 4. Once you feel that you have edited a file to your liking you would scroll down to "Commit Changes" And you would have two options, one "Commit directly to the **master** branch." Or "Create a new branch for this commit and start a pull request." Sounds difficult right? Well its not, What it means is you can either save all your edits into the fork or (copy) version of the repo you created. Or create a new branch and start a pull request which tell others about changes you've pushed to a branch in a repository on GitHub. But from our suggestions if you're working on multiple files it would be best to commit directly into your own fork before creating a pull request.
 
 ![Image to commit directly](https://i.gyazo.com/ba0908a1762a1d50fda073d097dac346.gif)
+
+5. If you did click "Commit directly to the master branch." And you have feel like you finished editing everything in your repo its now time to do a PR (Pull Request) Which is going to alert people about the changes you have commited and see if it would be ready to be pushed back onto the main repo. 
+
+
