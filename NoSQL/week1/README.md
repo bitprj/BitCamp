@@ -1,6 +1,6 @@
 # Week 1: Setting Up
 
-This week will focus on three topics: learning how to use Git Bash and Github, creating databases, and accessing databses.
+This week will focus on three topics: learning how to use Git Bash and Github, creating databases, and accessing databases.
 
 ### 📚 Summary
 Week one will be focusing on the fundamentals that you'll need to use throughout the program in order to create an app effectively.
