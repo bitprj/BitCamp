@@ -41,3 +41,28 @@ What is the point of ************Open Source************: This allows users to t
 ![Image Of Submitting PullRequest](https://i.gyazo.com/c54cba8f11c536d63e6aaebcd2a7ccb2.gif)
 
 ## What Are Markdowns?
+Markdown format allows users to style plain text on a website like formatting words as bold or italic, adding images, and creating lists which are just a few of things we can do with markdown. 
+
+### Headers
+
+![Image Of Headers](https://i.gyazo.com/5838ed8650e610c119a07c2c7dc5a993.png)
+
+### Emphasis
+
+![Image Of Emphasis](https://i.gyazo.com/b5aba6209d8ecaf36f0d00f3c0055262.png)
+
+### Lists
+
+![Image Unorder list](https://i.gyazo.com/072d4cf6c80bf2d23569f962929aba14.png)
+
+![Image Of A order list](https://i.gyazo.com/ac732e5d6aa9ba2391da30b6f1628b00.png)
+
+### Images
+
+![Image Unorder list](https://i.gyazo.com/b15c36dd13942a52e1e96c85ae2c43f1.png)
+
+### Links
+
+![Image Unorder list](https://i.gyazo.com/bc6aed2cb7f767c04996068c6776814a.png)
+
+
