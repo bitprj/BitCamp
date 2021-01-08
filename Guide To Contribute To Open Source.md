@@ -40,7 +40,7 @@ What is the point of ************Open Source************: This allows users to t
 
 ![Image Of Submitting PullRequest](https://i.gyazo.com/c54cba8f11c536d63e6aaebcd2a7ccb2.gif)
 
-## What Are Markdown?
+## What Is Markdown?
 Markdown format allows users to style plain text on a website like formatting words as bold or italic, adding images, and creating lists which are just a few of things we can do with markdown. If you click the "Raw" Button on the top right you can see how I use Markdown within this documentation. 
 
 ### Headers
