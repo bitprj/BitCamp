@@ -64,5 +64,3 @@ Markdown format allows users to style plain text on a website like formatting wo
 ### Links
 
 ![Image Unorder list](https://i.gyazo.com/bc6aed2cb7f767c04996068c6776814a.png)
-
-## What Are Github Issues? 
