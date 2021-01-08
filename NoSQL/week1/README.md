@@ -3,8 +3,7 @@
 This week will focus on three topics: learning how to use Git Bash and Github, creating databases, and accessing databases.
 
 ### 📚 Summary
-Week one will be focusing on the fundamentals that you'll need to use throughout the program in order to create an app effectively.
-This will be a relatively light week in terms of courseload.
+Students are able to navigate MongoDB Compass and understand how GitHub/Git Bash can be used effectively for developing applications after this week. They will experiment with and create sample datasets that reinforce understanding of how NoSQL databases store information and are structured.
 
 ### Learning Objectives
 Git Bash and Github - Learn how to use Git Bash and commit code to repositories, clone repositories, and create branches for cooperative work.
