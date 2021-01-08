@@ -28,4 +28,4 @@ We'll be going over how to:
 - Think of a project idea
 
 ### :question: How will this help students?
-Well if you can't do any of these things you really won't be able to create an app of any kind, so you'd better learn it.
+Without these tools, you won't be able to make an app of any kind, so it is essential that you learn these fundamentals.
