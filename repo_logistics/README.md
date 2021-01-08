@@ -68,15 +68,15 @@ This is the `homework/` in your camp's [subdirectory](https://github.com/emsesc/
 
 *We will not go over the file structure in this markdown file, so refer to the [`learning_lab`](https://github.com/bitprj/BitCamp/tree/master/repo_logistics/learning_lab) subdirectory for documentation on Learning Lab components.*
 
-### :file_folder: [Week Folders](https://github.com/emsesc/BitCamp/blob/repo-logistics/repo_logistics/sample-camp)
+### :file_folder: [Week Folders](https://github.com/emsesc/BitCamp/blob/sample-camp/repo_logistics/sample-camp)
 
 **What is it?**
 
-These are directories within the camp [subdirectory](https://github.com/emsesc/BitCamp/blob/repo-logistics/repo_logistics/sample-camp) that organize the content by weeks. Create as many as you need accordingly to the camp's weeks.
+These are directories within the camp [subdirectory](https://github.com/emsesc/BitCamp/blob/sample-camp/repo_logistics/sample-camp) that organize the content by weeks. Create as many as you need accordingly to the camp's weeks.
 
 **Purpose:** These directories each contain the week's README.md (individual week description), livestream, and homework.
 
-### :open_file_folder: [Inside the Week Folders](https://github.com/emsesc/BitCamp/blob/repo-logistics/repo_logistics/sample-camp/week1)
+### :open_file_folder: [Inside the Week Folders](https://github.com/emsesc/BitCamp/blob/sample-camp/repo_logistics/sample-camp/week1)
 
 **What is it?**
 
@@ -84,6 +84,6 @@ Inside the Week Directories, there are three components: code, videos, and the R
 
 * **`code`**: this contains the **code** you will use in the livestream.
 * **`videos`**: this contains the **video recordings** of the livestream.
-* [**`README.md`**](https://github.com/emsesc/BitCamp/blob/repo-logistics/repo_logistics/sample-camp/week1/README.md): this is the **individual week description**, which should be differentiated from the root [README.md file](https://github.com/emsesc/BitCamp/blob/repo-logistics/repo_logistics/sample-camp/README.md)
-  * **Note:** some content from the root [README.md file](https://github.com/emsesc/BitCamp/blob/repo-logistics/repo_logistics/sample-camp/README.md) is repeated in the [individual week description](https://github.com/emsesc/BitCamp/blob/repo-logistics/repo_logistics/sample-camp/week1/README.md) for clarification.
+* [**`README.md`**](https://github.com/emsesc/BitCamp/blob/sample-camp/repo_logistics/sample-camp/week1/README.md): this is the **individual week description**, which should be differentiated from the root [README.md file](https://github.com/emsesc/BitCamp/blob/sample-camp/repo_logistics/sample-camp/README.md)
+  * **Note:** some content from the root [README.md file](https://github.com/emsesc/BitCamp/blob/sample-camp/repo_logistics/sample-camp/README.md) is repeated in the [individual week description](https://github.com/emsesc/BitCamp/blob/sample-camp/repo_logistics/sample-camp/week1/README.md) for clarification.
   
