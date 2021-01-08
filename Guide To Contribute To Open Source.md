@@ -32,4 +32,7 @@ What is the point of ************Open Source************: This allows users to t
 
 ![Image Of PullRequest](https://i.gyazo.com/d581725482f9cc0fc3875c355907d5f6.gif)
 
+7. After you completed both the box you're going to include an issue if the pullrequest does have an issue? A github issues are a great way to keep track of tasks, enhancements, and bugs for your projects. Once you included everything you are going to click the drop down arrow on the green button and select "Create draft pull request" When you create a Draft Pull Request, it cannot be merged until it is marked as ready for review. 
+
+![Image Of PullRequest](https://i.gyazo.com/1177e7396f1cc35a2ef04e492e1de1dd.gif)
 
