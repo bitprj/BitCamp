@@ -2,6 +2,13 @@
 
 Welcome open-source user! We're glad to have you here. You're probably interested in contributing to our open-source repositories here at Bit Project. Before we go over the standards of contributing to our repos, let's go over few key points to help you get started.
 
+### Checklist
+*Here's a checklist of items with topics you should be familiar with to successfully contribute.*
+* Github Issues and Pull Requests
+* Github Commits and Forking Repos
+* Markdown Syntax and Files
+* How Bitcamps work!
+
 First of all, how it works. While contributing might seem quick and easy, the process is quite difficult to the regular newcomer. If you have some knowledge of Github (example: what an issue is, forking, creating a pull request) then feel free to skip this part. If not, here is a quick summary of some important terms and a few helpful links if you're just starting with Github.
 
 ---
