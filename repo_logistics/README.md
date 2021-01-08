@@ -48,21 +48,21 @@ Maintaining a consistent Bitcamp Curriculum documentation throughout all Bitcamp
 
 ***Throughout this walkthrough, the corresponding files/directories within `sample-camp/` will be linked for your reference***
 
-### :book: [The root README.md file](https://github.com/emsesc/BitCamp/blob/repo-logistics/repo_logistics/sample-camp/README.md)
+### :book: [The root README.md file](https://github.com/emsesc/BitCamp/blob/sample-camp/repo_logistics/sample-camp/README.md)
 
 **What is it?**
 
-This is the general README.md file under your camp's [subdirectory](https://github.com/emsesc/BitCamp/blob/repo-logistics/repo_logistics/sample-camp). This contains a general overview of the entire camp and quick summaries of each week.
+This is the general README.md file under your camp's [subdirectory](https://github.com/emsesc/BitCamp/tree/sample-camp/repo_logistics/sample-camp). This contains a general overview of the entire camp and quick summaries of each week.
 
 **Purpose:** This is for open-source contributors to understand what the camp's goals are and what the curriculum contains. This should NOT be as detailed as individual week descriptions. Be as clear and concise as possible.
 
 
 
-### :file_folder: The `homework/` folder​ 
+### :file_folder: [The `homework/` folder](https://github.com/emsesc/BitCamp/tree/sample-camp/repo_logistics/homework) 
 
 **What is it?**
 
-This is the `homework/` in your camp's [subdirectory](https://github.com/emsesc/BitCamp/blob/repo-logistics/repo_logistics/sample-camp). This contains all of the files needed to create your camp's Learning Lab.
+This is the `homework/` in your camp's [subdirectory](https://github.com/emsesc/BitCamp/tree/sample-camp/repo_logistics/sample-camp). This contains all of the files needed to create your camp's Learning Lab.
 
 **Purpose:** To easily sync response files and other Learning Lab materials, placing all files under this subdirectory makes your life easier. This also keeps all files related to the camp in one place for easy access.
 
