@@ -40,4 +40,4 @@ What is the point of ************Open Source************: This allows users to t
 
 ![Image Of Submitting PullRequest](https://i.gyazo.com/c54cba8f11c536d63e6aaebcd2a7ccb2.gif)
 
-## What are markdowns?
+## What Are Markdowns?
