@@ -26,10 +26,11 @@ Data is all around us and knowing how to use and manipulate databases is an incr
 Students are able to navigate [MongoDB Compass](https://www.mongodb.com/products/compass) and understand how GitHub/Git Bash can be used effectively for developing applications after this week. They will experiment with and create sample datasets that reinforce understanding of how NoSQL databases store information and are structured.
 
 **Learning Objectives**
-* How to Use GitHub (commits, pull requests, etc.) and Git Bash
+* How to Use GitHub (commits, cloning, branches etc.) and Git Bash
 * MongoDB Compass: access and create your databases
 * Basic MongoDB terminology
 * The basics of JSON
+* Installing an IDE that supports JS
 
 ### **Week 2**
 ***
