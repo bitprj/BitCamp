@@ -1,0 +1,190 @@
+title: Creating an Emotion Reader with Azure (Face API and HTTP Triggers)
+description: >-
+  This learning lab course is part of Bit Project's 8 Week Program. By the end
+  of the course, students will deploy a emotion reader web app using Azure
+  Services.
+template:
+  name: bit-camp-learning-lab-test
+  repo: azure-functions-template
+before:
+  - type: createIssue
+    title: Prerequisite
+    body: 00-prerequisite.md
+steps:
+  - title: 'Week 1: Downloading an IDE'
+    description: Installing Visual Studio Code.
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 00-response.md
+        issue: 1
+      - type: createIssue
+        title: Week 1
+        body: 1.1-ide.md
+  - title: 'Week 1: Downloading an IDE'
+    description: Installing Visual Studio Code.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 1.2-azure.md
+  - title: 'Week 1: Creating an Azure account'
+    description: Creating an Azure account and a basic function.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 1.3-github.md
+  - title: 'Week 1: Learning to Use Github'
+    description: Understanding how to use GitHub.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 1.4-feedback.md
+  - title: 'Week 1: Livestream Feedback'
+    description: Help us improve this course!
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 01-complete.md
+        issue: 2
+      - type: createIssue
+        title: Week 2
+        body: 2.0-postman.md
+      - type: closeIssue
+        issue: 2
+  - title: 'Week 2: Postman'
+    description: Sending a request with Postman.
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 2.1-dependencies.md
+  - title: 'Week 2: Installing Dependencies'
+    description: Using NPM to install necessities.
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 2.2-parsing.md
+  - title: 'Week 2: Parsing Multipart Data'
+    description: Parsing an image for Face API.
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 2.2.1-checkpoint1.md
+  - title: 'Week 2: Checkpoint #1'
+    description: Testing Your Azure Function
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 2.3-faceEndpoint.md
+  - title: 'Week 2: Creating a Face API Endpoint'
+    description: Connecting Face API components.
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 2.4-callFaceParams.md
+  - title: 'Week 2: Calling Face API (Parameters)'
+    description: Using Face API to analyze image.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: 2.5-callFaceFetch.md
+  - title: 'Week 2: Calling Face API (Fetch)'
+    description: Retrieving Face API analytics.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: 2.5.1-checkpoint2.md
+  - title: 'Week 2: Checkpoint #2'
+    description: Testing Your Azure Function
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: 2.6-feedback.md
+  - title: 'Week 2: Livestream Feedback'
+    description: Help us improve this course!
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 02-complete.md
+        issue: 3
+      - type: createIssue
+        title: Week 3
+        body: 3.1-html.md
+      - type: closeIssue
+        issue: 3
+  - title: 'Week 3: Creating an HTML Page'
+    description: Creating a frontend for our web app.
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 3.2-displayData.md
+        issue: 4
+  - title: 'Week 3: Displaying Emotion Data'
+    description: Using JQuery to change HTML.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/pull/1'
+    actions:
+      - type: respond
+        with: 3.3-deploy.md
+        issue: 4
+  - title: 'Week 3: Web Deployment'
+    description: Deploying through Azure Static Web Apps.
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 3.4-feedback.md
+        issue: 4
+  - title: 'Week 3: Livestream Feedback'
+    description: Help us improve this course!
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 03-complete.md
+        issue: 4
+      - type: createIssue
+        title: Final Project
+        body: 4.1-proposal.md
+      - type: closeIssue
+        issue: 4
+  - title: 'Final Project: Project Proposal'
+    description: Submitting final project proposals.
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 4.2-mvp.md
+        issue: 5
+  - title: 'Final Project: MVP'
+    description: Building the MVP.
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 4.3-final.md
+        issue: 5      
+  - title: 'Final Project: Final Steps'
+    description: Completing the final project.
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 4.4-lightningTalk.md
+        issue: 5     
+  - title: 'Final Project: Lightning Talk'
+    description: Preparing your lightning talk.
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 04-complete.md
+        issue: 5
+      - type: closeIssue
+        issue: 5
+tags:
+  - Azure
+  - Azure Functions
+  - Bit Project
+  - JavaScript
