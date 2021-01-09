@@ -29,7 +29,7 @@ In this 4-week Bit Camp, co-hosted by Twilio, students will learn the JavaScript
 
 This 8-week camp will be focusing on Atlas, which allows MongoDB to be developed and deployed in the cloud. Students will begin with the basics, setting up a database and then branching out to discover ways to analyze, filter, and create data. The last few weeks of camp consist of time to develop apply their newfound expertise and create a Web App with a MongoDB backend.
 
-#### 4. [**Serverless-Functions**](https://github.com/bitprj/BitCamp/tree/master/Serverless-Functions)
+#### 4. [**Serverless-Functions**](https://lab.github.com/bitprj/creating-an-emotion-reader-with-azure-(face-api-and-http-triggers)/)
 
 In this 8-week Bit Camp, co-hosted by Microsoft, you will learn about serverless architecture and functions, and why they are useful. You will utilize Microsoft Azure serverless functions, JavaScript, and external APIs to build and deploy your own app from end to end.
 
