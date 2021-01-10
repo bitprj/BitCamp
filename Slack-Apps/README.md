@@ -1,4 +1,3 @@
-
 # Bitcamp Slack 💬
 
 Slack Apps are powerful extensions for Slack, a channel-based messaging platform widely used in the industry like IBM, Amazon, and more. These Apps allow users in a workspace to interact, connect, communicate, and work for efficently.
@@ -22,8 +21,6 @@ Slack Apps are powerful extensions for Slack, a channel-based messaging platform
 ###  **Week 1: Getting Started with Slack API**
 ***
 
-📚 **Summary**
-
 ### Livestream
 
 In the Livestream Portion of Week 1, students will be introduced to the basics of the Slack API, including what a slack app is, how it is used in the industry, and the basics of creating their first app. During the livestream for this week, topics such as the Bolt Framework ([here](https://slack.dev/bolt-js/tutorial/getting-started "Bolt Framework")), Node JS, permissions/scopes, and a brief introduction of events and listeners will be discussed. As well, a basic slack app will be created that simply listens to a message in a specific channel, and responds to the user with a given message.
@@ -35,17 +32,15 @@ In the Homework Portion of Week 1, students will continue to advance the skills 
 **Learning Objectives**
 
 - Introduction to the Slack API (https://api.slack.com).
-- Using Bolt Framework with NodeJS (https://github.com/slackapi/bolt-js).
+- Using Bolt Framework with NodeJS (https://github.com/slackapi/bolt-js)
 - Creating a Slack App that uses `say()` and responds to a message.
 
 ###  ❓ How will this help students?
 
 In Week 1, students will work towards the end goal of creating their first Slack App by being introduced to the skills necessary to create one (reading documentation, learning about NodeJS, etc). During the Livestream, students will be able to ask questions refering to their current task.
 
-### **Week 2: Introduction to Shortcuts, Modals, and BlockKit**
+### **Week 2**
 ***
-
-📚 **Summary**
 
 ### Livestream
 
@@ -65,10 +60,8 @@ In the Homework Portion of Week 2, students will continue to advance the skills 
 
 In Week 2, students will work on developing skills they worked on in the previous week and learn about new functions of the Slack API like BlockKit, Modals, and Views. During the Livestream, students will be able to ask questions refering to their current task.
 
-### **Week 3: Integration with Google Translate API**
+### **Week 3**
 ***
-
-:books: **Summary**
 
 ### Livestream
 
@@ -80,7 +73,7 @@ In the Homework Portion of Week 3, students will continue to advance the skills 
 
 **Learning Objectives**
 
-- Introduction to 3rd Party APIs (https://cloud.google.com/translate/docs/).
+- Introduction to 3rd Party APIs (https://cloud.google.com/translate/docs/)
 - Using Emoji Reactions and responding in Threads.
 - Creating a Translation Slack App that responds to a Flag Emoji.
 
@@ -88,10 +81,9 @@ In the Homework Portion of Week 3, students will continue to advance the skills 
 
 In Week 3, students will be introduced to their first 3rd Party API, Google Translate. Using the Google Translate API, students will create a Slack App that responds to a flag emoji and posts the translated text in a thread. During the Livestream, students will be able to ask questions refering to their current task.
 
-### **Week 4: Using the Github API & Webhooks**
-***
+### **Week 4**
 
-:books: **Summary**
+***
 
 ### Livestream
 
@@ -99,19 +91,19 @@ The Livestream Portion of Week 4 involves webhooks and the Express framework.  S
 
 ### Homework
 
-The Homework Portion of Week 4 is a review of the topics that are covered in the livestream. Students will follow a GitHub Learning Lab that outlines the basics of coding using webhooks. There are issues for creating GET and POST methods in Express and creating up a GitHub webhook. The last issue is a guided project similar to the one demonstrated in the livestream. Overall, the purpose of the homework this week is to expose students to the versatility of webhooks.
+The Homework Portion of Week 4 is a review of the topics that are covered in the livestream. Students will follow a GitHub Learning Lab that outlines the basics of coding using webhooks. There are issues for creating GET and POST methods in Express and creating up a GitHub webhook. The last issue is a guided project similar to the one demonstrated in the livestream. Overall, the purpose of the homework this week is to expose students to the versatility of webhooks. 
 
 **Learning Objectives**
 
-- Introducing students to webhooks.
-  - Explaining the benefits and usecases for webhooks (https://zapier.com/blog/what-are-webhooks/).
-  - Teaching students how to use a webhook payload.
-- Introducing students to Express and framworks.
-  - Teaching students how to get a webhook payload.
-- Creating two apps that use the GitHub webhook service along with Express to post messages when an event occurs.
+- Introducing students to webhooks
+  - Explaining the benefits and usecases for webhooks
+  - Teaching students how to use a webhook payload
+- Introducing students to Express and framworks 
+  - Teaching students how to get a webhook payload
+- Creating two apps that use the GitHub webhook service along with Express to post messages when an event occurs
 
 
 
 ###  ❓ How will this help students?
 
-The livestream and homework for Week 4 will emphasize exploration of webhooks. Learning how to use a webhook will help students brainstorm ideas for their personal projects. During the livestream, students will be able to ask questions refering to their current task. The homework will additionally provide a step-by-step reference for the basics of creating a webhook.
+Webhooks are extremely useful tools when building apps of any kind. The livestream and homework for Week 4 will emphasize exploration of webhooks. Learning how to use a webhook will help students brainstorm ideas for their personal projects. During the livestream, students will be able to ask questions refering to their current task. The homework will additionally provide a step-by-step reference for the basics of creating a webhook.
