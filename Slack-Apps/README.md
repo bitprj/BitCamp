@@ -21,8 +21,6 @@ Slack Apps are powerful extensions for Slack, a channel-based messaging platform
 ###  **Week 1: Getting Started with Slack API**
 ***
 
-📚 **Summary**
-
 ### Livestream
 
 In the Livestream Portion of Week 1, students will be introduced to the basics of the Slack API, including what a slack app is, how it is used in the industry, and the basics of creating their first app. During the livestream for this week, topics such as the Bolt Framework ([here](https://slack.dev/bolt-js/tutorial/getting-started "Bolt Framework")), Node JS, permissions/scopes, and a brief introduction of events and listeners will be discussed. As well, a basic slack app will be created that simply listens to a message in a specific channel, and responds to the user with a given message.
@@ -44,8 +42,6 @@ In Week 1, students will work towards the end goal of creating their first Slack
 ### **Week 2**
 ***
 
-📚 **Summary**
-
 ### Livestream
 
 In the Livestream Portion of Week 2, students will work with new topics like shortcuts, modals, and BlockKit. Students will use skills from the previous week such as scopes/permissions and listeners to further progress their understanding. During the livestream for this week, students will build a polling Slack App using a shortcut-triggered modal (using a shortcut listener and poll shortcut from [api.slack.com](http//api.slack.com "Slack API")), BlockKit to accept user input/view building, and a ViewSubmission listener to post the poll and receive emoji responses.
@@ -66,8 +62,6 @@ In Week 2, students will work on developing skills they worked on in the previou
 
 ### **Week 3**
 ***
-
-:books: **Summary**
 
 ### Livestream
 
@@ -91,8 +85,6 @@ In Week 3, students will be introduced to their first 3rd Party API, Google Tran
 
 ***
 
-:books: **Summary**
-
 ### Livestream
 
 The Livestream Portion of Week 4 involves webhooks and the Express framework.  Students will learn about the usecases for a webhook, as well as how Express can be used to receive webhook payloads. The livestream covers GitHub webhooks, namely demonstrating the process of setting up a webhook and receiving a payload. The mentor leading the stream teaches these principles through a sample project: listening for a repository to be starred, then messaging a Slack channel when the event occurs.
@@ -115,8 +107,3 @@ The Homework Portion of Week 4 is a review of the topics that are covered in the
 ###  ❓ How will this help students?
 
 Webhooks are extremely useful tools when building apps of any kind. The livestream and homework for Week 4 will emphasize exploration of webhooks. Learning how to use a webhook will help students brainstorm ideas for their personal projects. During the livestream, students will be able to ask questions refering to their current task. The homework will additionally provide a step-by-step reference for the basics of creating a webhook.
-
-
-
-
-
