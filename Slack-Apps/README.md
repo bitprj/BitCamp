@@ -18,7 +18,7 @@ Slack Apps are powerful extensions for Slack, a channel-based messaging platform
 **Where?** Students will use VSCode, an IDE created by Microsoft, along with the Slack API, JavaScript (NodeJS), Bolt JS Framework, and a Google Developer Account to use 3rd party APIs.
 
 
-###  **Week 1: Getting Started with Slack API**
+###  **Week 1**
 ***
 
 ### Livestream
