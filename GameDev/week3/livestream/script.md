@@ -21,13 +21,17 @@ The first thing we need to do is let the car move left and right.
 
 Open the PlayerController script we created and add:
 
-<code>public float turnSpeed;</code>
+```cs
+public float turnSpeed;
+```
 
 to the top of the script under the speed variable.
  
 In the Update() function add:
 
-<code>transform.Translate(Vector3.right * Time.deltaTime * turnSpeed);</code>
+```cs
+transform.Translate(Vector3.right * Time.deltaTime * turnSpeed);
+```
 
 This works similarly to the code we use to move the car forward except that it moves the car right along with the turnSpeed variable.  
 
@@ -48,30 +52,45 @@ There are many inputs, but we’ll be using Horizontal and Vertical. There are d
 
 If you open up PlayerController again, we can start implementing these inputs into the code. Under the turnSpeed variable write:
 
-<code>public float horizontalInput;</code>
+```cs
+public float horizontalInput;
+```
 
 This will track the horizontal input of our player.
 
 Now we need to give the horizontalInput variable a value, which we can do in the Update() function. That input manager we saw in the Project Settings has a built-in class in 
 Unity that we can use to access it in the code. At the top of the Update() function add:
 
-<code>horizontalInput = Input.GetAxis(“Horizontal”)</code>
+```cs
+horizontalInput = Input.GetAxis(“Horizontal”)
+```
 
 The reason “Horizontal” in the brackets is because this Unity function needs the name of the axis we want to use. This is typed out as a string variable, hence the double quotes. The horizontalInput variable will now be 1 if the right key is pressed, -1 if the left key is pressed, and 0 if neither are pressed.
  
 Now we go into our code that moves the car left and right:
 
-<code>transform.Translate(Vector3.right * Time.deltaTime * turnSpeed);</code>
-and add: <code>* horizontalInput</code> after turnSpeed making it:
+```cs
+transform.Translate(Vector3.right * Time.deltaTime * turnSpeed);
+```
 
-<code>transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);</code>
+and add: 
+```cs
+* horizontalInput
+```
+after turnSpeed making it:
+
+```cs
+transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
+```
 
 This will multiply our whole horizontal movement equation by the horizontal input which can either be 1, -1, or 0.
 Now we can go into the game, change Turn Speed to 1 in the inspector and play. We can move the car left and right using the arrow keys.
 
+```cs
 public float horizontalInput;
-
+```
 #### Section Code
+```cs
 	public float horizontalInput;
 	
 	void Update() 
@@ -81,7 +100,7 @@ public float horizontalInput;
 		transform.Translate(Vector3.forward * Time.deltaTime * speed);
 		transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
 	}
- 
+ ```
 ### Part 3: Moving Forward and Backwards
  
 Now that we can move left and right, we should make players able to move forward and backwards.
@@ -94,21 +113,27 @@ We used the Horizontal axis to move left and right so we’ll be using the Verti
 
 So if we add:
 
-<code>public float forwardInput;</code>
-
+```cs
+public float forwardInput;
+```
 below our horizontalInput variable
 
-<code>forwardInput = Input.GetAxis(“Vertical”);</code>
+```cs
+forwardInput = Input.GetAxis(“Vertical”);
+```
 
 To the top of our Update() function
 
 And add <code>forwardInput</code> to our code that makes the car go forward, making it:
 
-<code>transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);</code>
+```cs
+transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
+```
 
 We can go into the game and see that our up arrow moves us forward and our back arrow moves us backwards.
 
 #### Section Code
+```cs
 	public float horizontalInput;
 	public float forwardInput;
 	
@@ -120,7 +145,7 @@ We can go into the game and see that our up arrow moves us forward and our back 
 		transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
 		transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
 	}
-
+```
 ### Part 4: Make the Vehicle Rotate When Turning
  
 We now have control of the vehicle's direction but when you turn left or right we slide instead of actually turning like a car would. We’re going to fix that.
@@ -130,19 +155,26 @@ Now select the Rotate tool in the top left corner (it has two arrows making a ci
 
 If we go back into our PlayerController script, we can write a line of code that rotates the vehicle on the y axis when we turn. To do this, we use the Rotate function in the transform class that we previously used to move the vehicle left and right. In the Update() function write:
 
-<code>transform.Rotate()</code>
+```cs
+transform.Rotate()
+```
 
 This rotate function takes two arguments in the brackets: An axis, and an angle. As we saw earlier the axis we need to rotate on is the y axis so we’ll be using Vector3.up. We can create an angle with:
 
-<code>Time.deltaTime * turnSpeed * horizontalInput</code>
+```cs
+Time.deltaTime * turnSpeed * horizontalInput
+```
 
 Together this creates:
 
-<code>transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);</code>
+```cs
+transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
+```
 
 We can also delete the code we used to make the car slide right and left.
 
 #### Section Code
+```cs
 	public float horizontalInput;
 	public float forwardInput;
 	
@@ -154,7 +186,7 @@ We can also delete the code we used to make the car slide right and left.
 		transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
 		transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
 	}
-
+```
 ### Part 5: Cleaning Up the Code and Hierarchy
  
 In the hierarchy, we have a lot of obstacles that are taking up a lot of space, they don’t look nice and as we add more game objects they’ll get in the way. If we look at Environment in our hierarchy, we can see a great way of managing these game objects by putting them inside another game object.
@@ -163,15 +195,18 @@ To do this, right-click on the hierarchy and press Create Empty. This will creat
  
 Next is to make the public variables in the PlayerController script private. Making a variable private means it can’t be edited from the inspector and can only be edited by going into the code. Since we’re done testing, we can make our variables private to tidy our inspector. Your variables at the top should look like this:
 
+```cs
 	private float speed = 5.0f;
 	private float turnSpeed = 25.0f;
 	private float horizontalInput;
 	private float forwardInput;
+```
 
 We need to put values on speed and turnSpeed because before we were giving them values in the inspector which we can’t do now that they’re private.
 Now we can add more comments. We can put <code>//Private Variables</code> on top of the variables section at the top, add <code>//Get Player Input</code> above horizontalInput and forwardInput in the Update() function, and we can add <code>//Rotate the Vehicle Left and Right</code> above the Rotate code. This makes the code more readable and makes it more understandable when you come back to it later.
 
 #### Section Code
+```cs
 	//Private Variables
 	private float speed = 20.0f;
 	private float turnSpeed = 45.0f;
@@ -190,7 +225,7 @@ Now we can add more comments. We can put <code>//Private Variables</code> on top
 		//Rotate the Vehicle Left and Right
 		transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
 	}
-
+```
 # Section 2: Project Design Documents
 Copy of empty design document template: https://docs.google.com/document/d/1DbHWUeKPZAuWpAHIe5jLvKjAI-ez42-gsUT65UlWzHI/edit
  
