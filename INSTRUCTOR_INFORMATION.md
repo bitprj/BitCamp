@@ -44,6 +44,11 @@ With 5 Camps happening at the same time, every weekday will be dedicated to one 
 
 # Office Hours
 
+Held on Discord voice channels (VC)
+
+- Recommended that instructor have their own VC when enough students join and when questions become more specific (e.g. for projects)
+- **Required for students in Mentorship Program**
+
 # Lightning Talks
 
 Students in Mentorship Program get to present their projects!
@@ -85,9 +90,16 @@ Students in Mentorship Program get to present their projects!
 
 # Project Submissions
 
+TBA in March
+
 # Student Experience
 
-# Progress Airtable
+Instructors are responsible for ensuring that students in the Mentorship Program have the best experience possible. For this, we require each Camp's instructors to:
+
+- Collect progress reports and feedback on a weekly basis
+- Conduct one virtual video call 1:1 meeting mid-way through the Camp
+
+The purpose of this is to ensure that the instructors are fully aware of any struggles that the students are facing so that they can tailor the experience accordingly.
 
 # Student Orientation
 
