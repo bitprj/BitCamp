@@ -95,12 +95,12 @@ The Homework Portion of Week 4 is a review of the topics that are covered in the
 
 **Learning Objectives**
 
-- Introducing students to webhooks
-  - Explaining the benefits and usecases for webhooks
-  - Teaching students how to use a webhook payload
-- Introducing students to Express and framworks 
-  - Teaching students how to get a webhook payload
-- Creating two apps that use the GitHub webhook service along with Express to post messages when an event occurs
+- Introducing students to webhooks.
+  - Explaining the benefits and usecases for webhooks (https://zapier.com/blog/what-are-webhooks/).
+  - Teaching students how to use a webhook payload.
+- Introducing students to Express and framworks.
+  - Teaching students how to get a webhook payload.
+- Creating two apps that use the GitHub webhook service along with Express to post messages when an event occurs.
 
 
 
