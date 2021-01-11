@@ -25,11 +25,11 @@ Webhooks are applications that send other apps useful information. They are almo
 
 If you don't have an account already, create one at www.github.com. You will need a repository, which can be created by pressing the 'create repository' button at the top left of your dashboard:
 
-![](./Gifs:Images/4.1-creating-repo.gif)
+![](../homework/responses/Gifs_Images/4.1-creating-repo.gif)
 
 Once you have created a repository, navigate to the settings page from the dashboard and select 'secrets'. You will need a secret in order to access the repository. Create an arbitrary secret name and value. 
 
-![](./Gifs:Images/4.2-secret.gif)
+![](../homework/responses/Gifs_Images/4.2-secret.gif)
 
 
 
