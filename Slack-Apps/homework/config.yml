@@ -1,0 +1,143 @@
+title: 'Creating Slack Apps with Bolt Framework, NodeJS, and APIs'
+description: >-
+  This learning lab course is intended for the purpose of Bit Project's bootcamp
+  with Slack on Slack Apps.
+template:
+  repo: slackapps-template
+  name: slackapps-folder
+before:
+  - type: createIssue
+    title: Week 1
+    body: 1.1-bolt-intro.md
+steps:
+  - title: 'Week 1: Intro to the Bolt Framework'
+    description: Week 1 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/1'
+    actions:
+      - type: respond
+        with: 1.2-bots-and-apps.md
+        issue: 1
+        
+  - title: 'Week 1: Intro to Slack Apps'
+    description: Week 1 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/1'
+    actions:
+      - type: respond
+        with: 1.3-setup-app-and-learn-events.md
+        
+  - title: 'Week 1: Config Setup and Event Listeners'
+    description: Week 1 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/1'
+    actions:
+      - type: respond
+        with: 1.4-basic-slack-app.md
+
+  - title: 'Week 1: Creating a Basic Slack App'
+    description: Week 1 Description
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/1'
+    actions:
+      - type: respond
+        with: 0.0-response.md
+      - type: createIssue
+        title: Week 2
+        body: 2.1-blocks-and-actions.md
+        
+  - title: 'Week 2: BlockKit and Actions'
+    description: Week 2 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 2.2-blocks-and-actions-app.md
+        
+  - title: 'Week 2: Slack App with BlockKit'
+    description: Week 2 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 2.3-commands-and-modals.md
+        
+  - title: 'Week 2: Commands and Modals'
+    description: Week 2 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 2.4-time-converter.md
+        
+  - title: 'Week 2: Time Converter Slack App'
+    description: Week 2 Description
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 0.0-response.md
+      - type: createIssue
+        title: Week 3
+        body: 3.1-reaction-event-listener-and-threads.md
+        
+  - title: 'Week 3: Reactions and Threads'
+    description: Week 3 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/4'
+    actions:
+      - type: respond
+        with: 3.2-oauth-account-and-credentials.md
+        
+  - title: 'Week 3: OAuth and Credentials'
+    description: Week 3 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/4'
+    actions:
+      - type: respond
+        with: 3.3-calling-translator-api.md
+        
+  - title: 'Week 3: Calling the Translator API'
+    description: Week 3 Description
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/3'
+    actions:
+      - type: respond
+        with: 0.0-response.md
+      - type: createIssue
+        title: Week 4
+        body: 4.1-express.md
+        
+  - title: 'Week 4: Learning About ExpressJS'
+    description: Week 4 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/4'
+    actions:
+      - type: respond
+        with: 4.2-webhooks.md
+        
+  - title: 'Week 4: Intro to Webhooks'
+    description: Week 4 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/4'
+    actions:
+      - type: respond
+        with: 4.3-final-project.md
+        
+  - title: 'Week 4: Final Project'
+    description: Week 4 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/4'
+    actions:
+      - type: respond
+        with: 0.0-done.md
+      - type: closeIssue
+        issue: 4
+        
+ 
+tags:
+  - Slack 
+  - Slack Apps
+  - JavaScript
+  - Bit Camp
+  - Bit Project
