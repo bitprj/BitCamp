@@ -1,8 +1,8 @@
-Outline:
+# Outline
 
 Hey all, today we’ll be looking at how to put sounds in your Unity projects. I’ll be going over how to play sounds through code, how to adjust those sounds in Unity, and how to find and best use free sound assets online.
 
-Now, hopefully you’ve already downloaded and opened the same project I have in front of me, which you can find and download at this github link: https://github.com/chris8736/bit_temp_mds/tree/main 
+Hopefully you’ve already downloaded and opened the same project I have in front of me, which you can find and download at this github link: https://github.com/chris8736/bit_temp_mds/tree/main 
 
 Audio Source basics (5 mins)
 
