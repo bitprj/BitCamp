@@ -6,34 +6,34 @@ We’ll use the exact same project as last time, and regardless of whether you�
 
 Particle System basics (10 mins)
 
--making a particle system
--observations
+- making a particle system
+- observations
 	
 Review of prototype scene (3 minutes)
 
--recap of last week
--further questions
+- recap of last week
+- further questions
 
 Observing particle systems (5 mins)
 
--fx_dust
--fx_explosion
+- fx_dust
+- fx_explosion
 
 Adding particle systems to the game (15 mins)
 
--adding particles to scene
--references
--play / pause logic
+- adding particles to scene
+- references
+- play / pause logic
 
 Editing particle system values (15 minutes)
 
--fixing fx_explosion
--explanation of modules
+- fixing fx_explosion
+- explanation of modules
 
 Looking at Unity’s Particle Pack (10 mins)
 
--trailer
--download
--observations
+- trailer
+- download
+- observations
 
 Homework Assignment (5 mins)
