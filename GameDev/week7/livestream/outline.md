@@ -1,4 +1,4 @@
-Outline
+# Outline
 
 Welcome back, today we’ll be building on the project we were working on last time, and learn how to create and edit particle systems in our Unity projects.
 
