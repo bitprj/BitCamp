@@ -1,4 +1,4 @@
-Audio Source basics (5 mins)
+## Audio Source basics (5 mins)
 
 Audio files like .mp3s and .wavs are just another set of assets we can add to our project. We’re going to be relying on one of Unity’s built-in components, the Audio Source. We can use Audio Sources to house one of our audio files, and can call upon the component to play that file in various modes.
 
@@ -15,7 +15,7 @@ Now that that’s set up, we can now play an audio file in our game. Make sure t
 As we can see, the Audio Source has multiple settings for our audio file, like volume and pitch, as well as options to loop. We can adjust these sliders now, but to change these settings during play, and play the audio clip whenever we want, we need scripts.
 
 
-Component Referencing (5 mins)
+## Component Referencing (5 mins)
 
 This is the point where component referencing comes in, and there are a couple ways to do this.
 
@@ -30,14 +30,16 @@ The second is to use GetComponent to automatically find the Audio Source for us:
 
 
 This only works if the Audio Source is attached to the same object as this script, but it saves us the extra time of looking for the component manually.
-Intro to Prototype Scene (10 mins)
+
+## Intro to Prototype Scene (10 mins)
 
 This is a scene taken from the Audio and SFX module on the Unity Learn website, though I’ve completed the collision, animation, and game over steps ahead of time so we can focus solely on sound effects. I do recommend stepping through the original project from the beginning if you’re curious about how the rest of the project works.
 
 Playing through the scene, we have a construction worker running through a city scene and jumping over obstacles that spawn regularly. If we collide with an obstacle, we play a death animation and the game ends.
 
 Though there a few moving parts here, we’re just going to look solely at the PlayerController script today, which you can find under the player object. There are two events in this script that we’re interested in - the first is when the player jumps, and the second is when the player bumps into an obstacle. We want to play audio effects in both cases.
-Playing on Command (15 mins)
+
+## Playing on Command (15 mins)
 
 Now that we have a solid understanding of what Audio Sources are and how to access them, it’s time to put them to use in our game.
 
@@ -66,7 +68,7 @@ And the same with crashing, which is handled in PlayerController’s onCollisonE
 All that’s left to do is save, and assign jumpSound and crashSound in the inspector! Navigate to Course Library -> Sound -> SFX to view the collection. Pick your favorite combination of audio clips to drag into the Player Controller component under Player, and press play to make sure everything’s playing correctly.
 
 
-Changing sound settings during runtime (5 mins)
+## Changing sound settings during runtime (5 mins)
 
 We can also mess with an Audio Source’s volume and pitch during runtime, simply by changing their values. Volume ranges from 0 to 1, silence to max volume. Pitch is by default set to 1. Adding 1 raises the clip’s octave, and subtracting 1 decreases the clip’s octave.
 
@@ -92,7 +94,7 @@ Another great resource is the Unity Asset Store, which has plenty of free sound 
 To access the Asset Store, either go to Unity’s official store website and log in, or open it from within the editor (though Unity is planning to phase this feature out). Search for the specific asset you want, click download, then import. Confirm all dialog boxes and you should eventually see the assets appear somewhere in your asset window’s root directory.
 
 
-Licensing Discussion (10 mins)
+## Licensing Discussion (10 mins)
 
 Freesound
 
