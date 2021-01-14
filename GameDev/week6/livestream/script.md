@@ -81,7 +81,7 @@ If we listen closely, we’ll notice that the speed of the music becomes more ra
 These two values, and some stereo settings, are the only things Audio Sources can adjust directly. For more range of control, Unity has audio filters that you can add as additional components if you so choose.
 
 
-Finding and looking through free sound asset websites (5 mins)
+## Finding and looking through free sound asset websites (5 mins)
 
 Your own projects won’t come with ready-made sound files that you can just drag and drop, so it’s important to know where to find the sound effects you’re looking for on your own.
 
