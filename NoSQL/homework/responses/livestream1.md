@@ -158,6 +158,3 @@ This retrieves the data stored in the `surveys` collection when a GET request is
 To store our secret URI (it contains the database credentials, so we don't want it to leak anywhere...) we will put it in Netlify where our Lambda function can access it.
 
 1. **Obtain the connection URI**
-
-
-
