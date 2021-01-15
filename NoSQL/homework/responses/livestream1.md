@@ -73,7 +73,7 @@ Create another document in `formboiz.responses` with:
 
 
 
-### :spider_web: Creating a Netlify Application
+### :globe_with_meridians: C​reating a Netlify Application (Part 1)
 
 Follow [this](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) handy tutorial to deploy the Netlify site we'll be using. Proceed to the next step once you have followed all the steps, and prepare to commit to the Github repository you linked while following the walkthrough. (Thank you to https://stephencook.dev/blog/netlify-mongodb/)
 
@@ -103,7 +103,7 @@ Run `npm install mongodb` on the terminal command line to install dependencies.
 2. Place this code in the file:
 
 ```js
-// ./lambda_functions/pokemon.js
+// ./lambda_functions/form.js
 
 const MongoClient = require("mongodb").MongoClient;
 
@@ -157,4 +157,91 @@ This retrieves the data stored in the `surveys` collection when a GET request is
 
 To store our secret URI (it contains the database credentials, so we don't want it to leak anywhere...) we will put it in Netlify where our Lambda function can access it.
 
-1. **Obtain the connection URI**
+1. **Obtain the URI**
+
+   Return to `Clusters` on your Atlas interface and click `CONNECT`. On the popup, click "Connect your application" and copy the connection string. **Be sure to add your user's password and replace `<dbname>` with "test"
+
+   > Here's an example: `mongodb+srv://m001-student:<REPLACE WITH PASSWORD>@productrectest.ov7hn.mongodb.net/test?retryWrites=true&w=majority`
+
+2. **Place URI in Netlify **
+
+   Follow [these instructions](https://docs.netlify.com/configure-builds/environment-variables/#declare-variables) to create an environment variable for the URI. Be sure it to name it as `MONGODB_URI`!
+
+   
+
+### :pencil: Testing using GET 
+
+At this point, the `/.netlify/functions/form` endpoint should return the contents of the `surveys` collection. Paste the endpoint into your browser and observe the output!
+
+
+
+###  :globe_with_meridians: ​Creating a Netlify Application (Part 2) 
+
+Now, we're going to add a snippet of code that inserts or updates a document when you make a POST request to the same `/.netlify/functions/form` endpoint. We're going to be **modifying** data instead of **retrieving it**.
+
+
+
+#### Modifying Data
+
+Return to the `/lambda_functions/form.js` file and append this portion of code:
+
+```js
+  const pushToDatabase = async (db, data) => {
+    const surveys = {
+      question: data.questions,
+      hash: data.hash,
+    };
+  
+    if (surveys.question && surveys.hash) {
+      await db.collection("surveys").insertMany([data]);
+      return { statusCode: 201 };
+    } else {
+      return { statusCode: 422 };
+    }
+  };
+  
+  module.exports.handler = async (event, context) => {
+    // otherwise the connection will never complete, since
+    // we keep the DB connection alive
+    context.callbackWaitsForEmptyEventLoop = false;
+  
+    const db = await connectToDatabase(MONGODB_URI);
+  
+    switch (event.httpMethod) {
+      case "GET":
+        return queryDatabase(db);
+      case "POST":
+        return pushToDatabase(db, JSON.parse(event.body));
+      default:
+        return { statusCode: 400 };
+    }
+  };
+```
+
+
+
+### :pencil: Testing using POST
+
+At this point, the `/.netlify/functions/form` endpoint should return the contents of the `surveys` collection **when a POST request is made with a body including `hash` and `questions` in JSON**. We can't simply access it in our browser this time since we're making a POST request. You have many options, but here are two:
+
+
+
+#### 1. Testing with Postman
+
+Make a POST request to the endpoint with a raw body in JSON. Example payload:
+
+```json
+{
+"hash" : "thisisauniquehash",
+"questions" : ["How do you say hello?", "Is this a good question?"]
+}
+```
+
+If you're unsure how to complete that, refer to [this.](https://www.toolsqa.com/postman/post-request-in-postman/)
+
+
+
+#### 2. Testing in the console
+
+Navigate to the endpoint in your browser and open "inspect element." Click to the console tab and enter these lines of code to make a POST request:
+
