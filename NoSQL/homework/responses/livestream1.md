@@ -73,7 +73,7 @@ Create another document in `formboiz.responses` with:
 
 
 
-### :globe_with_meridians: C​reating a Netlify Application (Part 1)
+### :globe_with_meridians: Creating a Netlify Application (Part 1)
 
 Follow [this](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) handy tutorial to deploy the Netlify site we'll be using. Proceed to the next step once you have followed all the steps, and prepare to commit to the Github repository you linked while following the walkthrough. (Thank you to https://stephencook.dev/blog/netlify-mongodb/)
 
@@ -163,7 +163,7 @@ To store our secret URI (it contains the database credentials, so we don't want 
 
    > Here's an example: `mongodb+srv://m001-student:<REPLACE WITH PASSWORD>@productrectest.ov7hn.mongodb.net/test?retryWrites=true&w=majority`
 
-2. **Place URI in Netlify **
+2. **Place URI in Netlify**
 
    Follow [these instructions](https://docs.netlify.com/configure-builds/environment-variables/#declare-variables) to create an environment variable for the URI. Be sure it to name it as `MONGODB_URI`!
 
