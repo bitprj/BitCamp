@@ -159,7 +159,7 @@ To store our secret URI (it contains the database credentials, so we don't want 
 
 1. **Obtain the URI**
 
-   Return to `Clusters` on your Atlas interface and click `CONNECT`. On the popup, click "Connect your application" and copy the connection string. **Be sure to add your user's password and replace `<dbname>` with "test"
+   Return to `Clusters` on your Atlas interface and click `CONNECT`. On the popup, click "Connect your application" and copy the connection string. **Be sure to add your user's password and replace `<dbname>` with "test"**
 
    > Here's an example: `mongodb+srv://m001-student:<REPLACE WITH PASSWORD>@productrectest.ov7hn.mongodb.net/test?retryWrites=true&w=majority`
 
