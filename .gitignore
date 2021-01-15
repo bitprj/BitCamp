@@ -1,2 +1,4 @@
 **/PackageCache
 .DS_Store
+*.suo
+/.vs
