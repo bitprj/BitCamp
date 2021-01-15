@@ -177,7 +177,7 @@ At this point, the `/.netlify/functions/form` endpoint should return the content
 
 ###  :globe_with_meridians: ​Creating a Netlify Application (Part 2) 
 
-Now, we're going to add a snippet of code that inserts or updates a document when you make a POST request to the same `/.netlify/functions/form` endpoint. We're going to be **modifying** data instead of **retrieving it**.
+Now, we're going to add a snippet of code that inserts a document when you make a POST request to the same `/.netlify/functions/form` endpoint. We're going to be **inserting** data instead of **retrieving it**.
 
 
 
@@ -245,3 +245,29 @@ If you're unsure how to complete that, refer to [this.](https://www.toolsqa.com/
 
 Navigate to the endpoint in your browser and open "inspect element." Click to the console tab and enter these lines of code to make a POST request:
 
+```js
+// Place this in the console to run!
+
+const postRequest = await fetch("/.netlify/functions/form", {
+  method: "POST",
+  body: JSON.stringify({
+    "hash": "thisisauniquehash",
+    "question" : ["How do you say hello?", "Is this a good question?"],
+  }),
+});
+
+console.log("POST request status code", postRequest.status);
+```
+
+**You should get a 201 status code if you modified the database correctly.**
+
+Why? Recall this piece of code:
+
+```js
+    if (surveys.question && surveys.hash) {
+      await db.collection("surveys").insertMany([data]);
+      return { statusCode: 201 };
+    } else {
+      return { statusCode: 422 };
+    }
+```
