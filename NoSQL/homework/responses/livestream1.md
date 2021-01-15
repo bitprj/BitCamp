@@ -51,7 +51,7 @@ Select `Collections` - we'll be creating two of these.
 
 
 
-Next, choose `Add My Own Data`. In the popup, call the Database "formboiz" and name the collection "surveys." *The surveys collection will contain individual documents that each hold one survey with questions.
+Next, choose `Add My Own Data`. In the popup, call the Database "formboiz" and name the collection "surveys." *The surveys collection will contain individual documents that each hold one survey with questions.*
 
 Click `insert document`:
 
@@ -75,7 +75,7 @@ Create another document in `formboiz.responses` with:
 
 ### :spider_web: Creating a Netlify Application
 
-Follow [this](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) handy tutorial to deploy the Netlify site we'll be using. Proceed to the next step once you have followed all the steps, and prepare to commit to the Github repository you linked while following the walkthrough.
+Follow [this](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) handy tutorial to deploy the Netlify site we'll be using. Proceed to the next step once you have followed all the steps, and prepare to commit to the Github repository you linked while following the walkthrough. (Thank you to https://stephencook.dev/blog/netlify-mongodb/)
 
 
 
@@ -96,6 +96,68 @@ Place this code in the file. This defines where our Serverless Functions will be
 Run `npm install mongodb` on the terminal command line to install dependencies.
 
 
+
+#### Accessing data from "formboiz" (the database)
+
+1. Create a new directory named `lambda_functions` and place a file named `form.js`
+2. Place this code in the file:
+
+```js
+// ./lambda_functions/pokemon.js
+
+const MongoClient = require("mongodb").MongoClient;
+
+const MONGODB_URI = process.env.MONGODB_URI;
+// Place this environment variable in Netlify
+const DB_NAME = 'formboiz';
+
+let cachedDb = null;
+
+const connectToDatabase = async (uri) => {
+  // we can cache the access to our database to speed things up a bit
+  // (this is the only thing that is safe to cache here)
+  if (cachedDb) return cachedDb;
+
+  const client = await MongoClient.connect(uri, {
+    useUnifiedTopology: true,
+  });
+
+  cachedDb = client.db(DB_NAME);
+
+  return cachedDb;
+};
+
+const queryDatabase = async (db) => {
+  const surveys = await db.collection("surveys").find({}).toArray();
+
+  return {
+    statusCode: 200,
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(surveys),
+  };
+};
+
+module.exports.handler = async (event, context) => {
+  // otherwise the connection will never complete, since
+  // we keep the DB connection alive
+  context.callbackWaitsForEmptyEventLoop = false;
+
+  const db = await connectToDatabase(MONGODB_URI);
+  return queryDatabase(db);
+};
+```
+
+This retrieves the data stored in the `surveys` collection when a GET request is made to your Netlify endpoint. However, before we can test this, we need to enter the MongoDB URI into Netlify so we can connect the database!
+
+
+
+#### Netlify Build Variable (MongoDB Connection URI)
+
+To store our secret URI (it contains the database credentials, so we don't want it to leak anywhere...) we will put it in Netlify where our Lambda function can access it.
+
+1. **Obtain the connection URI**
 
 
 
