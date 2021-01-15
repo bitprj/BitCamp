@@ -173,9 +173,12 @@ To store our secret URI (it contains the database credentials, so we don't want 
 
 At this point, the `/.netlify/functions/form` endpoint should return the contents of the `surveys` collection. Paste the endpoint into your browser and observe the output!
 
+> The full endpoint (what you put in the browser) should look something like this: https://youthful-noyce-162879.netlify.app/.netlify/functions/form
+
+> `youthful-noyce-162879` is the site name.
 
 
-###  :globe_with_meridians: ​Creating a Netlify Application (Part 2) 
+###  :globe_with_meridians: Creating a Netlify Application (Part 2) 
 
 Now, we're going to add a snippet of code that inserts a document when you make a POST request to the same `/.netlify/functions/form` endpoint. We're going to be **inserting** data instead of **retrieving it**.
 
