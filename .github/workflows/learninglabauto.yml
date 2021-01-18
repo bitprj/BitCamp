@@ -19,9 +19,6 @@ jobs:
         with:
           python-version: 3.7
 
-      - name: Install Requirements
-        run: pip install -r requirements.txt
-
       - name: Execute Python script
         run: |
           python scripts/learninglabauto.py
