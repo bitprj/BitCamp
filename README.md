@@ -2,7 +2,7 @@
 [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
 
 ## Bit Camp by Bit Project
-
+![Bit Camp Logo](/BitCampIllustration.jpeg)
 ## About Us
 
 [Bit Project](https://www.bitproject.org/) is a 501(c)(3) nonprofit dedicated to making tech equitable by providing free open source education. We believe lack of accessibility is a prominent issue in the technology industry and we’re aiming to solve it. 
