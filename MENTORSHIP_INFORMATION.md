@@ -20,22 +20,24 @@ A Bit Camp is Bit Project's version of a software bootcamp. Our Bit Camps are al
 
 - Weekly mentoring sessions
 
-    Our weekly mentoring sessions are the main component that mentors are responsible for. Every week, mentors will set up either 1-1 or group sessions with their mentees. Mentors and students can collaborate to choose which format (1-1 or group) they prefer as well as the days and times of each session. We only ask that mentors make sure all students get a chance to speak if a group session is chosen. The purpose of these sessions is for students to be able to develop meaningful relationships with developers in the industry, ask questions about the concepts and topics they are learning, and get advice and help on their final projects. Mentors can expect to have 2-3 mentees and spend around 2-3 hours per week on these sessions.
+    Our weekly mentoring sessions are the main component that mentors are responsible for. Every week, mentors will set up either 1-1 or group sessions with their mentees. Mentors and students can collaborate to choose which format (1-1 or group) they prefer as well as the days and times of each session. We only ask that mentors make sure all students get a chance to speak if a group session is chosen. The purpose of these sessions is for students to be able to develop meaningful relationships with developers in the industry, ask questions about the concepts and topics they are learning, and get advice and help on their final projects. 
 
-- Channel for communication (discord or slack)
+    Mentors can expect to have 2-3 mentees and spend around 2-3 hours per week on these sessions. Depending on the Bit Camp, these sessions can either be every week for the entire duration, or every week for only the second half of the program. Please reach out to info@bitproject.org to inquire about the mentorship time commitment for a specific Bit Camp. 
+
+- Channel for communication (Discord or Slack)
 
     There will be an open channel of communication for students, mentors, and the Bit Project team. The medium will be either Discord or Slack and everyone will get invites the week before the program starts. This channel will be used for all communication related to the Bit Camp.
 
 - Final project presentation webinar
 
-    At the end of the program, we will hold a final project presentation webinar. Mentors are highly encouraged to attend to support their students and see the culmination of the their work.
+    At the end of the program, we will hold a final project presentation webinar. Mentors will be asked to attend to support their students and see the culmination of the their work.
 
 ### Mentor Expectations and Responsibilities
 
 - Knowledge of Bit Camp topics/concepts
-    - Our GitHub repos contain all of the Bit Camp curriculum and will be finalized in advance of the program start so mentors have a chance to look through it and brush up on any skills required. These bootcamps are intended for beginners and topics will not be overly complex or difficult
+    - This GitHub repo contains all of our Bit Camp curriculums. Each program's curriculum will be finalized in advance of the start date so mentors have a chance to look through it and brush up on any skills required. These bootcamps are intended for beginners and topics will not be overly complex or difficult
 
-- Setting up weekly mentoring sessions with assigned students (2-3 hours/week)
+- Setting up weekly mentoring sessions with assigned students (2-3 hours/week for entire program or second half of program, varies per Bit Camp)
     - Developing relationships with your mentees by discussing interests, goals, technology
     - Assist students with understanding Bit Camp topics and concepts
     - Give guidance and help on students' final projects
@@ -52,7 +54,7 @@ A Bit Camp is Bit Project's version of a software bootcamp. Our Bit Camps are al
 
 - Level of experience
 
-    Our Bit Camps are intended for beginners. Students may be completely new to programming or they may have experience in programming, but not in the specific topic of the Bit Camp. Mentors can expect beginner to intermediate high school and college students.   
+    Our Bit Camps are intended for beginners. Students may be completely new to programming or they may have experience in programming, but not in the specific topic of the Bit Camp. Most Bit Camp students will be beginner to intermediate programmers in high school or college.   
 
 - Weekly interactions with students
 
