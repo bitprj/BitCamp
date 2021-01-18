@@ -1,0 +1,36 @@
+name: Learning Lab Automator
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Setup Python Environment
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+
+      - name: Install Requirements
+        run: pip install -r requirements.txt
+
+      - name: Execute Python script
+        run: |
+          python scripts/learninglabauto.py
+          
+      - name: setup git config
+        run: |
+          git config user.name ${{ secrets.USERNAME }}
+          git config user.email ${{ secrets.EMAIL }}
+      - name: commit changes
+        run: |
+          chmod +x ./scripts/commit.sh
+          ./scripts/commit.sh
