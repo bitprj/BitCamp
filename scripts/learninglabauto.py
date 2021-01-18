@@ -1,6 +1,7 @@
 import os
 import re
 
+os.chdir("./learninglab/homework")
 responses = sorted(os.listdir("./responses"))
 print(responses)
 weeks = []
