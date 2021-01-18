@@ -3,6 +3,9 @@ import re
 
 subdir = ""
 
+if subdir == "":
+  exit()
+
 os.chdir("./%s/homework" % subdir)
 responses = sorted(os.listdir("./responses"))
 print(responses)
