@@ -1,7 +1,7 @@
 import os
 import re
 
-subdir = ""
+subdir = "Slack-Apps"
 
 if subdir == "":
   exit()
