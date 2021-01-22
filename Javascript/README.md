@@ -37,8 +37,8 @@ In this assignment, students will **gain a thorough understanding of basic HTML 
 **Learning Objectives**
 
 - Setting up programming environment
-- Creating a HTML file and organize 
-- Learning basic HTML syntax to make buttons
+- Creating HTML and JS files
+- Learning basic HTML syntax to make buttons and display text
 - Learning JS functions to receive and read user input
 
 #### **Week 2**
