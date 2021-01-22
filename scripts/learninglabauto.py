@@ -15,7 +15,10 @@ issue = 1
 
 # determining number of weeks
 for file in responses:
-  weeks.append(file[0])
+  if file[0].isnumeric():
+    weeks.append(file[0])
+  else:
+    responses.remove(file)
 
 nweeks = int(max(weeks))
 print("Number of weeks:", nweeks)
