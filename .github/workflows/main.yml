@@ -11,4 +11,4 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: slackapps-course bitprj Bitcamp-Slack main
+          args: Slack-Apps/homework bitprj slackapps-course main
