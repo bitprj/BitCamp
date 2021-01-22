@@ -1,0 +1,1 @@
+[That's it for Week 2! Click here to move on to Week 3!]({{ repoUrl }}/issues)
