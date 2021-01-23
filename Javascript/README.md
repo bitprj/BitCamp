@@ -1,4 +1,4 @@
-# Bitcamp JavaScript :rocket: 
+# JavaScript :rocket: 
 
 What is JavaScript? JavaScript (JS) is an extremely useful tool for user interface (UI) design that allows the programmer to build interactive webpages. Some of the most essential items for a website's success are ease of navigation and an appealing design, thus making the mastery of JS a must for aspiring designers.
 
