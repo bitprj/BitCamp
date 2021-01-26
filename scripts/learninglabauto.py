@@ -1,7 +1,7 @@
 import os
 import re
 
-subdir = ""
+subdir = "Javascript"
 
 if subdir == "":
   exit()
