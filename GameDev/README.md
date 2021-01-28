@@ -17,8 +17,8 @@ Finale: From week 8 to the end of the program, students will be working with the
 
 ### Tools
 
-Unity Personal Edition
-Unity Asset Store
+- Unity Personal Edition
+- Unity Asset Store
 
 ## Curriculum Outline
 ### Week 1
