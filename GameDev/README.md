@@ -1,4 +1,4 @@
-# Bitcamp GameDev
+# GameDev 🎮
 
 Who doesn’t love video games? From Pac-Man to Mario, video games have ingrained themselves as a staple in day to day live - but how are they made? In the 80s, developers would simply have to code their games from scratch, but nowadays, there are a variety of game-development engines to automate the process. Unity is one of these engines; an industry standard used by multimillion dollar companies and small-time hobbyists alike. Beginner friendly and incredibly versatile, Unity is the gold standard for a reason, and learning it is a surefire way to turn yourself into a bona-fide game developer! 
 
