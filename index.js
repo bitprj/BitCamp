@@ -41,45 +41,47 @@ module.exports = (app) => {
     return context.octokit.issues.create(issueBody)
   });
 
-  for (i = 0; i < configyml.length; i++) {
-    let trigger = configyml.steps[i].event
-    while (!flag) {
-      app.on(trigger, async (content) => {
-        for (y = 0; y < configyml.steps[i].actions.length; y++) {
-          var array = configyml.yml.steps[i].actions[y]
-          if (array[y].type == "respond") {
-            var response = await context.octokit.repos.getContent({
-              owner:"bitprj",
-              repo:"BitCamp",
-              path:`Slack-Apps/homework/responses/${array[y].with}`,
-            });
-            const issueComment = context.issue({
-              body: response,
-            });
-            return context.octokit.issues.create(issueComment)
+  if (configyml) {
+    for (i = 0; i < configyml.length; i++) {
+      let trigger = configyml.steps[i].event
+      while (!flag) {
+        app.on(trigger, async (content) => {
+          for (y = 0; y < configyml.steps[i].actions.length; y++) {
+            var array = configyml.yml.steps[i].actions[y]
+            if (array[y].type == "respond") {
+              var response = await context.octokit.repos.getContent({
+                owner:"bitprj",
+                repo:"BitCamp",
+                path:`Slack-Apps/homework/responses/${array[y].with}`,
+              });
+              const issueComment = context.issue({
+                body: response,
+              });
+              return context.octokit.issues.create(issueComment)
+            }
+            if (array[y].type == "createIssue") {
+              var response = await context.octokit.repos.getContent({
+                owner:"bitprj",
+                repo:"BitCamp",
+                path:`Slack-Apps/homework/responses/${array[y].with}`,
+              });
+              const issueBody = context.issue({
+                issue_number: array[y].issue,
+                title: array[y].title,
+                body: response,
+              });
+              return context.octokit.issues.create(issueBody)
+            } 
+            if (array[y].type == "closeIssue") {
+              const payload = context.issue({
+                state: "closed",
+              })
+              return context.octokit.issues.update(payload)
+            }
           }
-          if (array[y].type == "createIssue") {
-            var response = await context.octokit.repos.getContent({
-              owner:"bitprj",
-              repo:"BitCamp",
-              path:`Slack-Apps/homework/responses/${array[y].with}`,
-            });
-            const issueBody = context.issue({
-              issue_number: array[y].issue,
-              title: array[y].title,
-              body: response,
-            });
-            return context.octokit.issues.create(issueBody)
-          } 
-          if (array[y].type == "closeIssue") {
-            const payload = context.issue({
-              state: "closed",
-            })
-            return context.octokit.issues.update(payload)
-          }
-        }
-        flag = true
-      });
+          flag = true
+        });
+      }
     }
   }
 
