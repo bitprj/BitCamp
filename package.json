@@ -1,5 +1,5 @@
 {
-  "name": "camp.dev",
+  "name": "bitcampdev",
   "version": "1.0.0",
   "private": true,
   "description": "This Github App creates BitLabs and guides students through courses.",
@@ -16,7 +16,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "probot": "^11.0.1"
+    "probot": "^11.0.5",
+    "ruby": "^0.6.1"
   },
   "devDependencies": {
     "jest": "^26.6.3",
