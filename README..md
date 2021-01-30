@@ -1,1 +1,0 @@
-# camp.dev
