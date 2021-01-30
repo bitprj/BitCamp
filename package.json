@@ -1,0 +1,29 @@
+{
+  "name": "camp.dev",
+  "version": "1.0.0",
+  "private": true,
+  "description": "This Github App creates BitLabs and guides students through courses.",
+  "author": "Bit Project <info@bitproject.org>",
+  "license": "ISC",
+  "homepage": "https://github.com/bitprj/camp.dev",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "start": "probot run ./index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "probot": "^11.0.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nock": "^13.0.5",
+    "smee-client": "^1.2.2"
+  },
+  "engines": {
+    "node": ">= 10.13.0"
+  }
+}
