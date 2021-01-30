@@ -24,27 +24,29 @@ module.exports = (app) => {
       let fileContents = yamlfile
       configyml = yaml.load(fileContents);
     } catch (e) {
-      console.log(e);
+      console.log("ERROR: " + e);
     }
-    app.log.info("YAML file reached")
 
     // start lab by executing what is in the before portion of config.yml
-    var response = await context.octokit.repos.getContent({
+    let response = await context.octokit.repos.getContent({
       owner:"bitprj",
       repo:"BitCamp",
-      path:`Slack-Apps/homework/responses/${configyml.before.body}`,
+      path:`Slack-Apps/homework/responses/${configyml.before[0].body}`,
     });
-    const issueBody = context.issue({
-      title: configyml.before.title,
+    response = Buffer.from(response.data.content, 'base64').toString()
+    return await context.octokit.issues.create({
+      owner: context.payload.installation.account.login,
+      repo: context.payload.repositories[0].name,
+      title: configyml.before[0].title,
       body: response,
-    });
-    return context.octokit.issues.create(issueBody)
+    })
   });
 
   if (configyml) {
     for (i = 0; i < configyml.length; i++) {
       let trigger = configyml.steps[i].event
       while (!flag) {
+        app.log.info(configyml.steps[i])
         app.on(trigger, async (content) => {
           for (y = 0; y < configyml.steps[i].actions.length; y++) {
             var array = configyml.yml.steps[i].actions[y]
@@ -54,6 +56,7 @@ module.exports = (app) => {
                 repo:"BitCamp",
                 path:`Slack-Apps/homework/responses/${array[y].with}`,
               });
+              response = Buffer.from(response.data.content, 'base64').toString()
               const issueComment = context.issue({
                 body: response,
               });
@@ -65,6 +68,7 @@ module.exports = (app) => {
                 repo:"BitCamp",
                 path:`Slack-Apps/homework/responses/${array[y].with}`,
               });
+              response = Buffer.from(response.data.content, 'base64').toString()
               const issueBody = context.issue({
                 issue_number: array[y].issue,
                 title: array[y].title,
@@ -85,13 +89,13 @@ module.exports = (app) => {
     }
   }
 
-  app.on("issues.opened", async (context) => {
-    app.log.info(context.payload.issue.repository_url)
-    const issueComment = context.issue({
-      body: "Thanks for opening this issue!",
-    });
-    return context.octokit.issues.createComment(issueComment);
-  });
+  // app.on("issues.opened", async (context) => {
+  //   app.log.info(context.payload.issue.repository_url)
+  //   const issueComment = context.issue({
+  //     body: "Thanks for opening this issue!",
+  //   });
+  //   return context.octokit.issues.createComment(issueComment);
+  // });
 
   // For more information on building apps:
   // https://probot.github.io/docs/
