@@ -37,6 +37,22 @@ module.exports = (app) => {
       path:`Slack-Apps/homework/responses/${configyml.before[0].body}`,
     });
 
+    await context.octokit.repos.createOrUpdateFileContents({
+      owner: context.payload.installation.account.login,
+      repo: context.payload.repositories[0].name,
+      path: ".camp",
+      message: "Update progress",
+      content: Buffer.from("0").toString('base64'),
+      committer: {
+        name: `bitcampdev`,
+        email: "info@bitproject.org",
+      },
+      author: {
+        name: `bitcampdev`,
+        email: "info@bitproject.org",
+      },
+    })
+
     response = Buffer.from(response.data.content, 'base64').toString()
     return await context.octokit.issues.create({
       owner: context.payload.installation.account.login,
@@ -48,7 +64,6 @@ module.exports = (app) => {
 
 
   app.on(['pull_request.closed', 'issue_comment.created'], async (context) => {
-    app.log.info("[COUNT]" + count)
     let yamlfile = await context.octokit.repos.getContent({
       owner:"bitprj",
       repo:"BitCamp",
@@ -63,6 +78,13 @@ module.exports = (app) => {
     } catch (e) {
       console.log("ERROR: " + e);
     }
+
+    const progress = context.issue({
+      path: ".camp",
+    });
+
+    var countfile = await context.octokit.repos.getContent(progress);
+    count = Buffer.from(countfile.data.content, 'base64').toString()
 
     for (y = 0; y < configyml.steps[count].actions.length; y++) {
       var array = configyml.steps[count].actions[y]
@@ -79,8 +101,8 @@ module.exports = (app) => {
           body: response,
           issue_number: array.issue,
         });
+        context.octokit.issues.createComment(issueComment)
         app.log.info("Respond")
-        return context.octokit.issues.createComment(issueComment)
       }
       if (array.type == "createIssue") {
         var response = await context.octokit.repos.getContent({
@@ -95,16 +117,37 @@ module.exports = (app) => {
           body: response,
         });
         app.log.info("createIssue")
-        return context.octokit.issues.create(issueBody)
+        context.octokit.issues.create(issueBody)
       } 
-      if (array[y].type == "closeIssue") {
+      if (array.type == "closeIssue") {
         const payload = context.issue({
           state: "closed",
           issue_number: array.issue,
         })
-        return context.octokit.issues.update(payload)
+        context.octokit.issues.update(payload)
       }
     }
+
+    count = parseInt(count)
     count += 1
+    app.log.info("Count: " + count)
+    app.log.info(JSON.stringify(countfile))
+    
+    const update = context.issue({
+      path: ".camp",
+      message: "Update progress",
+      content: Buffer.from(count.toString()).toString('base64'),
+      sha: countfile.data.sha,
+      committer: {
+        name: `bitcampdev`,
+        email: "info@bitproject.org",
+      },
+      author: {
+        name: `bitcampdev`,
+        email: "info@bitproject.org",
+      },
+    });
+
+    return await context.octokit.repos.createOrUpdateFileContents(update)
   })
 };

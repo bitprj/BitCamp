@@ -1,7 +1,7 @@
 {
   "action": "created",
   "installation": {
-    "id": 14435318,
+    "id": 14436400,
     "account": {
       "login": "emsesc",
       "id": 69332964,
@@ -23,16 +23,16 @@
       "site_admin": false
     },
     "repository_selection": "selected",
-    "access_tokens_url": "https://api.github.com/app/installations/14435318/access_tokens",
+    "access_tokens_url": "https://api.github.com/app/installations/14436400/access_tokens",
     "repositories_url": "https://api.github.com/installation/repositories",
-    "html_url": "https://github.com/settings/installations/14435318",
+    "html_url": "https://github.com/settings/installations/14436400",
     "app_id": 98377,
     "app_slug": "bitcampdev",
     "target_id": 69332964,
     "target_type": "User",
     "permissions": {
       "issues": "write",
-      "contents": "read",
+      "contents": "write",
       "metadata": "read",
       "pull_requests": "write"
     },
@@ -44,8 +44,8 @@
       "repository",
       "workflow_run"
     ],
-    "created_at": "2021-01-30T18:29:06.000-05:00",
-    "updated_at": "2021-01-30T18:29:07.000-05:00",
+    "created_at": "2021-01-30T20:40:30.000-05:00",
+    "updated_at": "2021-01-30T20:40:30.000-05:00",
     "single_file_name": null,
     "has_multiple_single_files": false,
     "single_file_paths": [
@@ -56,8 +56,8 @@
   },
   "repositories": [
     {
-      "id": 334533026,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMzQ1MzMwMjY=",
+      "id": 334549840,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMzQ1NDk4NDA=",
       "name": "bitcamp-test",
       "full_name": "emsesc/bitcamp-test",
       "private": false
