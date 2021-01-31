@@ -17,7 +17,7 @@ module.exports = (app) => {
     let yamlfile = await context.octokit.repos.getContent({
       owner:"bitprj",
       repo:"BitCamp",
-      path:"Slack-Apps/homework/config.yml",
+      path:"Javascript/homework/config.yml",
     });
     app.log.info("Attempting to get YAML")
 
@@ -34,7 +34,7 @@ module.exports = (app) => {
     let response = await context.octokit.repos.getContent({
       owner:"bitprj",
       repo:"BitCamp",
-      path:`Slack-Apps/homework/responses/${configyml.before[0].body}`,
+      path:`Javascript/homework/responses/${configyml.before[0].body}`,
     });
 
     await context.octokit.repos.createOrUpdateFileContents({
@@ -76,7 +76,7 @@ module.exports = (app) => {
       let yamlfile = await context.octokit.repos.getContent({
         owner:"bitprj",
         repo:"BitCamp",
-        path:"Slack-Apps/homework/config.yml",
+        path:"Javascript/homework/config.yml",
       });
   
       yamlfile = Buffer.from(yamlfile.data.content, 'base64').toString()
@@ -104,7 +104,7 @@ module.exports = (app) => {
           var response = await context.octokit.repos.getContent({
             owner:"bitprj",
             repo:"BitCamp",
-            path:`Slack-Apps/homework/responses/${array.with}`,
+            path:`Javascript/homework/responses/${array.with}`,
           });
           response = Buffer.from(response.data.content, 'base64').toString()
           const issueComment = context.issue({
@@ -119,7 +119,7 @@ module.exports = (app) => {
           var response = await context.octokit.repos.getContent({
             owner:"bitprj",
             repo:"BitCamp",
-            path:`Slack-Apps/homework/responses/${array.body}`,
+            path:`Javascript/homework/responses/${array.body}`,
           });
           response = Buffer.from(response.data.content, 'base64').toString()
           const issueBody = context.issue({
