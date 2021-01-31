@@ -10,56 +10,63 @@ const yaml = require('js-yaml');
 
 module.exports = (app) => {
   // Your code here
+  var start = "";
   app.log.info("Yay, the app was loaded!");
-  app.on("installation.created", async (context) => {
-    app.log.info("Installation created")
-    
-    let yamlfile = await context.octokit.repos.getContent({
-      owner:"bitprj",
-      repo:"BitCamp",
-      path:"Javascript/homework/config.yml",
-    });
-    app.log.info("Attempting to get YAML")
-
-    yamlfile = Buffer.from(yamlfile.data.content, 'base64').toString()
+  app.on("push", async (context) => {
+    app.log.info("Pushed")
     try {
-      let fileContents = yamlfile
-      configyml = yaml.load(fileContents);
-      start = true;
+      start = context.payload.commits[2].added[0].substring(0,4)
     } catch (e) {
-      console.log("ERROR: " + e);
+      start = ""
     }
-
-    // start lab by executing what is in the before portion of config.yml
-    let response = await context.octokit.repos.getContent({
-      owner:"bitprj",
-      repo:"BitCamp",
-      path:`Javascript/homework/responses/${configyml.before[0].body}`,
-    });
-
-    await context.octokit.repos.createOrUpdateFileContents({
-      owner: context.payload.installation.account.login,
-      repo: context.payload.repositories[0].name,
-      path: ".camp",
-      message: "Update progress",
-      content: Buffer.from("0").toString('base64'),
-      committer: {
-        name: `bitcampdev`,
-        email: "info@bitproject.org",
-      },
-      author: {
-        name: `bitcampdev`,
-        email: "info@bitproject.org",
-      },
-    })
-
-    response = Buffer.from(response.data.content, 'base64').toString()
-    return await context.octokit.issues.create({
-      owner: context.payload.installation.account.login,
-      repo: context.payload.repositories[0].name,
-      title: configyml.before[0].title,
-      body: response,
-    })
+    if (start == ".bit") {
+      app.log.info("Template repository cloned.")
+      let yamlfile = await context.octokit.repos.getContent({
+        owner: context.payload.repository.owner.login,
+        repo: context.payload.repository.name,
+        path:".bit/config.yml",
+      });
+      app.log.info("Attempting to get YAML")
+  
+      yamlfile = Buffer.from(yamlfile.data.content, 'base64').toString()
+      try {
+        let fileContents = yamlfile
+        configyml = yaml.load(fileContents);
+      } catch (e) {
+        console.log("ERROR: " + e);
+      }
+  
+      // start lab by executing what is in the before portion of config.yml
+      let response = await context.octokit.repos.getContent({
+        owner: context.payload.repository.owner.login,
+        repo: context.payload.repository.name,
+        path:`.bit/responses/${configyml.before[0].body}`,
+      });
+  
+      await context.octokit.repos.createOrUpdateFileContents({
+        owner: context.payload.repository.owner.login,
+        repo: context.payload.repository.name,
+        path: ".camp",
+        message: "Update progress",
+        content: Buffer.from("0").toString('base64'),
+        committer: {
+          name: `bitcampdev`,
+          email: "info@bitproject.org",
+        },
+        author: {
+          name: `bitcampdev`,
+          email: "info@bitproject.org",
+        },
+      })
+  
+      response = Buffer.from(response.data.content, 'base64').toString()
+      return await context.octokit.issues.create({
+        owner: context.payload.repository.owner.login,
+        repo: context.payload.repository.name,
+        title: configyml.before[0].title,
+        body: response,
+      })
+    }
   });
 
 
@@ -73,17 +80,16 @@ module.exports = (app) => {
     app.log.info(user)
 
     if (user != "bitcampdev[bot]") {
-      let yamlfile = await context.octokit.repos.getContent({
-        owner:"bitprj",
-        repo:"BitCamp",
-        path:"Javascript/homework/config.yml",
+      const yamlFile = context.issue({
+        path: '.bit/config.yml',
       });
+      let yamlfile = await context.octokit.repos.getContent(yamlFile);
   
       yamlfile = Buffer.from(yamlfile.data.content, 'base64').toString()
+
       try {
         let fileContents = yamlfile
         configyml = await yaml.load(fileContents);
-        start = true;
       } catch (e) {
         console.log("ERROR: " + e);
       }
@@ -101,11 +107,10 @@ module.exports = (app) => {
         app.log.info(array)
   
         if (array.type == "respond") {
-          var response = await context.octokit.repos.getContent({
-            owner:"bitprj",
-            repo:"BitCamp",
-            path:`Javascript/homework/responses/${array.with}`,
+          const responseFile = context.issue({
+            path:`.bit/responses/${array.with}`,
           });
+          var response = await context.octokit.repos.getContent(responseFile);
           response = Buffer.from(response.data.content, 'base64').toString()
           const issueComment = context.issue({
             body: response,
@@ -115,12 +120,10 @@ module.exports = (app) => {
           app.log.info("Respond")
         }
         if (array.type == "createIssue") {
-  
-          var response = await context.octokit.repos.getContent({
-            owner:"bitprj",
-            repo:"BitCamp",
-            path:`Javascript/homework/responses/${array.body}`,
+          const responseFile = context.issue({
+            path:`.bit/responses/${array.body}`,
           });
+          var response = await context.octokit.repos.getContent(responseFile);
           response = Buffer.from(response.data.content, 'base64').toString()
           const issueBody = context.issue({
             issue_number: array.issue,
