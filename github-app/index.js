@@ -4,6 +4,8 @@
  */
  var yamlfile;
  var configyml;
+ var count = 0;
+
 const yaml = require('js-yaml');
 
 module.exports = (app) => {
@@ -23,6 +25,7 @@ module.exports = (app) => {
     try {
       let fileContents = yamlfile
       configyml = yaml.load(fileContents);
+      start = true;
     } catch (e) {
       console.log("ERROR: " + e);
     }
@@ -33,6 +36,7 @@ module.exports = (app) => {
       repo:"BitCamp",
       path:`Slack-Apps/homework/responses/${configyml.before[0].body}`,
     });
+
     response = Buffer.from(response.data.content, 'base64').toString()
     return await context.octokit.issues.create({
       owner: context.payload.installation.account.login,
@@ -42,64 +46,65 @@ module.exports = (app) => {
     })
   });
 
-  if (configyml) {
-    for (i = 0; i < configyml.length; i++) {
-      let trigger = configyml.steps[i].event
-      while (!flag) {
-        app.log.info(configyml.steps[i])
-        app.on(trigger, async (content) => {
-          for (y = 0; y < configyml.steps[i].actions.length; y++) {
-            var array = configyml.yml.steps[i].actions[y]
-            if (array[y].type == "respond") {
-              var response = await context.octokit.repos.getContent({
-                owner:"bitprj",
-                repo:"BitCamp",
-                path:`Slack-Apps/homework/responses/${array[y].with}`,
-              });
-              response = Buffer.from(response.data.content, 'base64').toString()
-              const issueComment = context.issue({
-                body: response,
-              });
-              return context.octokit.issues.create(issueComment)
-            }
-            if (array[y].type == "createIssue") {
-              var response = await context.octokit.repos.getContent({
-                owner:"bitprj",
-                repo:"BitCamp",
-                path:`Slack-Apps/homework/responses/${array[y].with}`,
-              });
-              response = Buffer.from(response.data.content, 'base64').toString()
-              const issueBody = context.issue({
-                issue_number: array[y].issue,
-                title: array[y].title,
-                body: response,
-              });
-              return context.octokit.issues.create(issueBody)
-            } 
-            if (array[y].type == "closeIssue") {
-              const payload = context.issue({
-                state: "closed",
-              })
-              return context.octokit.issues.update(payload)
-            }
-          }
-          flag = true
+
+  app.on(['pull_request.closed', 'issue_comment.created'], async (context) => {
+    app.log.info("[COUNT]" + count)
+    let yamlfile = await context.octokit.repos.getContent({
+      owner:"bitprj",
+      repo:"BitCamp",
+      path:"Slack-Apps/homework/config.yml",
+    });
+
+    yamlfile = Buffer.from(yamlfile.data.content, 'base64').toString()
+    try {
+      let fileContents = yamlfile
+      configyml = await yaml.load(fileContents);
+      start = true;
+    } catch (e) {
+      console.log("ERROR: " + e);
+    }
+
+    for (y = 0; y < configyml.steps[count].actions.length; y++) {
+      var array = configyml.steps[count].actions[y]
+      app.log.info(array)
+
+      if (array.type == "respond") {
+        var response = await context.octokit.repos.getContent({
+          owner:"bitprj",
+          repo:"BitCamp",
+          path:`Slack-Apps/homework/responses/${array.with}`,
         });
+        response = Buffer.from(response.data.content, 'base64').toString()
+        const issueComment = context.issue({
+          body: response,
+          issue_number: array.issue,
+        });
+        app.log.info("Respond")
+        return context.octokit.issues.createComment(issueComment)
+      }
+      if (array.type == "createIssue") {
+        var response = await context.octokit.repos.getContent({
+          owner:"bitprj",
+          repo:"BitCamp",
+          path:`Slack-Apps/homework/responses/${array.with}`,
+        });
+        response = Buffer.from(response.data.content, 'base64').toString()
+        const issueBody = context.issue({
+          issue_number: array.issue,
+          title: array.title,
+          body: response,
+        });
+        app.log.info("createIssue")
+        return context.octokit.issues.create(issueBody)
+      } 
+      if (array[y].type == "closeIssue") {
+        const payload = context.issue({
+          state: "closed",
+          issue_number: array.issue,
+        })
+        return context.octokit.issues.update(payload)
       }
     }
-  }
-
-  // app.on("issues.opened", async (context) => {
-  //   app.log.info(context.payload.issue.repository_url)
-  //   const issueComment = context.issue({
-  //     body: "Thanks for opening this issue!",
-  //   });
-  //   return context.octokit.issues.createComment(issueComment);
-  // });
-
-  // For more information on building apps:
-  // https://probot.github.io/docs/
-
-  // To get your app running against GitHub, see:
-  // https://probot.github.io/docs/development/
+    count += 1
+  })
 };
