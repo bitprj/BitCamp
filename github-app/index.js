@@ -71,6 +71,8 @@ module.exports = (app) => {
 
 
   app.on(['pull_request.closed', 'issue_comment.created'], async (context) => {
+    var yamlfile;
+
     try {
       user = context.payload.sender.login
     } catch (e) {
@@ -80,11 +82,15 @@ module.exports = (app) => {
     app.log.info(user)
 
     if (user != "bitcampdev[bot]") {
-      const yamlFile = context.issue({
-        path: '.bit/config.yml',
-      });
-      let yamlfile = await context.octokit.repos.getContent(yamlFile);
-  
+      try {
+        const yamlFile = context.issue({
+          path: '.bit/config.yml',
+        });
+        var yamlfile = await context.octokit.repos.getContent(yamlFile);
+      } catch (e) {
+        process.exit()
+      }
+
       yamlfile = Buffer.from(yamlfile.data.content, 'base64').toString()
 
       try {
