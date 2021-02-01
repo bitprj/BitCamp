@@ -1,0 +1,104 @@
+.slider_bg_1{
+    background-image: url(../img/banner/banner.png);
+}
+.slider_bg_2{
+    background-image: url(../img/banner/banner2.png);
+}
+.slider_area{
+    .single_slider{
+        height: 900px;
+        
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        @media #{$mobile_device} {
+            height: auto;
+            background-size: cover;
+        }
+        @media #{$tablet_device} {
+            height: 620px;
+            // background-size: cover;
+        }
+        .phone_thumb {
+            position: relative;
+            top: 110px;
+            @media #{$mobile_device}{
+                top: 60px;
+            }
+            img{
+                @media #{$mobile_device}{
+                    width: 100%;
+                }
+                @media #{$tablet_device}{
+                    width: 100%;
+                }
+                @media #{$mid_device}{
+                    width: 100%;
+                }
+            }
+        }
+        .slider_text{
+            @media #{$mobile_device}{
+                padding-top: 100px;
+            }
+            h3{
+                color: #FFF;
+                font-family: "Poppins", sans-serif;
+                font-size: 60px;
+                text-transform: capitalize;
+                letter-spacing: 2px;
+                font-weight: 300;
+                line-height: 74px;
+                br{
+                    @media #{$mobile_device}{
+                        display: none;
+                    }
+                    @media #{$tablet_device}{
+                        display: none;
+                    }
+                    @media #{$mid_device}{
+                        display: none;
+                    }
+                }
+             span{
+                 font-weight: 700;
+             }
+             @media #{$mobile_device} {
+               font-size: 30px;
+            //    letter-spacing: 3px;
+                line-height: 35px;
+            }
+             @media #{$tablet_device} {
+               font-size: 30px;
+               line-height: 35px;
+
+            }
+             @media #{$mid_device} {
+               font-size: 45px;
+               letter-spacing: 3px;
+               line-height: 55px;
+
+            }
+            }
+            p{
+                font-size: 20px;
+                font-weight: 400;
+                color: #FFFFFF;
+                margin-bottom: 48px;
+                margin-top: 16px;
+             @media #{$mid_device} {
+                font-size: 16px;
+             }
+             @media #{$mobile_device} {
+                font-size: 16px;
+             }
+            }
+            .video_service_btn> a{
+                margin-right: 15px;
+                @media #{$mobile_device} {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    } 
+}

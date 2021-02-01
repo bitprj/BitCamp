@@ -1,0 +1,207 @@
+.features_area{
+    padding: 77px 0 90px 0;
+    @media #{$mobile_device}{
+        padding: 30px 0 40px 0;
+    }
+    @media #{$tablet_device}{
+        padding: 30px 0 40px 0;
+    }
+    .about_image{
+        img{
+            width: auto;
+        }
+    }
+    .about_draw{
+        img{
+            width: 100%;
+        }
+    }
+    .features_main_wrap{
+        padding: 90px 0;
+        @media #{$mobile_device} {
+            padding: 30px 0;
+        }
+        .about_image{
+            img{
+                @media #{$mobile_device}{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .features_info2{
+        @media #{$mobile_device}{
+            margin-bottom: 30px;
+        }
+        h3{
+            font-size: 46px;
+            line-height: 60px;
+            font-weight: 300 ;
+            color: #2C2C2C;
+            @media #{$mobile_device}{
+                font-size: 30px;
+                line-height: 40px;
+            }
+            @media #{$tablet_device}{
+                font-size: 35px;
+                line-height: 45px;
+            }
+            @media #{$mid_device}{
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        p{
+            font-size: 16px;
+            line-height: 28px;
+            color: #727272;
+            margin-bottom: 22px;
+            line-height: 30px;
+            margin-top: 20px;
+            margin-bottom: 32px;
+            br{
+                @media #{$mid_device}{
+                    display: none;
+                }
+            }
+        }
+    }
+    .features_info{
+        // padding-top: 158px;
+        // padding-bottom: 108px;
+        padding-left: 68px;
+        @media #{$mobile-device} {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @media #{$tablet_device}{
+            padding-left: 30px;
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+        @media #{$mid_device}{
+            padding-left: 30px;
+            padding-top: 0;
+            padding-bottom: 40px;
+        }
+        @media #{$large_device}{
+            padding-left: 30px;
+            padding-top: 0;
+        }
+        h3{
+            font-size: 46px;
+            line-height: 60px;
+            font-weight: 300 ;
+            color: #2C2C2C;
+            @media #{$mobile_device}{
+                font-size: 30px;
+                line-height: 40px;
+            }
+            @media #{$tablet_device}{
+                font-size: 38px;
+                line-height: 50px;
+            }
+            @media #{$mid_device}{
+                font-size: 30px;
+                line-height: 40px;
+            }
+            br{
+                @media #{$mobile_device} {
+                    display: none;
+                }
+                @media #{$tablet_device} {
+                    display: none;
+                }
+                @media #{$mid_device} {
+                    display: none;
+                }
+            }
+        }
+        p{
+            font-size: 16px;
+            line-height: 28px;
+            color: #727272;
+            margin-bottom: 22px;
+            margin-top: 28px;
+            br{
+                @media #{$mid_device}{
+                    display: none;
+                }
+            }
+        }
+        ul{
+            margin-bottom: 56px;
+            @media #{$mobile_device} {
+                margin-bottom: 30px;
+            }
+            li{
+                font-size: 16px;
+                line-height: 28px;
+                color: #727272;
+                position: relative;
+                padding-left: 28px;
+                margin-bottom: 5px;
+                font-weight: 400;
+                z-index: 1;
+                &::before{
+                    position: absolute;
+                    left: 0;
+                    background-image: url(../img/ilstrator_img/check.svg);
+                    width: 16px;
+                    height: 16px;
+                    content: '';
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                }
+            }
+        }
+        .boxed-btn3 {
+            padding: 13px 46px 14px 46px;
+        }
+    }
+}
+
+
+// productivity_area 
+.productivity_area{
+    background-image: url(../img/banner/product.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 164px 0;
+    background-repeat: no-repeat;
+    @media #{$mobile_device}{
+        padding: 100px 0;
+    }
+    h3{
+        font-size: 46px;
+        font-weight: 300;
+        color: #FFFFFF;
+        line-height: 60px;
+        @media #{$mobile_device} {
+            font-size: 30px;
+            line-height: 35px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        @media #{$tablet_device}{
+            margin-bottom: 30px;
+        }
+    }
+    .app_download{
+        text-align: right;
+        @media #{$mobile_device} {
+            text-align: center;
+        }
+        @media #{$tablet_device} {
+            text-align: center;
+        }
+        img{
+            margin-left: 9px;
+            @media #{$mobile_device}{
+                margin: 5px 0;
+            }
+        }
+    }
+}

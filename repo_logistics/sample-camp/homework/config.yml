@@ -1,0 +1,27 @@
+title: The sample-camp Course
+description: >-
+  This learning lab course is part of Bit Project's 8 Week Program. By the end
+  of the course, students will...
+template:
+  name: name-of-template
+  repo: name-of-repo
+before:
+  - type: createIssue
+    title: Prerequisite
+    body: 00-prerequisite.md
+steps:
+  - title: 'Week 1: Getting Started'
+    description: Week 1 of the camp.
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: respond
+        with: 00-response.md
+        issue: 1
+      - type: createIssue
+        title: Week 1
+        body: response.md
+...
+tags:
+  - Code
+  - Cool stuff
