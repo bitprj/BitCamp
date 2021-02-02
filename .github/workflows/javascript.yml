@@ -1,0 +1,14 @@
+name: Publish Javascript Repo
+on: push
+jobs:
+  master:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: publish:javascript
+        uses: bitprj/push-subdir@1.4
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: Javascript/homework bitprj javascript-course main
