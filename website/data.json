@@ -1,0 +1,27 @@
+{
+    "slug": "Serverless-Functions",
+    "content": [
+        {
+            "name": "week1",
+            "steps": [
+                {
+                    "name": "step1",
+                    "url": "/step1"
+                }
+            ]
+        },
+        {
+            "name": "week2",
+            "steps": [
+                {
+                    "name": "step1",
+                    "url": "/step1"
+                },
+                {
+                    "name": "step2",
+                    "url": "/step2"
+                }
+            ]
+        }
+    ]
+}
