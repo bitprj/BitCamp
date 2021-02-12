@@ -5,13 +5,12 @@
 ![Bit Camp Logo](/BitCampIllustration.jpeg)
 ## Our Mission
 
-The majority of students don't have resources to provide students with access to countless tech educational resources outside of the classroom. As a 501(c)(3) nonprofit, [Bit Project](https://www.bitproject.org/) makes it possible by helping students find ways to stay marketable in the competitive tech industry. 
-We offer a free open source alternative called "Bit Camps," created by student developers in collaboration with industry partners. The Bit Camps' goal is to teach beginner students various tech topics, such as software engineering, game development, and data analytics. 
+[Bit Project](https://www.bitproject.org/) is a nonprofit organization that helps students find ways to compete in the tech industry by providing them countless tech educational resources. We offer a free open source alternative called "Bit Camp," created by student developers in collaboration with industry partners, such as Microsoft, Twilio, Slack, etc. The goal is to teach students how to become more proficient in learning programming concepts and applying them to the projects.
 
 
-## Introduce Bit Camps
+## Introducing Bit Camps
 
-Our Bit Camps consist of weekly live streams (hosted by our student volunteers), assignments, office hours, and a final project.  Although mentorship and feedback are only available to students who apply and get into the boot camp, the curriculum is FREE and OPEN to all who want to learn new technologies and apply their skills to their own side projects. 
+Bit Camp consists of weekly live lectures (hosted by student developers), assignments, office hours, and the final project. Although mentorship and feedback are only available to students who apply and get into the boot camp, the curriculum is FREE and OPEN to all who want to learn new technologies and use their skills to their side projects. 
 
 To find out more, click on the links below. Additionally, we also provide a syllabus in the readme section to better understand each curriculum.
 
