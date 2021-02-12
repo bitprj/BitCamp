@@ -1,0 +1,308 @@
+{
+    "ref": "refs/heads/main",
+    "before": "0000000000000000000000000000000000000000",
+    "after": "bfb76c9d1a86df6fcd334315264dbafa13c9c503",
+    "repository": {
+      "id": 334760853,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMzQ3NjA4NTM=",
+      "name": "slackapps2",
+      "full_name": "emsesc/slackapps2",
+      "private": false,
+      "owner": {
+        "name": "emsesc",
+        "email": "69332964+emsesc@users.noreply.github.com",
+        "login": "emsesc",
+        "id": 69332964,
+        "node_id": "MDQ6VXNlcjY5MzMyOTY0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/69332964?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/emsesc",
+        "html_url": "https://github.com/emsesc",
+        "followers_url": "https://api.github.com/users/emsesc/followers",
+        "following_url": "https://api.github.com/users/emsesc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/emsesc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/emsesc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/emsesc/subscriptions",
+        "organizations_url": "https://api.github.com/users/emsesc/orgs",
+        "repos_url": "https://api.github.com/users/emsesc/repos",
+        "events_url": "https://api.github.com/users/emsesc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/emsesc/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/emsesc/slackapps2",
+      "description": null,
+      "fork": false,
+      "url": "https://github.com/emsesc/slackapps2",
+      "forks_url": "https://api.github.com/repos/emsesc/slackapps2/forks",
+      "keys_url": "https://api.github.com/repos/emsesc/slackapps2/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/emsesc/slackapps2/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/emsesc/slackapps2/teams",
+      "hooks_url": "https://api.github.com/repos/emsesc/slackapps2/hooks",
+      "issue_events_url": "https://api.github.com/repos/emsesc/slackapps2/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/emsesc/slackapps2/events",
+      "assignees_url": "https://api.github.com/repos/emsesc/slackapps2/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/emsesc/slackapps2/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/emsesc/slackapps2/tags",
+      "blobs_url": "https://api.github.com/repos/emsesc/slackapps2/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/emsesc/slackapps2/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/emsesc/slackapps2/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/emsesc/slackapps2/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/emsesc/slackapps2/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/emsesc/slackapps2/languages",
+      "stargazers_url": "https://api.github.com/repos/emsesc/slackapps2/stargazers",
+      "contributors_url": "https://api.github.com/repos/emsesc/slackapps2/contributors",
+      "subscribers_url": "https://api.github.com/repos/emsesc/slackapps2/subscribers",
+      "subscription_url": "https://api.github.com/repos/emsesc/slackapps2/subscription",
+      "commits_url": "https://api.github.com/repos/emsesc/slackapps2/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/emsesc/slackapps2/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/emsesc/slackapps2/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/emsesc/slackapps2/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/emsesc/slackapps2/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/emsesc/slackapps2/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/emsesc/slackapps2/merges",
+      "archive_url": "https://api.github.com/repos/emsesc/slackapps2/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/emsesc/slackapps2/downloads",
+      "issues_url": "https://api.github.com/repos/emsesc/slackapps2/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/emsesc/slackapps2/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/emsesc/slackapps2/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/emsesc/slackapps2/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/emsesc/slackapps2/labels{/name}",
+      "releases_url": "https://api.github.com/repos/emsesc/slackapps2/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/emsesc/slackapps2/deployments",
+      "created_at": 1612128593,
+      "updated_at": "2021-01-31T21:29:53Z",
+      "pushed_at": 1612128606,
+      "git_url": "git://github.com/emsesc/slackapps2.git",
+      "ssh_url": "git@github.com:emsesc/slackapps2.git",
+      "clone_url": "https://github.com/emsesc/slackapps2.git",
+      "svn_url": "https://github.com/emsesc/slackapps2",
+      "homepage": null,
+      "size": 0,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": null,
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main",
+      "stargazers": 0,
+      "master_branch": "main"
+    },
+    "pusher": {
+      "name": "emsesc",
+      "email": "69332964+emsesc@users.noreply.github.com"
+    },
+    "sender": {
+      "login": "emsesc",
+      "id": 69332964,
+      "node_id": "MDQ6VXNlcjY5MzMyOTY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69332964?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emsesc",
+      "html_url": "https://github.com/emsesc",
+      "followers_url": "https://api.github.com/users/emsesc/followers",
+      "following_url": "https://api.github.com/users/emsesc/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emsesc/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emsesc/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emsesc/subscriptions",
+      "organizations_url": "https://api.github.com/users/emsesc/orgs",
+      "repos_url": "https://api.github.com/users/emsesc/repos",
+      "events_url": "https://api.github.com/users/emsesc/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emsesc/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "installation": {
+      "id": 14450958,
+      "node_id": "MDIzOkludGVncmF0aW9uSW5zdGFsbGF0aW9uMTQ0NTA5NTg="
+    },
+    "created": true,
+    "deleted": false,
+    "forced": false,
+    "base_ref": null,
+    "compare": "https://github.com/emsesc/slackapps2/compare/aeeb166a0a59^...bfb76c9d1a86",
+    "commits": [
+      {
+        "id": "aeeb166a0a590b2cf69c45ebb8cbe649f3c20157",
+        "tree_id": "b210967bb0dd276e9db490159e85ec34ce1c3140",
+        "distinct": true,
+        "message": "Add files via upload",
+        "timestamp": "2021-01-31T15:42:23-05:00",
+        "url": "https://github.com/emsesc/slackapps2/commit/aeeb166a0a590b2cf69c45ebb8cbe649f3c20157",
+        "author": {
+          "name": "Emily Chen",
+          "email": "69332964+emsesc@users.noreply.github.com",
+          "username": "emsesc"
+        },
+        "committer": {
+          "name": "GitHub",
+          "email": "noreply@github.com",
+          "username": "web-flow"
+        },
+        "added": [
+          "config.yml"
+        ],
+        "removed": [
+  
+        ],
+        "modified": [
+  
+        ]
+      },
+      {
+        "id": "04d44189bd9da16115ba473a6a35fefedc7ccda2",
+        "tree_id": "3348c2b89ac1616b844d3cdc8542fe4db8c8ba7b",
+        "distinct": true,
+        "message": "Rename config.yml to .bit/config.yml",
+        "timestamp": "2021-01-31T15:42:42-05:00",
+        "url": "https://github.com/emsesc/slackapps2/commit/04d44189bd9da16115ba473a6a35fefedc7ccda2",
+        "author": {
+          "name": "Emily Chen",
+          "email": "69332964+emsesc@users.noreply.github.com",
+          "username": "emsesc"
+        },
+        "committer": {
+          "name": "GitHub",
+          "email": "noreply@github.com",
+          "username": "web-flow"
+        },
+        "added": [
+          ".bit/config.yml"
+        ],
+        "removed": [
+          "config.yml"
+        ],
+        "modified": [
+  
+        ]
+      },
+      {
+        "id": "bfb76c9d1a86df6fcd334315264dbafa13c9c503",
+        "tree_id": "2a01b4c01e8e22ff9e06a851d271d839f7c76772",
+        "distinct": true,
+        "message": "Add files via upload",
+        "timestamp": "2021-01-31T15:44:30-05:00",
+        "url": "https://github.com/emsesc/slackapps2/commit/bfb76c9d1a86df6fcd334315264dbafa13c9c503",
+        "author": {
+          "name": "Emily Chen",
+          "email": "69332964+emsesc@users.noreply.github.com",
+          "username": "emsesc"
+        },
+        "committer": {
+          "name": "GitHub",
+          "email": "noreply@github.com",
+          "username": "web-flow"
+        },
+        "added": [
+          ".bit/responses/1-complete.md",
+          ".bit/responses/1.1-bolt-intro.md",
+          ".bit/responses/1.2-bots-and-apps.md",
+          ".bit/responses/1.3-setup-app-and-learn-events.md",
+          ".bit/responses/1.4-basic-slack-app.md",
+          ".bit/responses/2-complete.md",
+          ".bit/responses/2.1-blocks-and-actions.md",
+          ".bit/responses/2.2-blocks-and-actions-app.md",
+          ".bit/responses/2.3-commands-and-modals.md",
+          ".bit/responses/2.4-time-converter.md",
+          ".bit/responses/3-complete.md",
+          ".bit/responses/3.1-reaction-event-listener-and-threads.md",
+          ".bit/responses/3.2-oauth-account-and-credentials.md",
+          ".bit/responses/3.3-calling-translator-api.md",
+          ".bit/responses/4-complete.md",
+          ".bit/responses/4.1-express.md",
+          ".bit/responses/4.2-webhooks.md",
+          ".bit/responses/4.3-final-project.md",
+          ".bit/responses/Gifs_Images/2.3-example.png",
+          ".bit/responses/Gifs_Images/4.1-creating-repo.gif",
+          ".bit/responses/Gifs_Images/4.2-secret.gif",
+          ".bit/responses/Gifs_Images/Slack-secret.gif",
+          ".bit/responses/Gifs_Images/basic-info-page.png",
+          ".bit/responses/Gifs_Images/channel-id.png",
+          ".bit/responses/Gifs_Images/event-subs-gif.gif",
+          ".bit/responses/Gifs_Images/event-subscriptions.png",
+          ".bit/responses/Gifs_Images/event-url.gif",
+          ".bit/responses/Gifs_Images/ngrok-link.gif",
+          ".bit/responses/Gifs_Images/slack-bot-token.gif",
+          ".bit/responses/Gifs_Images/translator-screen.png",
+          ".bit/responses/Gifs_Images/week-1-livestream.gif",
+          ".bit/responses/feedback.md"
+        ],
+        "removed": [
+  
+        ],
+        "modified": [
+  
+        ]
+      }
+    ],
+    "head_commit": {
+      "id": "bfb76c9d1a86df6fcd334315264dbafa13c9c503",
+      "tree_id": "2a01b4c01e8e22ff9e06a851d271d839f7c76772",
+      "distinct": true,
+      "message": "Add files via upload",
+      "timestamp": "2021-01-31T15:44:30-05:00",
+      "url": "https://github.com/emsesc/slackapps2/commit/bfb76c9d1a86df6fcd334315264dbafa13c9c503",
+      "author": {
+        "name": "Emily Chen",
+        "email": "69332964+emsesc@users.noreply.github.com",
+        "username": "emsesc"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "username": "web-flow"
+      },
+      "added": [
+        ".bit/responses/1-complete.md",
+        ".bit/responses/1.1-bolt-intro.md",
+        ".bit/responses/1.2-bots-and-apps.md",
+        ".bit/responses/1.3-setup-app-and-learn-events.md",
+        ".bit/responses/1.4-basic-slack-app.md",
+        ".bit/responses/2-complete.md",
+        ".bit/responses/2.1-blocks-and-actions.md",
+        ".bit/responses/2.2-blocks-and-actions-app.md",
+        ".bit/responses/2.3-commands-and-modals.md",
+        ".bit/responses/2.4-time-converter.md",
+        ".bit/responses/3-complete.md",
+        ".bit/responses/3.1-reaction-event-listener-and-threads.md",
+        ".bit/responses/3.2-oauth-account-and-credentials.md",
+        ".bit/responses/3.3-calling-translator-api.md",
+        ".bit/responses/4-complete.md",
+        ".bit/responses/4.1-express.md",
+        ".bit/responses/4.2-webhooks.md",
+        ".bit/responses/4.3-final-project.md",
+        ".bit/responses/Gifs_Images/2.3-example.png",
+        ".bit/responses/Gifs_Images/4.1-creating-repo.gif",
+        ".bit/responses/Gifs_Images/4.2-secret.gif",
+        ".bit/responses/Gifs_Images/Slack-secret.gif",
+        ".bit/responses/Gifs_Images/basic-info-page.png",
+        ".bit/responses/Gifs_Images/channel-id.png",
+        ".bit/responses/Gifs_Images/event-subs-gif.gif",
+        ".bit/responses/Gifs_Images/event-subscriptions.png",
+        ".bit/responses/Gifs_Images/event-url.gif",
+        ".bit/responses/Gifs_Images/ngrok-link.gif",
+        ".bit/responses/Gifs_Images/slack-bot-token.gif",
+        ".bit/responses/Gifs_Images/translator-screen.png",
+        ".bit/responses/Gifs_Images/week-1-livestream.gif",
+        ".bit/responses/feedback.md"
+      ],
+      "removed": [
+  
+      ],
+      "modified": [
+  
+      ]
+    }
+  }
