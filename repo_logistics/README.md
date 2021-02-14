@@ -10,50 +10,61 @@
 
 ---
 
-## :collision: The Github Action
+## :pencil2: Creating Your Own Cabin
 
-The Github Action automatically generates the needed files to create a Github Learning Lab. Refer to the below documentation for formatting requirements and how it works:
+Use the template to automatically sync your instruction files with a fully functional course. Refer to the below documentation for formatting requirements and how it works:
 
-### :one: Input and Output
+### :one: Use the Premade Template
 
-**User must provide:**
-- Response files in `/camp-name/homework/responses`
-- `course-details.md` file in `/camp-name/homework/course-details.md`
+We have a basic cabin (course) structure set up for you. Click [here](https://github.com/bitprj/cabin/generate) to generate a repo with *all* the neccessary files, file structure, and template responses that will help you format your course.
 
-**Github Action produces:**
+**While we do have most things set up for you, here's what you do need to provide:**
+- Response files in `/.bit/responses`
+- `course-details.md` file in `/.bit/course-details.md`
+
+**Here's what the template automatically updates for you as you commit to the repo:**
 - Completion response files named `#-complete.md` and `feedback.md`
 - A `config.yml` file
 
-Note: "camp-name" is whatever the Bit Camp is called. If we were to create files for a camp named "Serverless-Functions", the file path would be `/Serverless-Functions/homework/responses`.
-
 ### :two: Formatting Requirements
 
-In order for the Action to successfully parse content, the files **must** be named and formatted like so:
+In order for the template to successfully sync and parse content, the files **must** be named and formatted like so:
 
-#### Response files
+#### [Response files](https://github.com/bitprj/cabin/tree/main/.bit/responses)
 
 File name format: `[Week#].[Step#]-[Step title].md`
 
 > Example: `1.1-Week Step 1.md`
 
-File path: `/Serverless-Functions/homework/responses/[all response files]`
+File path: `/.bit/responses/[all response files]`
 
-File content: 
-* Response files are to be **titled with h2** at the very beginning of each markdown file. The title at the top will be the same title used in Github Learning Labs (what is in the config.yml file). 
-* The **description** of the step should be placed directly under formatted in **h4**.
+File content:
+* Response files should begin with a **markdown table**
+  * Place files here that the student should **include in the pull request** to move on to the next step.
+  * Ex: If you place `index.js` in the table for the first step of Week 1, a student will need to merge a pull request containing the file `index.js` in order for the bot to comment the second step of Week 2.
+  * Also, place the **week, step number, and step name** in this table.
+* The **title** should be formatted with **h2**.
+* The **description** of the step should be placed directly under formatted in **h3**.
 
 > Example:
 ```md
+---
+files: index.html, js/config.js, README.md
+week: 1
+step: 1
+name: Week 1 Step 1
+---
+
 ## Week 1 Step 1
 
-#### This is the description
+### This is the description
 ```
 
-#### `course-details.md` File
+#### [`course-details.md` File](https://github.com/bitprj/cabin/blob/main/.bit/course-details.md)
 
 File name: `course-details.md`
 
-File path: `/camp-name/homework/course-details.md`
+File path: `/.bit/course-details.md`
 
 File content: 
 * The `course-details.md` file must contain the course name and description.
@@ -67,34 +78,15 @@ File content:
 *Course description*
 ```
 
-### :three: Specifying the Camp name
+### :three: Errors, Check-marks, and Success?
 
-The Github Action will not run the Python file until a subdirectory (ie. Serverless-Functions) is specified. To do so, edit the `learninglabauto.py` file's `subdir` value.
+1. Either use the template response files or delete them all of them and place your own. (Remember to format them correctly!)
+2. Monitor the Github Action.
+![checkmark](https://user-images.githubusercontent.com/69332964/107892038-74758f80-6ef0-11eb-9c29-dcd47b30d9c4.png)
 
-**Before:**
-```py
-subdir = ""
 
-if subdir == "":
-  exit()
-```
+### :four: Finalizaing the Course
 
-**After:**
-```py
-subdir = "[Insert your camp name. Ex: Serverless-Functions]"
-
-if subdir == "":
-  exit()
-```
-
-### :four: Finishing up
-
-Once both the change to the `learninglabauto.py` file in `scripts/` and the addition of the other files are committed, the Github Action should trigger and run.
-
-Linked [here](https://github.com/emsesc/sample-learninglab) is a sample containing correctly formatted file names and structures.
-
-Watch this video for a walkthrough:
-[![Watch the video](https://cdn.loom.com/sessions/thumbnails/d21df3bc8776488b81c6682449e81776-with-play.gif)](https://www.loom.com/share/d21df3bc8776488b81c6682449e81776)
 ---
 
 ## :deciduous_tree: Documenting Bitcamp Curriculum (`sample-camp/`)
