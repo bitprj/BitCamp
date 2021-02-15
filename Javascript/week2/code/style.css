@@ -1,0 +1,26 @@
+body{
+    color: red;
+}
+
+#time{
+    color:blue;
+    padding: 10px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    margin: 5px;
+    background-color: honeydew;
+    border-top-left-radius: 50%;
+}
+
+*{
+    background-color: rgb(176, 215, 224);
+    
+}
+
+div{
+    height: 50px;
+    width: 50px;
+    border: 5px solid black;
+    border-radius: 50%;
+}

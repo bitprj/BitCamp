@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>What is your favorite pet?</p>
+    <form>
+        <input type="radio" name="pet" value="dog" id="dog">
+        <label for="dog">Dog</label><br>
+        <input type="radio" name="pet" value="cat" id="cat">
+        <label for="cat">Cat</label><br>
+        <input type="radio" name="pet" value="bunny" id="bunny">
+        <label for="bunny">Bunny</label><br>
+        <input type="radio" name="pet" value="hamster" id="hamster">
+        <label for="hamster">Hamster</label><br>
+        <button type="button" value="Submit" onclick="myfunc()">Submit</button>
+        <div id="ex"></div>
+    </form>
+    <script>
+        
+        function myfunc(){
+            var radioButtons = document.getElementsByName("pet");
+            var selected = radioButtons[0];
+            for(var i = 0; i < radioButtons.length; i++){
+                if(radioButtons[i].checked == true){
+                    selected = radioButtons[i];
+                    break;
+                }
+            }
+            var elem = document.getElementById("ex");
+            elem.innerHTML = selected.value;
+        }
+        
+    </script>
+</body>
+</html>

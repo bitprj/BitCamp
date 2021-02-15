@@ -2,8 +2,8 @@ title: JavaScript with HTML and CSS
 description: >-
     This four-week JavaScript bootcamp will give students with little to no coding experience an introduction to web development.  Throughout the course, students will create objects with HTML, style these objects with CSS, and animate them with JavaScript.
 template:
-    name: learninglab-template
-    repo: your-learninglab-template
+    name: javascript-course-repo
+    repo: javascript-template
 before:
     - type: createIssue
       title: Week 1

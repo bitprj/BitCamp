@@ -16,6 +16,7 @@ Use the template to automatically sync your instruction files with a fully funct
 
 ### :one: Use the Premade Template
 
+
 #### Create the template
 We have a basic cabin (course) structure set up for you. Click [here](https://github.com/bitprj/cabin/generate) to generate a repo with *all* the neccessary files, file structure, and template responses that will help you format your course.
 
@@ -109,6 +110,7 @@ Click on the commit --> click "build" --> click the drop down arrows and read th
 
 [![Watch the video](https://cdn.loom.com/sessions/thumbnails/57a96ffe6bdb4871963fb13fda57f654-with-play.gif)](https://www.loom.com/share/57a96ffe6bdb4871963fb13fda57f654)
 [![Watch the video](https://cdn.loom.com/sessions/thumbnails/726302a1dd1a45e7b87eae15d864fa3c-with-play.gif)](https://www.loom.com/share/726302a1dd1a45e7b87eae15d864fa3c)
+
 ---
 
 ## :deciduous_tree: Documenting Bitcamp Curriculum (`sample-camp/`)
