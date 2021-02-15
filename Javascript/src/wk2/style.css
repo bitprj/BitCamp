@@ -1,0 +1,45 @@
+/* everything in the body section just makes sure our time is in our
+preferred font and size, and that all items are centered on the page */
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+	color: #fff;
+	font-family: "Trebuchet MS", Verdana, sans-serif;
+	font-size: 25px;
+    background: #a5b8d9;
+    min-height: 100vh;
+}
+/* here we build the box around our clock
+we simply have a 400x150 px box with a border and a box shadow for
+aesthetic purposes.
+we also want to make sure all items are centered in the box */
+
+.clock
+{
+	width: 500px;
+    height: 200px;
+    font-size: 90px;
+    background: #102;
+    border: 20px solid #4b5970;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-left: 50px;
+	
+	box-shadow: 0 0 30px rgba(0,0,0,.1),
+				0 20px 20px rgba(0,0,0,.1),
+                0 0 0 4px rgba(255, 255, 255, 1);
+    
+}
+
+.timezone {
+	font-family: 'Trebuchet MS', Verdana, sans-serif;
+	font-size: 25px;
+	padding: 20px;
+    margin-right: 50px;
+}
+
+
+

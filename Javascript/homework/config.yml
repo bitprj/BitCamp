@@ -1,0 +1,212 @@
+title: JavaScript with HTML and CSS
+description: >-
+    This four-week JavaScript bootcamp will give students with little to no coding experience an introduction to web development.  Throughout the course, students will create objects with HTML, style these objects with CSS, and animate them with JavaScript.
+template:
+    name: javascript-course-repo
+    repo: javascript-template
+before:
+    - type: createIssue
+      title: Week 1
+      body: 1.1-setup.md
+steps:
+    - title: 'Week 1: Task 1: Environment setup and starting your first HTML file'
+      description: In this task, you'll be setting up your computer to get ready to code.  We'll also show you how to create a simple HTML file.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 1.2-buttons.md
+          issue: 1
+    - title: 'Week 1: Task 2: Getting user input with buttons'
+      description: For task 2, we'll go over how to insert a radio button, or an option button, as well as a regular button.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 1.3-user-input.md
+          issue: 1
+    - title: 'Week 1: Task 3: Using JavaScript to read user input'
+      description: Now that we've set up the form, we'll use JavaScript to grab the user's input for us to use in our code.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 1.4-date.md
+          issue: 1
+    - title: 'Week 1: Task 4: Printing the time with JS'
+      description: In this task, we'll show you how to print your local machine's time onto your webpage using some basic JS tools.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 1.5-timezone.md
+          issue: 1
+    - title: 'Week 1: Task 5: Changing your clock based on user input'
+      description: Now we'll show you how to write a JavaScript function that takes the user's input from the radio button and prints the time in the timezone they selected.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: feedback.md
+          issue: 1
+    - title: 'Week 1: Feedback'
+      description: Provide your feedback for Week 1!
+      event: issue_comment.created
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 1-complete.md
+          issue: 1
+        - type: createIssue
+          title: Week 2
+          body: 2.1-css-linking.md
+        - type: closeIssue
+          issue: 1
+    - title: 'Week 2: Task 1: Linking your CSS file'
+      description: How to begin a CSS file and link it to your HTML file.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 2.2-body.md
+          issue: 7
+    - title: 'Week 2: Task 2: Styling the body'
+      description: In this task, we'll go over how to style the text in your body tag.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 2.3-clock-design.md
+          issue: 7
+    - title: 'Week 2: Task 3: Creating your clock'
+      description: For the third task, we're going to begin designing a digital clock using some basic styling techniques.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 2.4-form-layout.md
+          issue: 7
+    - title: 'Week 2: Task 4: Styling your buttons '
+      description: Now that you've styled your text and your clock, now's time to make any changes to your radio buttons that you'd like.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: feedback.md
+          issue: 7
+    - title: 'Week 2: Feedback'
+      description: Provide your feedback for Week 2!
+      event: issue_comment.created
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 2-complete.md
+          issue: 7
+        - type: createIssue
+          title: Week 3
+          body: 3.1-integrating-code.md
+        - type: closeIssue
+          issue: 7
+    - title: 'Week 3: Task 1: Gathering your existing code'
+      description: This step will simply guide you through starting a JavaScript file and copying your code from last week's assignment.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 3.2-clock-styling.md
+          issue: 12
+    - title: 'Week 3: Task 2: Building the background of your clock'
+      description: In this task, we'll cover some tips and tricks to get your clock shaped and positioned correctly on your page.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 3.3-clock-digits.md
+          issue: 12
+    - title: 'Week 3: Task 3: Adding numbers to your clock'
+      description: We'll use HTML and CSS in this step to print numbers on your clock and get them ready for positioning.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 3.4-rotation.md
+          issue: 12
+    - title: 'Week 3: Task 4: Using rotation to align the numbers on your clock'
+      description: In this task, we'll walk you through how to use variables in CSS, as well as how to use a built-in CSS function to rotate your numbers so that they're in the right position on your clock.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 3.5-clock-hands.md
+          issue: 12
+    - title: 'Week 3: Task 5: Designing the hands of your clock'
+      description: We'll go over some more CSS tricks in this step to get the hands of your clock in position for time-telling.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 3.6-moving-hands.md
+          issue: 12
+    - title: 'Week 3: Task 6: Getting your hands to move'
+      description: We'll add some final touches to your CSS file so that your hands rotate correctly and then get to work on your JavaScript so that your clock can do what clocks do.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: feedback.md
+          issue: 12
+    - title: 'Week 3: Feedback'
+      description: Provide your feedback for Week 3!
+      event: issue_comment.created
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 3-complete.md
+          issue: 12
+        - type: createIssue
+          title: Week 4
+          body: 4.1-page-setup.md
+        - type: closeIssue
+          issue: 12
+    - title: 'Week 4: Task 1: Create a new page with an analog and a digital clock'
+      description: Your final assignment is going to merge everything you've created so far onto a single webpage, and allow the user to choose between a digital clock and analog clock. This first task will help you get all of your code in one place.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 4.2-more-buttons.md
+          issue: 19
+    - title: 'Week 4: Task 2: Adding radio buttons for clock preferences'
+      description: Next, we're going to create a set of radio buttons that allow a user to choose if they’d like to see the time on an analog clock or on a digital clock. This task will demonstrate a different approach to radio buttons.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 4.3-more-js-functions.md
+          issue: 19
+    - title: 'Week 4: Task 3: Toggling between a digital and an analog clock'
+      description: Now that we have the page all set up, all that's left to do is to get our code to do what the webpage says! This task will go over some JavaScript functions using methods you've learned previously.
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 4.4-customization.md
+          issue: 19
+    - title: 'Week 4: Task 4: Adding the bells and whistles'
+      description: Your final task will be to use your creativity to add anything you'd like to your clock webpage
+      event: pull_request.closed
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: feedback.md
+          issue: 19
+    - title: 'Week 4: Feedback'
+      description: Provide your feedback for Week 4!
+      event: issue_comment.created
+      link: '{{ repoUrl }}/issues'
+      actions:
+        - type: respond
+          with: 4-complete.md
+          issue: 19
+        - type: closeIssue
+          issue: 19

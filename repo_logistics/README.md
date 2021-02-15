@@ -6,6 +6,88 @@
   * This README.md file will give a brief overview of where everything is located.
   * If you need a reference to a complete Bitcamp documentation, click [here](https://github.com/bitprj/BitCamp/tree/master/Serverless-Functions)
 * In the `learning_lab` directory, you will find instructions to create your very own Github Learning Lab from your curriculum.
+* In this README.md, learn about the Github Action that creates Learning Labs
+
+---
+
+## :pencil2: Creating Your Own Cabin
+
+Use the template to automatically sync your instruction files with a fully functional course. Refer to the below documentation for formatting requirements and how it works:
+
+### :one: Use the Premade Template
+
+We have a basic cabin (course) structure set up for you. Click [here](https://github.com/bitprj/cabin/generate) to generate a repo with *all* the neccessary files, file structure, and template responses that will help you format your course.
+
+**While we do have most things set up for you, here's what you do need to provide:**
+- Response files in `/.bit/responses`
+- `course-details.md` file in `/.bit/course-details.md`
+
+**Here's what the template automatically updates for you as you commit to the repo:**
+- Completion response files named `#-complete.md` and `feedback.md`
+- A `config.yml` file
+
+### :two: Formatting Requirements
+
+In order for the template to successfully sync and parse content, the files **must** be named and formatted like so:
+
+#### [Response files](https://github.com/bitprj/cabin/tree/main/.bit/responses)
+
+File name format: `[Week#].[Step#]-[Step title].md`
+
+> Example: `1.1-Week Step 1.md`
+
+File path: `/.bit/responses/[all response files]`
+
+File content:
+* Response files should begin with a **markdown table**
+  * Place files here that the student should **include in the pull request** to move on to the next step.
+  * Ex: If you place `index.js` in the table for the first step of Week 1, a student will need to merge a pull request containing the file `index.js` in order for the bot to comment the second step of Week 2.
+  * Also, place the **week, step number, and step name** in this table.
+* The **title** should be formatted with **h2**.
+* The **description** of the step should be placed directly under formatted in **h3**.
+
+> Example:
+```md
+---
+files: index.html, js/config.js, README.md
+week: 1
+step: 1
+name: Week 1 Step 1
+---
+
+## Week 1 Step 1
+
+### This is the description
+```
+
+#### [`course-details.md` File](https://github.com/bitprj/cabin/blob/main/.bit/course-details.md)
+
+File name: `course-details.md`
+
+File path: `/.bit/course-details.md`
+
+File content: 
+* The `course-details.md` file must contain the course name and description.
+* The course name must be **formatted with h1** and the course description **must be italicized.**
+
+> Example:
+
+```md
+# Course Title
+
+*Course description*
+```
+
+### :three: Errors, Check-marks, and Success?
+
+1. Either use the template response files or delete them all of them and place your own. (Remember to format them correctly!)
+2. Monitor the Github Action.
+![checkmark](https://user-images.githubusercontent.com/69332964/107892038-74758f80-6ef0-11eb-9c29-dcd47b30d9c4.png)
+
+
+### :four: Finalizaing the Course
+
+---
 
 ## :deciduous_tree: Documenting Bitcamp Curriculum (`sample-camp/`)
 

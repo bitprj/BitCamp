@@ -1,4 +1,4 @@
-# Bitcamp Serverless ⚡
+# Serverless Functions ⚡
 
 Have you ever heard of the cloud? It's the servers that can be accessed over the internet. This can not only be used to store your files, but also to run your own written code. Just like how you can store your files in Google Drive instead of on your computer, you can also run code in a "serverless" fashion and not on your personal machine. With serverless architecture, you're free from the worries of managing a server, which is pretty complicated. All you have to do is worry about the logic! As a student with beginning experience or advanced, mastering Functions allow you to get skills of processing bulk data, integrating systems, and building simple APIs and micro-services. These concepts can be applied *everywhere* in computing and application development. 
 
