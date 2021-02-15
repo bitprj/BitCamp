@@ -16,7 +16,11 @@ Use the template to automatically sync your instruction files with a fully funct
 
 ### :one: Use the Premade Template
 
+#### Create the template
 We have a basic cabin (course) structure set up for you. Click [here](https://github.com/bitprj/cabin/generate) to generate a repo with *all* the neccessary files, file structure, and template responses that will help you format your course.
+
+#### Secrets *shhhh*
+Add some respository secrets to the template repo you just created so the Github Action can sync your files. On your repository, go to `Settings` --> `Secrets` and then click `New Repository Secret`. Add an `EMAIL` secret containing your email, and `USERNAME` secret containing your Github username.
 
 **While we do have most things set up for you, here's what you do need to provide:**
 - Response files in `/.bit/responses`
@@ -30,7 +34,7 @@ We have a basic cabin (course) structure set up for you. Click [here](https://gi
 
 In order for the template to successfully sync and parse content, the files **must** be named and formatted like so:
 
-#### [Response files](https://github.com/bitprj/cabin/tree/main/.bit/responses)
+#### :file_folder: [Response files](https://github.com/bitprj/cabin/tree/main/.bit/responses)
 
 File name format: `[Week#].[Step#]-[Step title].md`
 
@@ -60,7 +64,9 @@ name: Week 1 Step 1
 ### This is the description
 ```
 
-#### [`course-details.md` File](https://github.com/bitprj/cabin/blob/main/.bit/course-details.md)
+**Note: Pay special attention to how the files are spaced and where slashes are put.**
+
+#### :file_folder: [`course-details.md` File](https://github.com/bitprj/cabin/blob/main/.bit/course-details.md)
 
 File name: `course-details.md`
 
@@ -82,11 +88,27 @@ File content:
 
 1. Either use the template response files or delete them all of them and place your own. (Remember to format them correctly!)
 2. Monitor the Github Action.
+
+If you have this green checkmark on **your root directory as shown here,** you are good to go! If you have a red x-mark, you have some editing to do on your response or course files.
 ![checkmark](https://user-images.githubusercontent.com/69332964/107892038-74758f80-6ef0-11eb-9c29-dcd47b30d9c4.png)
 
+Whether or not you have a check mark or x-mark, double check the status of your commit in "Actions."
+![image](https://user-images.githubusercontent.com/69332964/107892815-8f96ce00-6ef5-11eb-9b84-684aeb5f00f3.png)
 
-### :four: Finalizaing the Course
+Click on the commit --> click "build" --> click the drop down arrows and read the logs to determine the issue with your files.
+![image](https://user-images.githubusercontent.com/69332964/107893016-af7ac180-6ef6-11eb-91e9-d5b963abb598.png)
 
+
+### :four: Finalizing the Course
+
+1. Make your repository a "template" so students can easily click a button to start their course.
+2. Delete `.bit/.progress` if it is in your repository
+3. Make sure `.bit/.camp` contains this default setting: `{"count" : "0", "prcount" : "0", "issue" : "1"}`
+
+### Need a visual walkthough? Watch these two videos to learn how to set up your course and how students will use it.
+
+[![Watch the video](https://cdn.loom.com/sessions/thumbnails/57a96ffe6bdb4871963fb13fda57f654-with-play.gif)](https://www.loom.com/share/57a96ffe6bdb4871963fb13fda57f654)
+[![Watch the video](https://cdn.loom.com/sessions/thumbnails/726302a1dd1a45e7b87eae15d864fa3c-with-play.gif)](https://www.loom.com/share/726302a1dd1a45e7b87eae15d864fa3c)
 ---
 
 ## :deciduous_tree: Documenting Bitcamp Curriculum (`sample-camp/`)
