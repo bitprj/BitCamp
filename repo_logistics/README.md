@@ -10,7 +10,7 @@
 
 ---
 
-## :pencil2: Creating Your Own Cabin
+## :tools: Building Your Own Cabin
 
 Use the template to automatically sync your instruction files with a fully functional course. Refer to the below documentation for formatting requirements and how it works:
 
@@ -101,7 +101,7 @@ Click on the commit --> click "build" --> click the drop down arrows and read th
 
 ### :four: Finalizing the Course
 
-1. Make your repository a "template" so students can easily click a button to start their course.
+1. Make your repository a "template" in the repo settings so students can easily click a button to start their course.
 2. Delete `.bit/.progress` if it is in your repository
 3. Make sure `.bit/.camp` contains this default setting: `{"count" : "0", "prcount" : "0", "issue" : "1"}`
 
