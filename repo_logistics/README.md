@@ -10,7 +10,7 @@
 
 ---
 
-## :tools: Building Your Own Cabin
+## :hammer: Building Your Own Cabin
 
 Use the template to automatically sync your instruction files with a fully functional course. Refer to the below documentation for formatting requirements and how it works:
 
