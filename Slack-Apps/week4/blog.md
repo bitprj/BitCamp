@@ -13,7 +13,7 @@ This week's goals include:
 
 ### Livestream Objectives
 
-The livestream for Week 4 is an introduction to the week's objectives. During the livestream, you will learn how to use GitHub webhooks and handle the payload. For reference, Github is a verison control site that lets you maintain repositories of code across several iterations. It is extremely useful for both personal and proffessional projects. Getting the payload from a webhook will involve using the Express framework. 
+The livestream for Week 4 is an introduction to the week's objectives. During the livestream, you will learn how to use GitHub webhooks and handle the payload. For reference, Github is a version control site that lets you maintain repositories of code across several iterations. It is extremely useful for both personal and professional projects. Getting the payload from a webhook will involve using the Express framework. 
 
 The mentor leading the stream teaches these principles through two sample projects. The first is listening for a repository to be starred, then messaging a Slack channel when the event occurs. The second involves listening for the home of an app to be opened, then publishing a view with the event information.
 
@@ -32,9 +32,6 @@ Once you have created a repository, navigate to the settings page from the dashb
 ![](../homework/responses/Gifs_Images/4.2-secret.gif)
 
 
-
-
-
 ### ⚡️ Set Up
 
 Express is used in to project to handle the payload from a GitHub webhook. After you have finished the regular setup of your app, navigate in your terminal to the directory where it is located. Call ```npm install express ``` and wait for the package to download. Then call ```npm install axios```. You will not need axios for this project, but can use it in the next.
@@ -44,7 +41,7 @@ When the dependencies have been installed, open your app.js file in a text edito
 ```javascript
 const { App, ExpressReceiver } = require('@slack/bolt');
 const express = require('express');
-const express = require('axios');
+const axios = require('axios');
 const { config } = require('dotenv');
 
 const app = new App({

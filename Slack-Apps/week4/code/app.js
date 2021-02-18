@@ -46,35 +46,6 @@ receiver.router.post('/github-stars', async (req, res) => {
 });
 
 /**
- * To create a custom endpoint for our Slack app, we rely on 
- * the ExpressReceiver's router property.
- * 
- * In the example below, we've added a webhook via the Settings
- * section of a Github repository that we own, using the same
- * endpoint that we pass into the `post` method below. 
- * 
- * When creating your webhook in Github, make sure to set the 
- * Content Type to `application/json` and to listen for the 
- * 'Issues' webhook event.
- *  
- * Further Information & Resources
- * https://slack.dev/bolt-js/concepts#custom-routes
- */
-receiver.router.post('/github-issues', async (req, res) => {
-  const { action, issue, repository } = req.body;
-
-  const text = `${issue.user.login} just ${action} <${issue.html_url}|Issue #${issue.number}: ${issue.title}>.`;
-
-  await app.client.chat.postMessage({
-    token: process.env.SLACK_BOT_TOKEN,
-    channel: 'development',
-    text,
-  });
-
-  res.sendStatus(200);
-});
-
-/**
  * The app_home_opened event occurs when a user accesses an 
  * app's Home tab.
  * 
