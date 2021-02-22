@@ -1,99 +1,98 @@
-Note: Part 4 the Inventory system currently uses Unity version 2020.1 instead of 2019.4. We will be making this correction later.
-
 # Intro
-Welcome back everyone. Last time we created a score text that changes as you play the game and a game over screen with a working restart button. Today, we will start by finishing up our game with a main menu. Then we will show off another example of what you can do with UI elements and introduce you to a few more we have yet to show you. 
+Welcome back everyone. Last time we created a score text that changes as you play the game, a game over screen with a working restart button, and a main menu. Today we will show off another example of what you can do with UI elements and introduce you to a few more we have yet to show you. 
 
 
-# Part 3 - Main Menu
-- Now it’s a little strange to be thrust into the game as soon as you start up the application. So we are going to create a main menu.
-- Start by opening up a new scene and saving it as “Main Menu”
-- Right click in the Hierarchy pane and click → UI → Text - TextMeshPro and rename this as Title
-- Change the text itself to be Crates and the position to (0, 0)
-- Change the color, font, and size if you wish
-- You may have to disable wrapping to get the Title on one line
-- Now let’s create some buttons to choose the difficulty for our game
-- Right click in the Hierarchy pane and click → UI → Button - TextMeshPro
-- Change the name to Easy Button and its text to Easy. 
-- Change the size if you wish
-- We’ll also reduce the width to make the button look nicer and move it to the left.
-- In the Hierarchy panel click the button and hit Ctrl-D twice to duplicate it twice
-- Select the new buttons in the Hierarchy pane and change the position so that all of our buttons aren’t overlapping one another. 
-- Change the name and text of the new buttons to Medium Button and Medium for the second one and Hard Button and Hard for the third
-- Next we are going to go to our Game Over scene and make some changes to our Scene Loader object
-- First go into your SceneLoader.cs script to add a difficulty variable and update the Start() and StartGame() functions:
-
-![mainMenu Code snippet 1](codeSnippetImages/mainMenu1.png)
- 
-- The DontDestroyOnLoad will make it so that our Scene Loader game object will persist through different scenes. Through this we can transfer the difficulty value between scenes
-- In the Project panel navigate to Assets > Prefabs and drag the Scene Loader from the Hierarchy panel to the Project panel
-- Then delete Scene Loader from the Hierarchy and then drag the new prefab to the Restart Button’s On Click event. Don’t forget to reselect the StartGame(int) function too
-- Go back to the Main Menu scene and add this new prefab to the Hierarchy
-- Create a DifficultyButton.cs script and attach this to our three difficulty buttons
-In this new script:
-
-![mainMenu Code snippet 2](codeSnippetImages/mainMenu2.png)
-
-- Go to the inspector for each of the buttons and you should see a difficulty field in the script section. Assign Easy a difficulty of 1, Medium 2, and Hard 3
-- Now if we click the play button from our Main Menu scene, we should be able to play the game and still use the restart button on the Game Over screen
-- A message should appear in the console telling you which button you pressed too
-- However, we aren’t actually changing the difficulty yet
-- Go to your GameManager.cs script and add a difficulty variable and update the Start() function:
- 
- ![mainMenu Code snippet 3](codeSnippetImages/mainMenu3.png)
- 
-- Now you should have buttons that change the difficulty for the game and restarting the game will put you at the same difficulty too
-- A message should also appear in you console log that says what the difficulty is set to
 
 # Part 4 - Inventory System
 Sources: Brackeys from YouTube and Ahninniah from the Unity Asset Store
 Intro:
 This tutorial is going to cover ways to pause in Unity and is also going to involve using the UI grid layout component. We are going to be using a prebuilt game that already includes player movement, item interaction and an inventory. This inventory, however, has no representation visually and the HeldItem child object of the player can’t have any items assigned to it in the game’s current state.
 
-- Create Pause script
+- Create Pause script called "Pausing"
 - Choosing what and what not to disable can vary depending on the game, but here are a few things to keep in mind:
 - Disabling objects by tag can be difficult, because objects can be re-enabled directly using a tag
 - Things like the player controller are obvious, but keep in mind other objects’ operations that will be running
 - In the case of larger games, using parent objects is the best way to go about this
+
 - Luckily, for this tutorial, we’re only concerned about restricting player control while pausing, which means retrieving and disabling the MoveView and PlayerMovement scripts according to a boolean value
-- The cursor is set to be locked and invisible in the middle of the screen at startup by the MoveView script, but to allow it to be used on the pause screen, we’re going to be changing that variable based on the boolean as well
 
 ![inventory Code snippet 1](codeSnippetImages/inventory1.png)
 
-- We’ll then put this script in the GameManager object and assign its public variables:
+- The cursor is set to be locked and invisible in the middle of the screen at startup by the MoveView script, but to allow it to be used on the pause screen, we’re going to be changing that variable based on the boolean as well
+- Cursor Lock States: None, Locked, Confined
 
 ![inventory Code snippet 2](codeSnippetImages/inventory2.png)
 
-- Now we’re going to start setting up the menu the player will be able to interact with
-- In the Canvas object, we’re going to create a UI>Panel object as its object that will be called InventoryMenu and will be sized according to the values in my final game
-- We’re going to briefly cover some panel and canvas attributes in Unity and some common beginner pitfalls
-- How to anchor panels by place on screen rather than dimensions to have consistency across aspect ratios
-- We’re going to add a small panel as a child of InventoryMenu with a TextMeshPro child object that will indicate that this is an inventory menu
-- A child of the InventoryMenu will also be created which is going to be an empty game object called InventoryGrid
-- In this game object we’re going to add a Grid Layout component which is a quick, easy way to format UI that has things like repeating buttons or displays
-- We’re going to briefly go over some of the components of the Grid Layout component
-- We’re then going to create a child of this InventoryGrid called InventorySlot that is a Button
-- This InventorySlot object will be copied and pasted 24 times to give the grid the 25 components to represent the inventory slots. This will allow us to play more with the Grid Layout options and get our inventory to look nice
-- Now we can delete all of the buttons except for the first InventorySlot, as we’re going to be making changes to it and we’ll copy it again later, but we’re firstly going to create a script called InventorySlot to define the behavior of this object
-- This script is going to use a small amount of Image component functionality, but we’re going to do more once we attach it to the object
+![inventory Code snippet 3](codeSnippetImages/inventory2.png)
 
-![inventory Code snippet 3](codeSnippetImages/inventory3.png)
-
-- We’re going to attach this script to the InventorySlot object, and then add the image component that this code references
-- We can use a placeholder image to get the dimensions of this image looking nice inside the button, as this is where the image of the item in this slot is going to be displayed
-- This script is also going to be interacting with the Button component, so we’re going to place OnPressed() into OnClick() in the inspector
-- This object can now be copied 24 times. A prefab can be made if you’d like for easy recreation and access to the InventorySlot’s variables. It’s good practice if you want to make changes down the line, but it’s not necessary for the scope of this tutorial
-- Copying a prefab in the hierarchy is an easy way to duplicate them and it still counts as a prefab
-- The inventory menu can now be seen while playing the game, but it covers the screen regardless of whether the game is paused or not
-- We’re going to go back into the Pausing script in GameManager to add a reference to the InventoryMenu object and some lines of code that’ll enable/disable it based on the paused boolean
+- We’ll then put this script in the GameManager object and assign its public variables:
 
 ![inventory Code snippet 4](codeSnippetImages/inventory4.png)
 
-- Our final script of this tutorial is going to be the InventoryUI script which is going to be placed in the InventoryMenu game object
+- Now we’re going to start setting up the menu the player will be able to interact with
+- Talk about setting canvas
+    - We’re going to briefly cover some panel and canvas attributes in Unity and some common beginner pitfalls
+    - How to anchor panels by place on screen rather than dimensions to have consistency across aspect ratios
+    - Different Render Modes
+        - Screen space - scene
+        - Screen space - camera
+        - World space
+    - Canvas Scaler
+        - Is “Constant Pixel Size” by default
+        - Screen match mode: match width or height
+        - Have slider dragged to height and why we want this
+
+- In the Canvas object, we’re going to create an empty game object called PauseMenu. This is going to house all of the UI elements we’ll see when pausing
+    - Is going to be anchored to center
+
+- We’re going to add a small panel as a child of PauseMenu with a TextMeshPro child object that will indicate that this is an inventory menu (Called TitlePanel)
+    - Is going to be anchored to center
+
+- In the PauseMenu object, we’re going to create a UI>Panel object as its object that will be called InventoryGrid and will be sized according to the values in my final game
+    - Is going to be anchored to center
+    - In this game object we’re going to add a Grid Layout Group component which is a quick, easy way to format UI that has things like repeating buttons or displays
+    - We’re going to briefly go over some of the components of the Grid Layout component
+    - We’re then going to create a child of this InventoryGrid called InventorySlot that is a Button
+    - We’re going to create a button object as a child and then turn it into a prefab and copy it to show some of the properties of the Grid Layout Group
+    - We can drag this object into the assets window to turn it into a prefab, as we’re going to be manipulating multiple copies of this and will want to make changes that extend across all of those copies
+
+- We can add and use a placeholder image to get the dimensions of this image looking nice inside the button, as this is where the image of the item in this slot is going to be displayed
+- Make sure to click “preserve aspect” in the image settings
+- We’re now going to create a script called InventorySlot to define the behavior of this object
+- Firstly, since we’re going to be referencing the Image component in this script, we’re going to have to put “using UnityEngine.UI;”
 
 ![inventory Code snippet 5](codeSnippetImages/inventory5.png)
 
+- This script is going to use a small amount of Image component functionality, but we’re going to do more once we attach it to the object
+- The “Item” object I’m referencing in this script is a kind of unity object called a “scriptable object”. It allows for instances of objects that hold similar values to be created. In this case, the “Item” scriptable object is one I created for this tutorial that holds all of an item’s data such as the icon or name
+
+![inventory Code snippet 6](codeSnippetImages/inventory6.png)
+
+- We’re going to attach this script to the InventorySlot prefab, and then add the image component that this code references
+- This script is also going to be interacting with the Button component, so we’re going to place OnPressed() into OnClick() in the inspector
+- The inventory menu can now be seen while playing the game, but it covers the screen regardless of whether the game is paused or not
+- We’re going to go back into the Pausing script in GameManager to add a reference to the InventoryMenu object and some lines of code that’ll enable/disable it based on the paused boolean
+
+![inventory Code snippet 7](codeSnippetImages/inventory7.png)
+
+![inventory Code snippet 8](codeSnippetImages/inventory8.png)
+
+- We can now assign the new pauseMenu variable in the inspector
+- Our final script of this tutorial is going to be the InventoryUI script which is going to be placed in the PauseMenu game object
+
+![inventory Code snippet 9](codeSnippetImages/inventory9.png)
+
+- This script is also going to be using the Unity UI package
+
+![inventory Code snippet 10](codeSnippetImages/inventory10.png)
+![inventory Code snippet 11](codeSnippetImages/inventory11.png)
+
 - This is going to involve discussing the inventory script logic and how we can use it to be displayed by the UI
+- We can then add this script to be a component in the PauseMenu object
 - We then will assign InventoryGrid as the itemsParent variable in the inspector
+- We can now go back to the pause menu one last time and have the InventoryUI script run the UpdateUI method every time the I button is pressed
+
+![inventory Code snippet 12](codeSnippetImages/inventory12.png)
+
 - And we’re done!
 - If time permits, I’ll answer questions and go over some of the more specific workings of the base game components
-
