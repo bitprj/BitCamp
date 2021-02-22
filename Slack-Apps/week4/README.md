@@ -14,12 +14,11 @@ The Homework Portion of Week 4 is a review of the topics that are covered in the
 - Introducing students to webhooks.
   - Explaining the benefits and usecases for webhooks (https://zapier.com/blog/what-are-webhooks/).
   - Teaching students how to use a webhook payload.
-- Introducing students to Express and framworks.
+- Introducing students to Express and frameworks.
   - Teaching students how to get a webhook payload.
 - Creating two apps that use the GitHub webhook service along with Express to post messages when an event occurs.
 
 
-
 ###  ❓ How will this help students?
 
-The livestream and homework for Week 4 will emphasize exploration of webhooks. Learning how to use a webhook will help students brainstorm ideas for their personal projects. During the livestream, students will be able to ask questions refering to their current task. The homework will additionally provide a step-by-step reference for the basics of creating a webhook.
+The livestream and homework for Week 4 will emphasize exploration of webhooks. Learning how to use a webhook will help students brainstorm ideas for their personal projects. During the livestream, students will be able to ask questions referring to their current task. The homework will additionally provide a step-by-step reference for the basics of creating a webhook.
