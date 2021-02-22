@@ -7,12 +7,14 @@
 
 [Bit Project](https://www.bitproject.org/) is a nonprofit organization that helps students find ways to compete in the tech industry by providing them countless tech educational resources. We offer a free open source alternative called "Bit Camp," created by student developers in collaboration with industry partners, such as Microsoft, Twilio, Slack, etc. The goal is to teach students how to become more proficient in learning programming concepts and applying them to the projects.
 
+As an open source organization, we want to increase community involvement and encourage more developers to contribute to our content. If you think any of our existing content is confusing to understand for beginners, too easy, too hard, etc., open a Pull Request (PR) and let us know! We welcome all suggestions and edits to our repo.
+
 
 ## Introducing Bit Camps
 
-Bit Camp consists of weekly live lectures (hosted by student developers), assignments, office hours, and the final project. Although mentorship and feedback are only available to students who apply and get into the boot camp, the curriculum is FREE and OPEN to all who want to learn new technologies and use their skills to their side projects. 
+Bit Camp consists of weekly live lectures (hosted by student developers), assignments, office hours, and guidelines for creating a final project. Although mentorship and feedback are only available to students who apply and get into the boot camp, the curriculum is FREE and OPEN to all who want to learn new technologies and use their skills to their side projects. 
 
-To find out more, click on the links below. Additionally, we also provide a syllabus in the readme section to better understand each curriculum.
+To find out more, click on the links below. Additionally, we also provide a syllabus in the **readme.md** to better understand each curriculum.
 
 
 #### 1. [**GameDev**](https://github.com/bitprj/BitCamp/tree/master/GameDev)
