@@ -13,7 +13,7 @@ before:
 steps:
   - title: 'Week 1: Downloading an IDE'
     description: Installing Visual Studio Code.
-    event: issues.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/issues/1'
     actions:
       - type: respond
@@ -45,7 +45,7 @@ steps:
         with: 1.4-feedback.md
   - title: 'Week 1: Livestream Feedback'
     description: Help us improve this course!
-    event: issues.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/issues/1'
     actions:
       - type: respond
@@ -124,7 +124,7 @@ steps:
         issue: 3
   - title: 'Week 2: Livestream Blog'
     description: The livestream in blog format.
-    event: issues.closed
+    event: issue_comment.created
     actions:
       - type: respond
         with: 02-complete.md
@@ -165,7 +165,7 @@ steps:
         issue: 4
   - title: 'Week 3: Livestream Blog'
     description: The livestream in blog format.
-    event: issues.closed
+    event: issue_comment.created
     actions:
       - type: respond
         with: 03-complete.md

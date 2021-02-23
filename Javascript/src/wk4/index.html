@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Week 4: Final Project</title>
+</head>
+<body>
+    <form>
+		<div class="timezone">
+			<p>Select Timezone:</p>
+			
+			<input type="radio" id="est" name="tz" value="est" checked>
+			<label for="est">Eastern Standard Time</label><br>
+			<input type="radio" id="cst" name="tz" value="cst">
+			<label for="cst">Central Standard Time</label><br>
+			<input type="radio" id="mst" name="tz" value="mst">
+			<label for="mst">Mountain Standard Time</label><br>
+			<input type="radio" id="pst" name="tz" value="pst">
+			<label for="pst">Pacific Standard Time</label><br>
+			<input type="radio" id="ast" name="tz" value="ast">
+			<label for="ast">Alaska Standard Time</label><br>
+			<input type="radio" id="hst" name="tz" value="hst">
+			<label for="hst">Hawaii-Aleutian Standard Time</label><br>
+			<br>
+			
+			<button type="button" value="Submit" onclick="ValidateForm()"> Submit </button>
+			<br>
+		</div>
+    </form>
+	<br>
+	<form>
+		<div class="view">
+			<input type="radio" id="a" name="v" value="a" checked onclick="setAnalog()">
+			<label for="a">Analog</label><br>
+			<input type="radio" id="d" name="v" value="d" onclick="setDigital()">
+			<label for="d">Digital</label><br>
+			
+			<br>
+			<br>
+		</div>
+    </form>
+    <div class="clock" id="clock">
+        <div class="number number1">1</div>
+		<div class="number number2">2</div>
+		<div class="number number3">3</div>
+		<div class="number number4">4</div>
+		<div class="number number5">5</div>
+		<div class="number number6">6</div>
+		<div class="number number7">7</div>
+		<div class="number number8">8</div>
+		<div class="number number9">9</div>
+		<div class="number number10">10</div>
+		<div class="number number11">11</div>
+        <div class="number number12">12</div>
+        <div class="hand hour" data-hour-hand></div>
+		<div class="hand minute" data-minute-hand></div>
+		<div class="hand second" data-second-hand></div>
+	</div>
+	<div class="digital" id="digital"></div>
+    <p id="output"></p>
+</body>
+</html>

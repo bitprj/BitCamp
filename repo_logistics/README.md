@@ -10,50 +10,67 @@
 
 ---
 
-## :collision: The Github Action
+## :hammer: Building Your Own Cabin
 
-The Github Action can provide you an easier way to work with Github Learning Lab. Below are the steps how to create a good format for Github Action.
+Use the template to automatically sync your instruction files with a fully functional course. Refer to the below documentation for formatting requirements and how it works:
 
-### :one: Input and Output
+### :one: Use the Premade Template
 
-**You must provide:**
-- Response files in `/camp-name/homework/responses`
-- `course-details.md` file in `/camp-name/homework/course-details.md`
+#### Create the template
+We have a basic cabin (course) structure set up for you. Click [here](https://github.com/bitprj/cabin/generate) to generate a repo with *all* the neccessary files, file structure, and template responses that will help you format your course.
 
-**Github Action produces:**
+#### Secrets *shhhh*
+Add some respository secrets to the template repo you just created so the Github Action can sync your files. On your repository, go to `Settings` --> `Secrets` and then click `New Repository Secret`. Add an `EMAIL` secret containing your email, and `USERNAME` secret containing your Github username.
+
+**While we do have most things set up for you, here's what you do need to provide:**
+- Response files in `/.bit/responses`
+- `course-details.md` file in `/.bit/course-details.md`
+
+**Here's what the template automatically updates for you as you commit to the repo:**
 - Completion response files named `#-complete.md` and `feedback.md`
 - A `config.yml` file
 
-Note: "camp-name" is whatever the Bit Camp is called. If we were to create files for a camp named "Serverless-Functions", the file path would be `/Serverless-Functions/homework/responses`.
-
 ### :two: Formatting Requirements
 
-The files **must** be named and formatted like so:
+In order for the template to successfully sync and parse content, the files **must** be named and formatted like so:
 
-#### Response files
+#### :file_folder: [Response files](https://github.com/bitprj/cabin/tree/main/.bit/responses)
 
 File name format: `[Week#].[Step#]-[Step title].md`
 
 > Example: `1.1-Week Step 1.md`
 
-File path: `/Serverless-Functions/homework/responses/[all response files]`
+File path: `/.bit/responses/[all response files]`
 
-File content: 
-* Response files should use **h2 title** at the very beginning of each markdown file. The title will be the same one used in config.yml that is located in `/camp-name/homework/config.yml`
-* The **description** of the step should be formatted in **h4**.
+File content:
+* Response files should begin with a **markdown table**
+  * Place files here that the student should **include in the pull request** to move on to the next step.
+  * Ex: If you place `index.js` in the table for the first step of Week 1, a student will need to merge a pull request containing the file `index.js` in order for the bot to comment the second step of Week 2.
+  * Also, place the **week, step number, and step name** in this table.
+* The **title** should be formatted with **h2**.
+* The **description** of the step should be placed directly under formatted in **h3**.
 
 > Example:
 ```md
+---
+files: index.html, js/config.js, README.md
+week: 1
+step: 1
+name: Week 1 Step 1
+---
+
 ## Week 1 Step 1
 
-#### This is the description
+### This is the description
 ```
 
-#### `course-details.md` File
+**Note: Pay special attention to how the files are spaced and where slashes are put.**
+
+#### :file_folder: [`course-details.md` File](https://github.com/bitprj/cabin/blob/main/.bit/course-details.md)
 
 File name: `course-details.md`
 
-File path: `/camp-name/homework/course-details.md`
+File path: `/.bit/course-details.md`
 
 File content: 
 * The `course-details.md` file must contain the course name and description.
@@ -68,32 +85,33 @@ File content:
 ```
 Refer [here](https://github.com/emsesc/sample-learninglab) to view the sample containing correctly formatted file names and structures.
 
-### :three: Specifying the Camp name
+### :three: Errors, Check-marks, and Success?
 
-The Github Action will not run the Python file until a subdirectory (ie. Serverless-Functions) is specified. To do so, open the `learninglabauto.py` file under `scripts/` folder and edit the file's `subdir` value.
+1. Either use the template response files or delete them all of them and place your own. (Remember to format them correctly!)
+2. Monitor the Github Action.
 
-**Before:**
-```py
-subdir = ""
+If you have this green checkmark on **your root directory as shown here,** you are good to go! If you have a red x-mark, you have some editing to do on your response or course files.
+![checkmark](https://user-images.githubusercontent.com/69332964/107892038-74758f80-6ef0-11eb-9c29-dcd47b30d9c4.png)
 
-if subdir == "":
-  exit()
-```
+Whether or not you have a check mark or x-mark, double check the status of your commit in "Actions."
+![image](https://user-images.githubusercontent.com/69332964/107892815-8f96ce00-6ef5-11eb-9b84-684aeb5f00f3.png)
 
-**After:**
-```py
-subdir = "[Insert your camp name. Ex: Serverless-Functions]"
+Click on the commit --> click "build" --> click the drop down arrows and read the logs to determine the issue with your files.
+![image](https://user-images.githubusercontent.com/69332964/107893016-af7ac180-6ef6-11eb-91e9-d5b963abb598.png)
 
-if subdir == "":
-  exit()
-```
 
-### :four: Finishing up
+### :four: Finalizing the Course
 
-Once the `learninglabauto.py` file and the other files are committed, the Github Action should trigger and run.
+1. Make your repository a "template" in the repo settings so students can easily click a button to start their course.
+2. Delete `.bit/.progress` if it is in your repository
+3. Make sure `.bit/.camp` contains this default setting: `{"count" : "0", "prcount" : "0", "issue" : "1"}`
 
-Watch this video for a walkthrough:
-[![Watch the video](https://cdn.loom.com/sessions/thumbnails/d21df3bc8776488b81c6682449e81776-with-play.gif)](https://www.loom.com/share/d21df3bc8776488b81c6682449e81776)
+
+### Need a visual walkthough? Watch these two videos to learn how to set up your course and how students will use it.
+
+[![Watch the video](https://cdn.loom.com/sessions/thumbnails/57a96ffe6bdb4871963fb13fda57f654-with-play.gif)](https://www.loom.com/share/57a96ffe6bdb4871963fb13fda57f654)
+[![Watch the video](https://cdn.loom.com/sessions/thumbnails/726302a1dd1a45e7b87eae15d864fa3c-with-play.gif)](https://www.loom.com/share/726302a1dd1a45e7b87eae15d864fa3c)
+
 ---
 
 ## :deciduous_tree: Documenting Bitcamp Curriculum (`sample-camp/`)
