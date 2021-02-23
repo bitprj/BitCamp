@@ -2,11 +2,11 @@
 
 ### What's in `repo_logistics/`?
 
-* In the `sample-camp` directory, you will find a template subdirectory for how each Bitcamp documentation should be structured.
+* In the `learning_lab` directory, you will find instructions to create your very own [Github Learning Lab](https://lab.github.com/).
+* In the `sample-camp` directory, you will find a template for the Bitcamp schedule and the curriculum.
   * This README.md file will give a brief overview of where everything is located.
-  * If you need a reference to a complete Bitcamp documentation, click [here](https://github.com/bitprj/BitCamp/tree/master/Serverless-Functions)
-* In the `learning_lab` directory, you will find instructions to create your very own Github Learning Lab from your curriculum.
-* In this README.md, learn about the Github Action that creates Learning Labs
+  * Here is a sample of how the Bitcamp documentation should look [like](https://github.com/bitprj/BitCamp/tree/master/Serverless-Functions)
+* In this README.md, you will find the explanation about Github Action and Learning Labs.
 
 ---
 
@@ -15,7 +15,6 @@
 Use the template to automatically sync your instruction files with a fully functional course. Refer to the below documentation for formatting requirements and how it works:
 
 ### :one: Use the Premade Template
-
 
 #### Create the template
 We have a basic cabin (course) structure set up for you. Click [here](https://github.com/bitprj/cabin/generate) to generate a repo with *all* the neccessary files, file structure, and template responses that will help you format your course.
@@ -84,6 +83,7 @@ File content:
 
 *Course description*
 ```
+Refer [here](https://github.com/emsesc/sample-learninglab) to view the sample containing correctly formatted file names and structures.
 
 ### :three: Errors, Check-marks, and Success?
 
@@ -105,6 +105,7 @@ Click on the commit --> click "build" --> click the drop down arrows and read th
 1. Make your repository a "template" in the repo settings so students can easily click a button to start their course.
 2. Delete `.bit/.progress` if it is in your repository
 3. Make sure `.bit/.camp` contains this default setting: `{"count" : "0", "prcount" : "0", "issue" : "1"}`
+
 
 ### Need a visual walkthough? Watch these two videos to learn how to set up your course and how students will use it.
 
@@ -152,15 +153,15 @@ Maintaining a consistent Bitcamp Curriculum documentation throughout all Bitcamp
  * `...`
  * `README.md`
 
-***Throughout this walkthrough, the corresponding files/directories within `sample-camp/` will be linked for your reference***
+***`sample-camp/` file will be linked for your reference***
 
 ### :book: [The root README.md file](https://github.com/emsesc/BitCamp/blob/sample-camp/repo_logistics/sample-camp/README.md)
 
 **What is it?**
 
-This is the general README.md file under your camp's [subdirectory](https://github.com/emsesc/BitCamp/tree/sample-camp/repo_logistics/sample-camp). This contains a general overview of the entire camp and quick summaries of each week.
+This contains a general overview of the entire camp and quick summaries of each week, which is located under your camp's [subdirectory](https://github.com/emsesc/BitCamp/tree/sample-camp/repo_logistics/sample-camp). 
 
-**Purpose:** This is for open-source contributors to understand what the camp's goals are and what the curriculum contains. This should NOT be as detailed as individual week descriptions. Be as clear and concise as possible.
+**Purpose:** This can help open-source contributors to understand what the camp's goals are and what the curriculum contains. Make sure to make it clear and be as detailed as possible.
 
 
 
@@ -170,23 +171,23 @@ This is the general README.md file under your camp's [subdirectory](https://gith
 
 This is the `homework/` in your camp's [subdirectory](https://github.com/emsesc/BitCamp/tree/sample-camp/repo_logistics/sample-camp). This contains all of the files needed to create your camp's Learning Lab.
 
-**Purpose:** To easily sync response files and other Learning Lab materials, placing all files under this subdirectory makes your life easier. This also keeps all files related to the camp in one place for easy access.
+**Purpose:** To keep all files related to the camp in one place, please place all files under this subdirectory for easy access.
 
-*We will not go over the file structure in this markdown file, so refer to the [`learning_lab`](https://github.com/bitprj/BitCamp/tree/master/repo_logistics/learning_lab) subdirectory for documentation on Learning Lab components.*
+*Refer to the [`learning_lab`](https://github.com/bitprj/BitCamp/tree/master/repo_logistics/learning_lab) subdirectory to go over the file structure in this markdown file.
 
 ### :file_folder: [Week Folders](https://github.com/emsesc/BitCamp/blob/sample-camp/repo_logistics/sample-camp)
 
 **What is it?**
 
-These are directories within the camp [subdirectory](https://github.com/emsesc/BitCamp/blob/sample-camp/repo_logistics/sample-camp) that organize the content by weeks. Create as many as you need accordingly to the camp's weeks.
+These are [subdirectories](https://github.com/emsesc/BitCamp/blob/sample-camp/repo_logistics/sample-camp) that organize the content by weeks. Create as many as you need accordingly to the camp's weeks.
 
-**Purpose:** These directories each contain the week's README.md (individual week description), livestream, and homework.
+**Purpose:** Each directory contain the week's README.md (individual week description), livestream, and homework.
 
 ### :open_file_folder: [Inside the Week Folders](https://github.com/emsesc/BitCamp/blob/sample-camp/repo_logistics/sample-camp/week1)
 
 **What is it?**
 
-Inside the Week Directories, there are three components: code, videos, and the README.md (individual week description).
+These consist of three components: code, videos, and the README.md (individual week description).
 
 * **`code`**: this contains the **code** you will use in the livestream.
 * **`videos`**: this contains the **video recordings** of the livestream.
