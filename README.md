@@ -14,7 +14,7 @@ As an open source organization, we want to increase community involvement and en
 
 Bit Camp consists of weekly live lectures (hosted by student developers), assignments, office hours, and guidelines for creating a final project. Although mentorship and feedback are only available to students who apply and get into the boot camp, the curriculum is FREE and OPEN to all who want to learn new technologies and use their skills to their side projects. 
 
-To find out more, click on the links below. Additionally, we also provide a syllabus in the **readme.md** to better understand each curriculum.
+To find out more, click on the links below. Additionally, we also provide a syllabus in each **README.md** for better understanding of each curriculum.
 
 
 #### 1. [**GameDev**](https://github.com/bitprj/BitCamp/tree/master/GameDev)
