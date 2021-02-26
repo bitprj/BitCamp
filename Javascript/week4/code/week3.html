@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Title</title>
+</head>
+<body>
+    <form>
+		<div class="timezone">
+			<p>Select Timezone:</p>
+			
+			<input type="radio" id="est" name="tz" value="est">
+			<label for="est">Eastern Standard Time</label><br>
+			<input type="radio" id="cst" name="tz" value="cst">
+			<label for="cst">Central Standard Time</label><br>
+			<input type="radio" id="mst" name="tz" value="mst">
+			<label for="mst">Mountain Standard Time</label><br>
+			<input type="radio" id="pst" name="tz" value="pst">
+			<label for="pst">Pacific Standard Time</label><br>
+			<input type="radio" id="ast" name="tz" value="ast">
+			<label for="ast">Alaska Standard Time</label><br>
+			<input type="radio" id="hst" name="tz" value="hst">
+			<label for="hst">Hawaii-Aleutian Standard Time</label><br>
+			<br>
+			
+			<button type="button" value="Submit" onclick="ValidateForm()"> Submit </button>
+			<br>
+			<div id="result"></div> 
+		</div>
+    </form>
+    <br>
+    <div class="clock" id="clock">
+        <div class="example"></div>
+    </div>
+    
+    <p id="output"></p>
+    
+    <script type="text/javascript">
+        var offset = 0;
+        function ValidateForm()
+        {
+            var radioButtons = document.getElementsByName("tz");
+            var timezone = radioButtons[0].value;
+            for(var i = 0; i < radioButtons.length; i++)
+            {
+                if(radioButtons[i].checked == true)
+                {
+                    timezone = radioButtons[i].value;
+                    document.getElementById("result").innerHTML = timezone;
+                }
+            }
+            if (timezone == "cst"){
+                offset = 1;
+            } else if (timezone == "mst"){
+                offset = 2;
+            } else if (timezone == "pst"){
+                offset = 3;
+            } else if (timezone == "ast"){
+                offset = 4;
+            } else if (timezone == "hst"){
+                offset = 5;
+            } else if (timezone == "est"){
+                offset = 0;
+            }
+            showTime();
+        }
+        function showTime()
+        {
+            var day = new Date();
+            var h = day.getHours() - offset;
+            var m = day.getMinutes();
+            var s = day.getSeconds();
+            var session = "AM";
+
+            //change hour variables so we have a 12 hour clock
+            if(h == 0){
+                h = 12;
+            }
+
+            if(h > 12){
+                h = h - 12;
+                session = "PM";
+            }
+
+            //these conditionals make sure there's a 0 preceding any
+            //single digit numbers so our clock looks uniform
+            if(h < 10){
+                h = "0" + h;
+            }
+
+            if(m < 10){
+                m = "0" + m;
+            }
+
+            if(s < 10){
+                s = "0" + s;
+            }
+
+            //concatenate the time into a single string
+            var time = h + ":" + m + ":" + s + " " + session;
+            //print the time onto the webpage
+            document.getElementById("clock").innerText = time;
+            document.getElementById("clock").textContent = time;
+
+            //this makes sure the time is updated every second
+            setTimeout(showTime, 1000)
+        }
+        showTime();
+    </script>
+</body>
+</html>

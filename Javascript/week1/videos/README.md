@@ -4,6 +4,8 @@ Slidedeck: https://docs.google.com/presentation/d/1tQc-3KrYwR96bWwjHzSh2sSyYE3Oc
 
 Twitch link: https://www.twitch.tv/videos/898298488
 
+YouTube link: https://www.youtube.com/watch?v=m7h6t8u6qzU
+
 Link for GitHub Learning Lab: https://lab.github.com/bitprj/javascript-with-html-and-css/
 
 Visual Studio Code Download Link: https://code.visualstudio.com/Download
