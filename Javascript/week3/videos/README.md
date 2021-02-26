@@ -4,7 +4,7 @@ Slidedeck: https://docs.google.com/presentation/d/1O377dnMY9lcX0dT3A0JpKNiTGmP0Q
 
 Twitch link:  https://www.twitch.tv/videos/918278297
 
-YouTube link: to be posted
+YouTube link: https://www.youtube.com/watch?v=gh8Au0iVEjw&ab_channel=BitProject
 
 Link for GitHub Learning Lab: https://lab.github.com/bitprj/javascript-with-html-and-css/
 
